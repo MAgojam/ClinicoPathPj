@@ -1,0 +1,23 @@
+{
+  "scope": "Warm Python run only; excludes startup, native rendering and browser work",
+  "results": [
+    {
+      "analysis": "pydotdecision",
+      "rows": 180,
+      "median_python_run_seconds": 0.01729795799474232,
+      "html_bytes": 10948
+    },
+    {
+      "analysis": "pyd3cutoff",
+      "rows": 180,
+      "median_python_run_seconds": 0.03346670902101323,
+      "html_bytes": 470849
+    },
+    {
+      "analysis": "pyobservablecutoff",
+      "rows": 180,
+      "median_python_run_seconds": 0.038581374974455684,
+      "html_bytes": 701531
+    }
+  ]
+}
