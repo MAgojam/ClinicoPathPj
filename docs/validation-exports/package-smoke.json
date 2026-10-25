@@ -1,0 +1,71 @@
+{
+  "package": "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/ClinicoPathPj_0.2.0.jmo",
+  "integrity": "ok",
+  "module": "ClinicoPathPj",
+  "version": "0.2.0",
+  "analyses": [
+    {
+      "analysis": "pydecisioncalculator",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "accuracy",
+        "ratios"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pysequentialtests",
+      "status": "ok",
+      "tables": [
+        "strategies",
+        "workload"
+      ],
+      "plots": [
+        "accuracyPlot"
+      ]
+    },
+    {
+      "analysis": "pydecision",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "accuracy",
+        "ratios"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pychisqposttest",
+      "status": "ok",
+      "tables": [
+        "overall",
+        "cells",
+        "pairs"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pybenford",
+      "status": "ok",
+      "tables": [
+        "test",
+        "frequencies"
+      ],
+      "plots": [
+        "digitPlot"
+      ]
+    },
+    {
+      "analysis": "pydecisioncurve",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "curves"
+      ],
+      "plots": [
+        "netBenefitPlot"
+      ]
+    }
+  ]
+}
