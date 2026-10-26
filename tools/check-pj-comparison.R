@@ -69,6 +69,5 @@ for(mode in c('jamovi','system')) {
 stopifnot(identical(baseLibraries,.libPaths()))
 writeLines('PASSED current host: both interpreters, native counts, exact intervals, both directions/criteria, automatic optimum, applied option rerun, missing/undefined/error/recovery.',file.path(stage,'BACKEND_PASSED.txt'))
 
-cat('Reports written to: ',stage,'\n',sep='')
 
 cat('Reports written to: ',stage,'\n',sep='')
