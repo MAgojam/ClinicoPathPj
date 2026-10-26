@@ -35,6 +35,9 @@ import warnings  # noqa: E402
 from collections import namedtuple  # noqa: E402
 from pathlib import Path  # noqa: E402
 
+# L'embedded Windows usa un file _pth: aggiunge solo la directory fidata del runtime del modulo.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 MAX_WARNINGS = 10
 MAX_CONSOLE = 100_000
 SELF_LIMIT = 75  # seconds; R stops runs after 60 s, this only matters if R itself was killed
@@ -392,7 +395,9 @@ def main(argv):
     if len(argv) != 2:
         print("usage: cpj_runtime.py <request.json> <response.json>", file=sys.stderr)
         return 2
-    signal.alarm(SELF_LIMIT)  # default SIGALRM action ends the process if no parent stops it
+    # Windows non espone alarm; il runner R mantiene comunque timeout e terminazione del processo.
+    if hasattr(signal, 'alarm'):
+        signal.alarm(SELF_LIMIT)
     with open(argv[0], encoding="utf-8") as stream:
         request = json.load(stream)
     write(execute(request), argv[1])

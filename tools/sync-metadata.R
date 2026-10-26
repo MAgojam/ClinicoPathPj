@@ -28,7 +28,7 @@ sync_module_metadata <- function(root = ".") {
         registry <- jsonlite::fromJSON(registry_path, simplifyVector = FALSE)
         installed_names <- unlist(lapply(registry$analyses, function(entry)
             if (!is.null(entry$source)) c(entry$id, unlist(entry$aliases, use.names = FALSE))), use.names = FALSE)
-        document$analyses <- Filter(function(a) a$name %in% installed_names, document$analyses)
+        document$analyses <- Filter(function(a) a$name %in% c(installed_names, "cpDiagnostic", "pjDiagnostic"), document$analyses)
         # The compiler preserves metadata for existing entries. Seed hidden aliases here,
         # because its analysis schema rejects `hidden` although the module schema supports it.
         for (entry in registry$analyses) {

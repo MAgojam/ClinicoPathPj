@@ -135,7 +135,8 @@
 }
 
 .cpjRun <- function(self, name, options, arrays = character(0), numeric = character(0),
-                    required = character(0), events = character(0), terms = character(0), checkpoint = NULL) {
+                    required = character(0), events = character(0), terms = character(0), checkpoint = NULL,
+                    pythonOverride = NULL) {
     # jmvcore restores Preformatted and Text content from the saved state, so clear it first:
     # otherwise an earlier run's traceback or interpretation would still show under this run's results.
     for (item in self$results$items)
@@ -183,7 +184,8 @@
         if (column %in% numericColumns) x <- jmvcore::toNumeric(x)
         .cpjColumn(x, column)
     })
-    python <- .cpjPython()
+    # Solo il confronto locale puo fornire un interprete embedded verificato su Windows.
+    python <- if(is.null(pythonOverride)) .cpjPython() else pythonOverride
     runtime <- system.file("python", "cpj_runtime.py", package = "ClinicoPathPj", mustWork = TRUE)
     dir <- tempfile("cpj")
     dir.create(dir)

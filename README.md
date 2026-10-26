@@ -336,3 +336,10 @@ Descriptive-port verification and limitations are recorded in [the 0.3.1 validat
 For numeric roles that also permit factors, `coerceNumeric: True` in SPEC requests numeric-metadata conversion in the R bridge; the Python engine must explicitly validate any remaining factor labels. Number/Integer options may omit either bound while keeping a finite default and finite supplied bounds.
 
 `pydataquality` adds native missingness and duplicate accounting, quality maps and a local keyboard-accessible missingness preview. See [methods, examples and limits](docs/python-dataquality.md).
+
+## Optional Pj service comparison (fork branch)
+
+This branch adds two side-by-side diagnostic analyses without replacing the
+original ClinicoPathPj analyses. See [the comparison guide](docs/pj-service-comparison.md)
+for installation, macOS build instructions, interpretation and validation limits.
+The additional Pj route requires separately installed **Pj 1.3.0 or newer**.

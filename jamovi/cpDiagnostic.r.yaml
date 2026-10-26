@@ -1,0 +1,87 @@
+{
+  "name": "cpDiagnostic",
+  "title": "Diagnostic cutoff - ClinicoPathPj bridge",
+  "jrs": "1.1",
+  "items": [
+    {
+      "name": "summary",
+      "title": "Applied Cutoff",
+      "type": "Text"
+    },
+    {
+      "name": "timing",
+      "title": "Backend timing",
+      "type": "Html"
+    },
+    {
+      "name": "explorer",
+      "title": "Cutoff Explorer",
+      "type": "Html"
+    },
+    {
+      "name": "counts",
+      "title": "Applied Cutoff Classification",
+      "type": "Table",
+      "rows": 0,
+      "columns": [
+        {
+          "name": "cell",
+          "title": "Classification",
+          "type": "text"
+        },
+        {
+          "name": "n",
+          "title": "Count",
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "name": "metrics",
+      "title": "Applied Cutoff Accuracy",
+      "type": "Table",
+      "rows": 0,
+      "columns": [
+        {
+          "name": "metric",
+          "title": "Metric",
+          "type": "text"
+        },
+        {
+          "name": "estimate",
+          "title": "Estimate",
+          "type": "number",
+          "format": "pc"
+        },
+        {
+          "name": "lower",
+          "title": "95% CI Lower",
+          "type": "number",
+          "format": "pc"
+        },
+        {
+          "name": "upper",
+          "title": "95% CI Upper",
+          "type": "number",
+          "format": "pc"
+        }
+      ]
+    },
+    {
+      "name": "staticDotplot",
+      "title": "Applied Cutoff Dotplot",
+      "type": "Image",
+      "width": 600,
+      "height": 400,
+      "renderFun": ".plot",
+      "requiresData": false,
+      "visible": false
+    },
+    {
+      "name": "console",
+      "title": "Python console",
+      "type": "Preformatted",
+      "visible": "(showConsole)"
+    }
+  ]
+}

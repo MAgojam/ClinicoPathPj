@@ -12,6 +12,22 @@ description: >-
   Python bundled with jamovi (numpy, scipy). Verified on jamovi for macOS.
 minApp: 28.3.0
 analyses:
+  - name: cpDiagnostic
+    ns: ClinicoPathPj
+    title: Diagnostic cutoff - ClinicoPathPj bridge
+    menuGroup: ClinicoPathPj
+    menuSubgroup: Python bridge comparison
+    menuTitle: Diagnostic cutoff - ClinicoPathPj bridge
+    category: analyses
+    hidden: false
+  - name: pjDiagnostic
+    ns: ClinicoPathPj
+    title: Diagnostic cutoff - Pj service
+    menuGroup: ClinicoPathPj
+    menuSubgroup: Python bridge comparison
+    menuTitle: Diagnostic cutoff - Pj service
+    category: analyses
+    hidden: false
   - title: Descriptives (Python)
     name: pydescriptives
     ns: ClinicoPathPj
@@ -174,6 +190,9 @@ analyses:
     menuTitle: Multi-Variable Visual Quality
 usesNative: 'yes'
 datasets:
+  - name: Diagnostic service test data
+    path: pj_diagnostic_teaching.csv
+    description: Synthetic comparison data. Choose Measurement, Reference and positive level Positive.
   - name: Python Core Examples
     path: python_core_examples.omv
     description: Six Python core analyses using 36 synthetic observations.

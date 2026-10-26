@@ -1,0 +1,99 @@
+{
+  "name": "pjDiagnostic",
+  "title": "Diagnostic cutoff - Pj service",
+  "jrs": "1.1",
+  "items": [
+    {
+      "name": "status",
+      "title": "Pj service",
+      "type": "Html"
+    },
+    {
+      "name": "timing",
+      "title": "Backend timing",
+      "type": "Html"
+    },
+    {
+      "name": "explorer",
+      "title": "Linked D3 diagnostic explorer",
+      "type": "Html",
+      "visible": true,
+      "clearWith": [
+        "marker",
+        "reference",
+        "positive",
+        "direction",
+        "criterion",
+        "cutoff",
+        "python"
+      ]
+    },
+    {
+      "name": "counts",
+      "title": "Applied cutoff classification",
+      "type": "Table",
+      "visible": true,
+      "columns": [
+        {
+          "name": "cell",
+          "title": "Classification",
+          "type": "text"
+        },
+        {
+          "name": "n",
+          "title": "Count",
+          "type": "integer"
+        }
+      ],
+      "clearWith": [
+        "marker",
+        "reference",
+        "positive",
+        "direction",
+        "criterion",
+        "cutoff",
+        "python"
+      ]
+    },
+    {
+      "name": "metrics",
+      "title": "Applied cutoff accuracy",
+      "type": "Table",
+      "visible": true,
+      "columns": [
+        {
+          "name": "metric",
+          "title": "Metric",
+          "type": "text"
+        },
+        {
+          "name": "estimate",
+          "title": "Estimate",
+          "type": "number",
+          "format": "pc"
+        },
+        {
+          "name": "lower",
+          "title": "95% CI lower",
+          "type": "number",
+          "format": "pc"
+        },
+        {
+          "name": "upper",
+          "title": "95% CI upper",
+          "type": "number",
+          "format": "pc"
+        }
+      ],
+      "clearWith": [
+        "marker",
+        "reference",
+        "positive",
+        "direction",
+        "criterion",
+        "cutoff",
+        "python"
+      ]
+    }
+  ]
+}
