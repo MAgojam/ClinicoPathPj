@@ -80,7 +80,7 @@ pjDiagnosticClass <- R6::R6Class('pjDiagnosticClass', inherit=pjDiagnosticBase,
                 self$results[[name]]$setVisible(TRUE)
             }
             self$results$metrics$setNote('assumptions','Exact Clopper-Pearson 95% intervals assume independent rows and a fixed cutoff; they do not account for cutoff selection. Predictive values depend on sample group proportions.')
-            # Come criterio generale gia verificato in Metafora, non sostituisce contenuto identico.
+            # Evita di sostituire il contenuto HTML quando i byte non cambiano.
             # Protobuf puo perdere l'etichetta Encoding di R pur conservando gli stessi byte UTF-8.
             if(!identical(charToRaw(self$results$explorer$content),charToRaw(plot)))
                 self$results$explorer$setContent(plot)

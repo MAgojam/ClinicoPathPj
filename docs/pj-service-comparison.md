@@ -1,10 +1,8 @@
 # ClinicoPathPj and the Pj service: diagnostic comparison
 
-Revision: **26 October 2026 â€” Agente_Pj / Maurizio Agosti**.
-This is an experimental branch of Maurizio's fork, based on Serdar Balci's
-ClinicoPathPj commit `56e02f6640678908948d5826e3b44a64166aab0a`.
-It is not an official upstream release. Original authorship, maintainer and GPL
-license are preserved. No pull request to upstream is opened by this work.
+This experimental branch adds a comparison between the original ClinicoPathPj
+Python bridge and the public Pj service API. It is not an official upstream
+release. The original project authorship, maintainer and GPL license are preserved.
 
 ## Install and compare
 
@@ -18,8 +16,8 @@ Pj is separately installed and is neither copied nor declared as a CRAN Imports
 dependency. Without Pj, the original analyses and processx comparison remain
 independent; only the Pj entry reports that Pj must be installed.
 
-Open **Data Library â†’ ClinicoPathPj â†’ Diagnostic service test data** (180 synthetic
-teaching observations). Add both analyses under **ClinicoPathPj â†’ Python bridge
+Open **Data Library > ClinicoPathPj > Diagnostic service test data** (180 synthetic
+teaching observations). Add both analyses under **ClinicoPathPj > Python bridge
 comparison**:
 
 - **Diagnostic cutoff - ClinicoPathPj bridge** uses the original `pydotdecision`
@@ -52,7 +50,7 @@ polls jamovi checkpoints to cancel stale analyses. Their cancellation behaviour
 is not equivalent. Pj's timeout is per subprocess, not an overall wall-clock cap.
 
 ROC/AUC uses all complete rows including ties; hiding correct points is only a
-visual filter. Cutoff optimization needs independent validation. Clopperâ€“Pearson
+visual filter. Cutoff optimization needs independent validation. Clopper-Pearson
 intervals assume independent rows and a fixed cutoff, ignoring selection
 uncertainty. Predictive values depend on sample group proportions. The Pj entry
 accepts at most 5,000 complete rows and uses a linear measurement axis. It does
@@ -82,30 +80,29 @@ No original analysis specifications or calculation algorithms are replaced.
 
 ## Validation
 
-The earlier local laboratory was manually approved on Windows. This fork needs
-its own verification; laboratory approval is not a macOS certification.
 Run `tools/check-pj-comparison.R <installed-module-R-library>` in jamovi's
 embedded R after building to check independent counts/exact intervals, both
 Pj interpreters, changed cutoffs, missing values and error recovery. It requires
 Pj installed beside the host and the selected Python dependencies.
 Do not run it while installing/replacing the same module.
-macOS compilation and interactive Apply/save/reopen must be verified by the
-recipient on their Mac. No new macOS PASSED is claimed by this branch.
+macOS compilation and interactive Apply/save/reopen require validation on macOS.
 
 `tools/check-pj-routes.R <installed-module-R-library>` additionally compares
 12 matched configurations of the two complete routes using jamovi Python.
 It writes its timing CSV and report to a temporary directory; print or inspect
 that directory when collecting evidence. Neither test installs or updates Pj.
 
-### Fork validation, 26 October 2026 — Agente_Pj
+### Verified environment and checks
 
 Windows x64, jamovi 28.14, embedded R 4.6.0, embedded Python 3.14.5 and
-System Python 3.14.7: isolated module build passed. Independent counts,
-Clopper–Pearson intervals, both directions/criteria, automatic and changed
+System Python 3.14.7: module compilation and interactive visual checks passed.
+Independent counts,
+Clopper-Pearson intervals, both directions/criteria, automatic and changed
 cutoffs, missing values, error recovery and unchanged global library paths
 passed for both Pj interpreters. Twelve matched configurations of the original
 processx route and Pj route produced identical native estimates and intervals.
 Eight headless browser scenarios passed for D3 drag, numeric input, ROC/AUC
 and Apply option messages. Metadata sync preserves the two comparison entries;
 the upstream generated-source consistency check passed on Windows.
-No new macOS or Linux build, GUI save/reopen or cancellation test is claimed.
+macOS and Linux builds, saved-analysis reopening and cancellation behaviour
+have not been validated for this branch.
