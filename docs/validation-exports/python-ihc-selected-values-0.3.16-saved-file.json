@@ -1,0 +1,137 @@
+{
+  "file": "docs/validation-exports/python-ihc-selected-values-0.3.16-validation.omv",
+  "integrity": "ok",
+  "input_rows": 12,
+  "retained_rows": 9,
+  "applied_rows": [
+    "1",
+    "2"
+  ],
+  "table_rows": 6,
+  "columns": {
+    "position": [
+      6,
+      6,
+      6,
+      7,
+      7,
+      7
+    ],
+    "sourceRow": [
+      "1",
+      "1",
+      "1",
+      "2",
+      "2",
+      "2"
+    ],
+    "subject": [
+      "S01",
+      "S01",
+      "S01",
+      "S01",
+      "S01",
+      "S01"
+    ],
+    "group": [
+      "Group A",
+      "Group A",
+      "Group A",
+      "Group A",
+      "Group A",
+      "Group A"
+    ],
+    "region": [
+      "Center",
+      "Center",
+      "Center",
+      "Edge",
+      "Edge",
+      "Edge"
+    ],
+    "marker": [
+      "Ki67",
+      "ER",
+      "PR",
+      "Ki67",
+      "ER",
+      "PR"
+    ],
+    "raw": [
+      12.0,
+      90.0,
+      70.0,
+      18.0,
+      85.0,
+      65.0
+    ],
+    "displayed": [
+      -1.03851623099316,
+      1.0894095588038444,
+      1.0962381360361724,
+      -0.7892723355548015,
+      0.9683640522700839,
+      0.9467511174857853
+    ],
+    "status": [
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed"
+    ]
+  },
+  "independent_checks": [
+    {
+      "sourceRow": "1",
+      "marker": "Ki67",
+      "raw": 12.0,
+      "displayed": -1.03851623099316,
+      "independent_z": -1.03851623099316
+    },
+    {
+      "sourceRow": "1",
+      "marker": "ER",
+      "raw": 90.0,
+      "displayed": 1.0894095588038444,
+      "independent_z": 1.0894095588038444
+    },
+    {
+      "sourceRow": "1",
+      "marker": "PR",
+      "raw": 70.0,
+      "displayed": 1.0962381360361724,
+      "independent_z": 1.0962381360361724
+    },
+    {
+      "sourceRow": "2",
+      "marker": "Ki67",
+      "raw": 18.0,
+      "displayed": -0.7892723355548015,
+      "independent_z": -0.7892723355548015
+    },
+    {
+      "sourceRow": "2",
+      "marker": "ER",
+      "raw": 85.0,
+      "displayed": 0.9683640522700839,
+      "independent_z": 0.9683640522700839
+    },
+    {
+      "sourceRow": "2",
+      "marker": "PR",
+      "raw": 65.0,
+      "displayed": 0.9467511174857853,
+      "independent_z": 0.9467511174857853
+    }
+  ],
+  "method": "Decode integer fixture data.bin; complete-row cohort; Python statistics.mean/stdev ddof=1; tolerance 1e-12",
+  "native_checks": [
+    "preview leaves applied table unchanged",
+    "Apply switches source rows",
+    "fresh-engine reopen",
+    "disable clears table; re-enable reconstructs it",
+    "native HTML table present in saved document"
+  ]
+}
