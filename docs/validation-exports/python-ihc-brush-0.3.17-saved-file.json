@@ -1,0 +1,113 @@
+{
+  "file": "docs/validation-exports/python-ihc-brush-0.3.17-validation.omv",
+  "integrity": "ok",
+  "input_rows": 12,
+  "retained_rows": 9,
+  "selection": {
+    "version": 1,
+    "rows": [
+      "4",
+      "9"
+    ],
+    "snapshot": "ffebee306f9ae6fdec447efc6790bdaed7fe9d232900e50167a9f530e4a083a0"
+  },
+  "selected_values": {
+    "position": [
+      8,
+      8,
+      8,
+      9,
+      9,
+      9
+    ],
+    "sourceRow": [
+      "4",
+      "4",
+      "4",
+      "9",
+      "9",
+      "9"
+    ],
+    "subject": [
+      "S03",
+      "S03",
+      "S03",
+      "S07",
+      "S07",
+      "S07"
+    ],
+    "group": [
+      "Group A",
+      "Group A",
+      "Group A",
+      "Group C",
+      "Group C",
+      "Group C"
+    ],
+    "region": [
+      "Center",
+      "Center",
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+    ],
+    "marker": [
+      "Ki67",
+      "ER",
+      "PR",
+      "Ki67",
+      "ER",
+      "PR"
+    ],
+    "raw": [
+      25.0,
+      70.0,
+      50.0,
+      30.0,
+      50.0,
+      30.0
+    ],
+    "displayed": [
+      25.0,
+      70.0,
+      50.0,
+      30.0,
+      50.0,
+      30.0
+    ],
+    "status": [
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed",
+      "Observed"
+    ]
+  },
+  "saved_integer_flags": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    -2147483648,
+    -2147483648,
+    -2147483648
+  ],
+  "full_cohort_means": {
+    "Ki67": 37,
+    "ER": 45,
+    "PR": 33.333333333333336
+  },
+  "native_checks": [
+    "numeric X 40-80 / Y 0-5 previews rows 6,8,5,7; applied rows remain 1,2",
+    "pointer drag previews rows 4,9; explicit Apply changes native rows and marker table",
+    "fresh-engine reopen restores applied rows 4,9; drag mode off and bounds reset",
+    "fresh-engine selected-marker table disable/re-enable reruns successfully"
+  ]
+}
