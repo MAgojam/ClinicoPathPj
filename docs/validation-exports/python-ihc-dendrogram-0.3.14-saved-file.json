@@ -1,0 +1,22 @@
+{
+  "file": "docs/validation-exports/python-ihc-dendrogram-0.3.14-validation.omv",
+  "integrity": "ok",
+  "options": {
+    "markers": [
+      "Ki67",
+      "ER",
+      "PR"
+    ],
+    "scaling": "zscore",
+    "missing": "complete",
+    "clusterRows": true,
+    "clusterColumns": true,
+    "showDendrograms": true
+  },
+  "native_png_resources": [
+    "02 pyihcheatmap/resources/b3c1c26150989796.png",
+    "02 pyihcheatmap/resources/a601c4be13cd16e0.png",
+    "02 pyihcheatmap/resources/927d7cf13a6485ec.png",
+    "02 pyihcheatmap/resources/6839aca088cf3496.png"
+  ]
+}

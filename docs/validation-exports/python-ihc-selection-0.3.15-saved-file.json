@@ -1,0 +1,71 @@
+{
+  "file": "docs/validation-exports/python-ihc-selection-0.3.15-validation.omv",
+  "integrity": "ok",
+  "rowCount": 12,
+  "selection": {
+    "version": 1,
+    "rows": [
+      "1",
+      "2"
+    ],
+    "snapshot": "ffebee306f9ae6fdec447efc6790bdaed7fe9d232900e50167a9f530e4a083a0"
+  },
+  "scaling": "zscore",
+  "output": {
+    "name": "IHC_selection",
+    "id": 12,
+    "columnType": "Output",
+    "dataType": "Integer",
+    "measureType": "Nominal",
+    "formula": "",
+    "formulaMessage": "",
+    "parentId": 0,
+    "width": 100,
+    "type": "integer",
+    "outputAnalysisId": 2,
+    "outputOptionName": "selectionFlag",
+    "outputName": "1",
+    "outputDesiredColumnName": "IHC_selection",
+    "outputAssignedColumnName": "IHC_selection",
+    "importName": "",
+    "description": "Applied IHC source-row selection; excluded, disabled or invalid rows are unassessed",
+    "transform": 0,
+    "edits": [],
+    "missingValues": [],
+    "trimLevels": true
+  },
+  "saved_integer_codes": [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -2147483648,
+    -2147483648,
+    -2147483648
+  ],
+  "decoded_values": [
+    "Selected",
+    "Selected",
+    "Not selected",
+    "Not selected",
+    "Not selected",
+    "Not selected",
+    "Not selected",
+    "Not selected",
+    "Not selected",
+    null,
+    null,
+    null
+  ],
+  "native_checks": [
+    "explicit Apply after local branch preview",
+    "nominal dataset output",
+    "fresh-engine reopen",
+    "raw then zscore recalculation retains applied selection"
+  ]
+}
