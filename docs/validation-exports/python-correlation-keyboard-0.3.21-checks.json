@@ -1,0 +1,23 @@
+{
+  "version": "0.3.21",
+  "analysis": "pyjjcorrmat",
+  "date": "2026-10-27",
+  "change": "Local correlation matrix keyboard navigation",
+  "checks": {
+    "original_template": "new regression fails: 9 Tab stops instead of 1",
+    "updated_template": "3x3 labels, unavailable estimates, focus, modifier keys, local-only checks pass",
+    "bounds": "2x2 and 20x20 arrow, Home/End and matrix endpoint checks pass",
+    "python": "6 focused correlation tests pass",
+    "compiler": "build-only succeeded"
+  },
+  "limits": [
+    "Native 0.3.21 keyboard qualification pending",
+    "Prior numerical and native desktop evidence remains scoped to 0.3.20",
+    "No calculation or option-contract change"
+  ],
+  "sources": {
+    "inst/python/templates/correlation.html": "5c776eeb86e9021523917466d2f8d672d6481080843c9cc3b28a0d17b0ee5ce4",
+    "tests/javascript/correlation.cjs": "a7fc3b2bdd5c2aa47faee882c12ce3f4531d24cf5a65ceb3733a067ae5148af0",
+    "tests/javascript/correlation-keyboard.cjs": "28590007b19854e733813fb7f1058dddba53c7dbdea9c8ced04dcee2054de8ea"
+  }
+}

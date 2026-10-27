@@ -1,0 +1,40 @@
+{
+  "module": "ClinicoPathPj",
+  "version": "0.3.20",
+  "date": "2026-10-27",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "analysis": "pyjjcorrmat",
+  "gui_checks": [
+    "GUI sideload success",
+    "fresh engine",
+    "Pearson/listwise 8 input, 6 common complete rows",
+    "constant column: three unavailable pairs",
+    "pairwise per-pair n updated",
+    "keyboard Return cell inspection",
+    "Spearman rerun, Pearson interval control disabled",
+    "OMV saved and reopened in second fresh engine",
+    "Pearson recalculation after reopening",
+    "native PNG export visually inspected"
+  ],
+  "saved_configuration": {
+    "method": "Spearman",
+    "missingness": "pairwise",
+    "adjustment": "holm",
+    "variables": [
+      "Constant",
+      "Marker_C",
+      "Marker_B",
+      "Marker_A"
+    ]
+  },
+  "artifacts": {
+    "python-correlation-0.3.20-validation.omv": "19a90340a08f65ec41e5d7ece05feb0c4442128ff2d4935e398ff55f3c201b41",
+    "python-correlation-0.3.20-native.png": "a8d3dc60ffbc82b05c8a0e9d7b66042d25f4b6e37cb8b6e958f803910a9f682c"
+  },
+  "limits": [
+    "single macOS arm64 configuration",
+    "not full parity or clinical validation",
+    "no other platform qualification"
+  ]
+}

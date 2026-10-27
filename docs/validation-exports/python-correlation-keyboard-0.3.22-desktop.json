@@ -1,0 +1,27 @@
+{
+  "version": "0.3.22",
+  "date": "2026-10-27",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "analysis": "pyjjcorrmat",
+  "before": "0.3.21 first-cell Left moved to last column; host-bubbling regression fails",
+  "after": [
+    "2/3/20-variable DOM checks pass",
+    "host-bubbling regression passes",
+    "6 focused Python tests pass",
+    "compiler and freshness pass",
+    "17 packaged-runtime cases pass",
+    "GUI package installation and fresh-engine recalculation",
+    "native first/last boundaries, arrows, row End, Command End, Control Home",
+    "native Tab exit and remembered Shift Tab re-entry",
+    "native Enter and Space",
+    "new OMV saved; second fresh engine reopens and first-cell Left remains clamped; Right advances"
+  ],
+  "fixture": "docs/validation-exports/python-correlation-keyboard-0.3.22-validation.omv",
+  "sha256": "c3f3e6a008a25e8f185deddb192f11ab473fae891e977aca3ec5c20846ab1536",
+  "limits": [
+    "single macOS configuration; not full accessibility certification",
+    "native export evidence remains 0.3.20 scope",
+    "statistical methods and saved option contracts unchanged"
+  ]
+}

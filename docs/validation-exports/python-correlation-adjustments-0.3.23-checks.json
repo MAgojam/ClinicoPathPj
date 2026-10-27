@@ -1,0 +1,27 @@
+{
+  "module": "ClinicoPathPj",
+  "version": "0.3.23",
+  "analysis": "pyjjcorrmat",
+  "date": "2026-10-27",
+  "oracle_fixtures": 1533,
+  "focused_python_tests": 7,
+  "native_r": {
+    "assertions": 706,
+    "configurations": 28,
+    "failures": 0,
+    "warnings": 0,
+    "exit_code": 0,
+    "post_completion_messages": [
+      "Error: Operation not permitted",
+      "Error: Operation not permitted",
+      "Error: Operation not permitted"
+    ]
+  },
+  "gui": "new adjustment controls pending; prior keyboard/export evidence retains tested scope",
+  "sources": {
+    "inst/python/cpj_correlation.py": "325a0ff131362147e12b120796b11c73cb314a805b306f2ffdb9ceabe4a16d8d",
+    "tools/correlation-adjustment-reference.R": "93761b003e3f5c297c256fa6ef8e663bf371f9752f6ac07764b72fb87e3520b2",
+    "tools/check-correlation-adjustments.py": "dad6f357e36ddccde2b1130d53e00bf90aa763f6ef5bfa92baa100b1258816a4",
+    "tests/testthat/test-correlation-python.R": "434180537aeb2ecbf3033c824a307a198334a0ddd016822e1966d97ecba89681"
+  }
+}

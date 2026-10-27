@@ -1,0 +1,15 @@
+{
+  "oracle": "base R stats::p.adjust",
+  "R": "R version 4.6.0 (2026-04-24)",
+  "fixtures": 1533,
+  "status": "passed",
+  "methods": [
+    "BH",
+    "BY",
+    "bonferroni",
+    "hochberg",
+    "holm",
+    "hommel",
+    "none"
+  ]
+}
