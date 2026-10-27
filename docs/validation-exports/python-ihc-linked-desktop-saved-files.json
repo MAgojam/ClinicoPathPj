@@ -1,0 +1,42 @@
+[
+  {
+    "file": "docs/validation-exports/python-ihc-linked-0.3.12-validation.omv",
+    "integrity": "ok",
+    "analysis": "pyihcheatmap",
+    "options": {
+      "markers": [
+        "Ki67",
+        "ER",
+        "PR"
+      ],
+      "scatterX": null,
+      "scatterY": null,
+      "showScatter": true,
+      "scaling": "zscore"
+    },
+    "native_png_resources": [
+      "02 pyihcheatmap/resources/cc86cd8315241859.png",
+      "02 pyihcheatmap/resources/fff0875a908afdb1.png"
+    ]
+  },
+  {
+    "file": "docs/validation-exports/python-ihc-linked-0.3.13-validation.omv",
+    "integrity": "ok",
+    "analysis": "pyihcheatmap",
+    "options": {
+      "markers": [
+        "Ki67",
+        "ER",
+        "PR"
+      ],
+      "scatterX": "Ki67",
+      "scatterY": "PR",
+      "showScatter": true,
+      "scaling": "zscore"
+    },
+    "native_png_resources": [
+      "02 pyihcheatmap/resources/af4e53fe7e19dd87.png",
+      "02 pyihcheatmap/resources/94562a76bca6dc19.png"
+    ]
+  }
+]
