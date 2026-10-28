@@ -1,0 +1,55 @@
+{
+  "version": "0.3.30",
+  "date": "2026-10-28",
+  "change": "unequal-frequency synthetic example; analysis/renderer unchanged",
+  "complete": 60,
+  "excluded": 2,
+  "input": 62,
+  "pattern_counts": [
+    12,
+    8,
+    6,
+    10,
+    4,
+    5,
+    3,
+    2,
+    3,
+    1,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "union": 48,
+  "all_sets": 1,
+  "zero_pattern": "1011",
+  "focused_set_tests": 9,
+  "previous_full_suite": {
+    "version": "0.3.29",
+    "python_tests": 270,
+    "native_assertions": 97
+  },
+  "desktop_runtime": "ClinicoPathPj 0.3.29, macOS arm64 jamovi 28.13",
+  "desktop_checks": [
+    "special import new CSV into existing synthetic analysis retained selected roles/positive levels",
+    "native counts and local inspector show unequal frequencies",
+    "matrix visually inspected with count labels 0..12",
+    "1800x1200 native PNG exported",
+    "separate 0.3.30 unequal example saved; 62-row nominal output independently counted and last two rows missing",
+    "fresh-engine reopen and forced rerun reproduce unequal bar heights and 60/2 cohort"
+  ],
+  "artifacts": {
+    "python-set-matrix-unequal-0.3.30-desktop.omv": "93e5d044daced6d32f77c05122965e0e90fd816cf664506cc78b59c88fab98eb",
+    "python-set-matrix-unequal-0.3.30-native.png": "915804b6d1a87640b2c5615d87b57779252a51406c5ffd02f6a6cd7d2a5b2a64"
+  },
+  "limits": [
+    "synthetic demonstration, not patient data",
+    "no full parity or clinical/platform qualification"
+  ],
+  "packaged_cases": 18,
+  "packaged_unequal_counts": "pass",
+  "unchanged_python_assets_except_registry": 1267
+}

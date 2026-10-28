@@ -1,0 +1,43 @@
+{
+  "version": "0.3.31",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "feature": "optional stable descending-frequency display",
+  "focused_python_tests": 11,
+  "dom_harnesses": 2,
+  "native_r_assertions": 106,
+  "native_exit_code": 0,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "packaged_runtime_cases": 18,
+  "checks": [
+    "stable membership-code tie breaking",
+    "same order in exact table, bar plot, matrix and local inspector",
+    "saved codes and canonical labels unchanged",
+    "source-row preview unchanged",
+    "none retained at zero; other zero display respects existing option",
+    "native reused versus fresh frequency calculation agrees",
+    "return to membership order restores original display",
+    "packaged unequal-frequency CSV sorts independently constructed expected signatures"
+  ],
+  "environment_messages": [
+    "R printed Operation not permitted between/after assertions; exit 0 and no assertion failures",
+    "desktop automation native pipe startup failed three times, including after reset"
+  ],
+  "gui": "new ordering control and saved-option reopen pending; previous plot/unequal-example GUI evidence remains version-specific",
+  "limits": [
+    "two to four sets",
+    "not full UpSet/Venn/Euler parity or clinical validation",
+    "new control GUI and cross-platform qualification remain open"
+  ],
+  "artifacts": {
+    "ClinicoPathPj_0.3.31.jmo": "e190625734f52de8ce99df7633013b3fa1793569004a134d81668ba7e8b7a7fb",
+    "python-set-order-0.3.31-preview.png": "10f0d75def3a70b513d9a4698661b5497c4bed541d512bad9ddcf719d9a22c76"
+  },
+  "sources": {
+    "inst/python/analyses/descriptives/pyvenn.py": "559b65047f6542ddc4a6a435cf20ef79ef9f56868296165c022cb19e2a3f3f04",
+    "inst/python/templates/sets.html": "9dacb5afd4b95f25b8b158a62a73d999ef28b26405d95b723e9c212080201304"
+  },
+  "full_python_tests": 273,
+  "full_python_exit_code": 0
+}

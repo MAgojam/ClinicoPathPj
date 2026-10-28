@@ -1,0 +1,60 @@
+{
+  "version": "0.3.28",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "change": "compact row preview; full hidden members contract retained; Included/Excluded status",
+  "focused_python_tests": 7,
+  "native_r_assertions": 89,
+  "packaged_runtime_cases": 18,
+  "native_exit": 0,
+  "native_warnings": 0,
+  "environment_messages": [
+    "R prints Operation not permitted after passing tests; exit 0"
+  ],
+  "regression_evidence": [
+    {
+      "source": "before",
+      "visible_columns": [
+        "row",
+        "pattern",
+        "members",
+        "status"
+      ],
+      "compact_preview": false
+    },
+    {
+      "source": "after",
+      "visible_columns": [
+        "row",
+        "pattern",
+        "status"
+      ],
+      "compact_preview": true
+    }
+  ],
+  "desktop": [
+    "GUI update; full restart; 0.3.27 OMV reopens; four positive levels retained",
+    "forced recalculation; compact three-column preview visibly clear for all 18 rows",
+    "native exact-pattern table preserves full set names; counts unchanged",
+    "separate 0.3.28 OMV saved; nominal codes 1..16 then missing/missing independently inspected"
+  ],
+  "test_harness_corrections": [
+    "bundled unittest omits __main__; use unittest.main runner",
+    "hidden result column omitted by native asDF; inspect columns directly; native blank text is NA"
+  ],
+  "artifacts": {
+    "python-set-intersections-0.3.28-desktop.omv": "24c043be95505cd11725eaa516081f4fe0fe1370c888199c6ade22371cf88a53"
+  },
+  "limits": [
+    "one macOS arm64 configuration",
+    "no full Venn/Euler/UpSet parity or clinical qualification",
+    "broader theme/accessibility and other platforms remain open"
+  ],
+  "saved_output_comparison": "0.3.27 versus 0.3.28: dataset bytes and all category labels identical",
+  "rebuilt_package": {
+    "sha256": "b69524e56c921f2d7a66a3afb611b421980902d3e752c257bf212a115e07baa3",
+    "unchanged_python_assets_except_registry": 1267,
+    "runtime_cases": 18,
+    "compiler_and_freshness": "pass"
+  }
+}

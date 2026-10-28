@@ -1,0 +1,56 @@
+{
+  "version": "0.3.29",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "feature": "optional bounded UpSet-style exact intersection bars and membership dots",
+  "python_full": 270,
+  "python_focused": 12,
+  "native_r_assertions": 97,
+  "native_exit_code": 0,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "packaged_cases": 18,
+  "packaged_matrix_png": [
+    900,
+    600
+  ],
+  "geometry_oracles": [
+    "independent binary product fixtures for 2,3,4 sets",
+    "every active dot coordinate; no connector for none",
+    "exact supplied count bar heights and shared signatures",
+    "malformed/duplicate patterns, noninteger/negative counts and invalid set names rejected"
+  ],
+  "native_lifecycle": [
+    "enabled raster",
+    "disable clears state",
+    "incomplete selected role clears state",
+    "restoring role/positive level recovers counts"
+  ],
+  "harness_correction": "Initial native expectations used Python columns state; native jamovi bridge stores data frame in state$data. Corrected harness; implementation unchanged.",
+  "environment_messages": [
+    "R printed Operation not permitted around completion; assertions pass and exit zero"
+  ],
+  "gui": "See python-set-matrix-0.3.29-desktop.json: focused macOS arm64 checks pass; broader qualification remains open",
+  "limits": [
+    "2 to 4 sets; at most 16 patterns",
+    "not full UpSet/Venn/Euler parity",
+    "no new inference or cohort changes",
+    "long figure labels shortened with disclosure",
+    "no clinical validation or cross-platform qualification"
+  ],
+  "sources": {
+    "inst/python/analyses/descriptives/pyvenn.py": "1944c97efc7a3562fe6ed3b322e5f8a3a7eb555b1ca00dcd4489f3363d8af5ef",
+    "inst/python/cpj_runtime.py": "aa967a683ed195210491eb33dedc4f75d79ecab2fa0dc51b2cdb9b5e18f2efc0",
+    "inst/python/cpj_plots.py": "0932bc381189eb0bcb35c775243d9063a6e45ff1f27ad8b76cd6364e7b289859",
+    "R/utils-plots.R": "8471915f1ad63d0ff49fd9047130622725711ac2b247c3d74f5e3fef987b6680",
+    "tools/generate.py": "bf9465e34ef6c39b3770e2e30ed1b3f96f2ee4930e37f3a5880d766ba311edde"
+  },
+  "rebuilt_package": {
+    "sha256": "85938958f312bc089578143d979b41fe15168b6a718bd40f3047966d4ee720e4",
+    "unchanged_python_assets_except_registry": 1267,
+    "compiler": "pass",
+    "generator_and_status_freshness": "pass",
+    "extracted_runtime_cases": 18,
+    "matrix_png": "900x600 pass"
+  }
+}

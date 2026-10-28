@@ -1,0 +1,35 @@
+{
+  "version": "0.3.29",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI sideload and full restart",
+    "0.3.28 saved analysis opens with four Positive levels; new matrix option defaults off",
+    "enable matrix; visually inspect all 16 count bars and membership dots for Marker A-D",
+    "matrix off/on controls work without changing complete-cohort counts",
+    "native PNG export 1800x1200 visually inspected",
+    "new OMV saved with matrix enabled; two image assets and nominal output codes verified",
+    "second full restart restores enabled option, levels and matrix image",
+    "forced recalculation works; missing positive level prompts; restoring Positive recovers displayed matrix",
+    "saved dataset still has pattern codes 1..16 then two missing values"
+  ],
+  "cohort": {
+    "input": 18,
+    "retained": 16,
+    "excluded": 2,
+    "union": 15,
+    "all_sets": 1
+  },
+  "artifacts": {
+    "python-set-matrix-0.3.29-desktop.omv": "9354effa2fe4e03e395f2223d6377898ffa5250949e8aff701d1166e745889ef",
+    "python-set-matrix-0.3.29-native.png": "92781d147215caa1f0b7e31872156157555dad56aaf5311ea8d884c665dc5731"
+  },
+  "limits": [
+    "single macOS arm64 environment",
+    "no full UpSet/Venn/Euler parity",
+    "no exhaustive long-label/theme/accessibility or other-platform qualification",
+    "not clinical validation or full release clearance"
+  ]
+}

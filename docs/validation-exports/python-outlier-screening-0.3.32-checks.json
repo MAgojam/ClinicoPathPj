@@ -1,0 +1,57 @@
+{
+  "version": "0.3.32",
+  "date": "2026-10-28",
+  "analysis": "pyoutlierdetection",
+  "supported_core": [
+    "robust Z",
+    "standard Z",
+    "IQR fences",
+    "common finite complete cohort",
+    "native summary/row preview/count plot",
+    "row-aligned nominal any-variable flag"
+  ],
+  "default_method": "robust univariate; baseline overall composite default omitted",
+  "defaults": {
+    "zscore_threshold": 3.29,
+    "iqr_multiplier": 1.7
+  },
+  "python_full_tests": 278,
+  "python_focused_tests": 5,
+  "native_r_assertions": 45,
+  "native_exit_code": 0,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "performance_reference": "0.18.2",
+  "packaged_runtime_cases": 19,
+  "oracles": [
+    "base R median/mad/sample sd/type-7 quantile strict predicates",
+    "performance::check_outliers supported interior-case row flags",
+    "hand zero-spread, strict ties and missing/nonfinite fixtures",
+    "native sparse source-row nominal serialization and incomplete/recovery",
+    "native 800x500 raster"
+  ],
+  "initial_failure": "Native public wrapper rejected source Inf before Python dispatch. Oracle fixture uses missing instead; separate native rejection assertion and Python finite-cohort test retained. Documented host distinction.",
+  "environment_messages": [
+    "R printed Operation not permitted around passing assertions; exit zero",
+    "GUI automation native pipe startup failed"
+  ],
+  "gui": "pending new-analysis installation, OMV reopen and export; previous analyses evidence not inherited",
+  "limits": [
+    "univariate subset only; not composite baseline default",
+    "no multivariate/interval methods or sampling",
+    "maximum 10000 input rows and 20 variables; native preview 1000 rows",
+    "not automatic exclusion, clinical validation or full parity"
+  ],
+  "sources": {
+    "inst/python/cpj_outliers.py": "d17fae187860a512910da84c5be904f361a4a26f130c9d354d43da59ce615d84",
+    "inst/python/analyses/descriptives/pyoutlierdetection.py": "556fe6f18ad64692e7ebd7ff8fa5aa3153811a950d0574507cce94c06482ad80",
+    "data/python_outlier_screening_examples.csv": "690b7319ffe8ce6d8d8ce402484e06d9c8a0fb974e5ddd1b8eb64da59eef980f"
+  },
+  "rebuilt_package": {
+    "sha256": "7f2edf0bf08ca0954d9909a5e2db684fb1c9021c3f13c1c1f65d3e2aca7aaa7c",
+    "unchanged_python_assets_except_registry": 1269,
+    "compiler": "pass",
+    "runtime_cases": 19,
+    "generator_and_status_freshness": "pass"
+  }
+}
