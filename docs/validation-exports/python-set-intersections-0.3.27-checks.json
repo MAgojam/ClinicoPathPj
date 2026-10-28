@@ -1,0 +1,38 @@
+{
+  "version": "0.3.27",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "focused_python_tests": 7,
+  "full_python_tests": 265,
+  "native_r_assertions": 86,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "native_exit_code": 0,
+  "oracles": [
+    "independent base-R complete-case positive predicates and exact signatures for two/three/four sets",
+    "sparse source-row nominal output serialization and missing versus none",
+    "valid-incomplete-valid lifecycle and native raster"
+  ],
+  "resolved_failure": "initial saved-output serialization lacked measure type; explicit nominal metadata repaired it",
+  "dom": "literal labels, focus/click, count/row-ID inspection and no network/native writes pass",
+  "gui": "See python-set-intersections-0.3.27-desktop.json: macOS arm64 focused desktop checks pass; presentation and broader qualification remain open",
+  "limits": [
+    "no geometric Venn/Euler or full UpSet",
+    "two to four sets only",
+    "no inferential overlap/enrichment or weights",
+    "not full parity or clinical qualification"
+  ],
+  "sources": {
+    "inst/python/cpj_sets.py": "79ac478d361bd9d59e357fb2370504ebb4ae7841ad2494492656bd4e13662938",
+    "inst/python/analyses/descriptives/pyvenn.py": "b3b110298f65c8fe721f23bdad803bccd845c9de8e6b3ee9e8c633a26cca2a82",
+    "inst/python/templates/sets.html": "63d1f3cd6b3b051ed2c293c28dd309e81ac85c818b81115012136ba4bea46e14"
+  },
+  "compiler": "pass",
+  "generator_freshness": "pass",
+  "migration_status_freshness": "pass",
+  "packaged_runtime_cases": 18,
+  "final_native_repeat": "86 assertions pass against final rebuilt candidate library",
+  "environment_messages": [
+    "R printed Operation not permitted during and after the suite; exit 0, no assertion failures or test warnings"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "0.3.26",
+  "date": "2026-10-28",
+  "analysis": "pyjjcorrmat",
+  "focused_python_tests": 11,
+  "native_r_assertions": 1886,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "native_exit_code": 0,
+  "post_completion_messages": [
+    "Error: Operation not permitted"
+  ],
+  "grouped_native_configurations": 12,
+  "oracles": [
+    "within-group R cor.test",
+    "within-group raw/ranked lm.fit residual regressions and df-adjusted t/Fisher-z",
+    "separate p.adjust families per group"
+  ],
+  "dom": [
+    "ungrouped keyboard/host propagation regression",
+    "group switching clears stale details and retains per-group remembered focus",
+    "literal labels and no backend dispatch"
+  ],
+  "gui": "macOS arm64 / jamovi 28.13: previous saved-file rerun, grouped cohorts, switching/remembered focus, recovery, fresh-engine save/reopen/rerun and native PNG export pass; see desktop report",
+  "limits": [
+    "six observed groups maximum",
+    "no between-group inference or across-group adjustment family",
+    "no robust/Bayesian methods or Spearman intervals",
+    "not full parity or clinical qualification"
+  ],
+  "source_sha256": "8288fc34d9356cb7997ba750262f60c9ba642aa93f14a0710903515c546dc7f4",
+  "compiler": "passed",
+  "packaged_runtime": "17 cases pass, including split cohorts, independent opposite correlations and grouped matrix payload"
+}

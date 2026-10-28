@@ -1,0 +1,45 @@
+{
+  "version": "0.3.26",
+  "date": "2026-10-28",
+  "analysis": "pyjjcorrmat",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI installation and fresh engine",
+    "previous 0.3.25 saved ungrouped analysis reopened and recalculated unchanged with All rows cohort",
+    "grouped example: 13 input, two groups, one missing grouping row",
+    "Group_A input/complete=6/6, Group_B=6/5",
+    "local group switching cleared details and native summary remained unchanged",
+    "remembered per-group native keyboard focus passed",
+    "partial Group_A matched R reference; constant Group_B system unavailable",
+    "unchecking partial recovered Group_B zero-order pair",
+    "new OMV save and visually inspected native stacked PNG export",
+    "fresh-engine reopen restored grouping/method/results; partial to zero-order reruns reproduced results"
+  ],
+  "saved_configuration": {
+    "grvar": "Group",
+    "method": "nonparametric",
+    "partial": false,
+    "missingness": "listwise",
+    "adjustment": "holm"
+  },
+  "group_B_zero_order": {
+    "n": 5,
+    "excluded": 1,
+    "controls": 0,
+    "df": 3,
+    "r": -0.9999999999999999,
+    "p": 1.4042654220543602e-24,
+    "adjusted": 4.212796266163081e-24
+  },
+  "artifacts": {
+    "python-correlation-groups-0.3.26-validation.omv": "7798ce9ad10d80f8adee50ddad2c034335393f1dbfc8c86ef32f91a776139763",
+    "python-correlation-groups-0.3.26-native.png": "a2c28bf91f1ce2c0632cfb714789d116cffeaebd421a79db09172f813d2e1239"
+  },
+  "limits": [
+    "one macOS configuration",
+    "local selector/focus is transient across reopening",
+    "maximum-size/theme/assistive technology and other platforms not exhaustively qualified",
+    "not full method parity or clinical validation"
+  ]
+}

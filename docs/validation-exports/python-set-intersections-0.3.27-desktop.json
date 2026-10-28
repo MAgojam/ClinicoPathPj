@@ -1,0 +1,36 @@
+{
+  "version": "0.3.27",
+  "date": "2026-10-28",
+  "analysis": "pyvenn",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI sideload update and Data Library example",
+    "fresh application engine: new analysis initializes successfully",
+    "four explicit positive levels; 18 input, 16 complete, 2 excluded; union 15; all four 1; all 16 exact patterns count 1; marginal counts 8",
+    "local none inspection source row 1; all-four inspection source row 16; each 6.25 percent",
+    "native membership preview and nominal saved output",
+    "native image PNG export 1600x1000",
+    "second fresh engine reopened clean OMV; restored positive levels and saved column",
+    "forced recalculation; missing positive level produces prompt; restoring Positive recovers expected counts",
+    "independent saved-file inspection: one pyvenn entry; pattern codes 1..16 then two integer missing values; nominal labels preserve leading zeroes"
+  ],
+  "initial_issue": "Old engine namespace rejected new pyvenn identifier after sideload; full restart and a newly created analysis succeeded. Initial failed snapshot is separate from the clean desktop fixture.",
+  "artifacts": {
+    "python-set-intersections-0.3.27-desktop.omv": "566c9a8efdbc7069d5d21449b231c2edd1ee10a444716eb5c7b7427dbb245aad",
+    "python-set-intersections-0.3.27-desktop.png": "261c3ed5fafbd37465bb6466c3632d3d95938ee8e30d0d845486ab45419fc765"
+  },
+  "limits": [
+    "partial port, no Venn/Euler geometry or full UpSet",
+    "one macOS arm64 configuration only",
+    "long included-set labels crowd optional native membership preview; presentation follow-up remains",
+    "theme, maximum payload and assistive technology qualification remain open",
+    "not full parity, release clearance or clinical validation"
+  ],
+  "rebuilt_package": {
+    "sha256": "445e71151ea099a219d9a7c25ae8009d4574bec271ff8a4a7ad7c6c2bb48a125",
+    "python_assets_unchanged_except_registry": 1267,
+    "extracted_runtime_cases": 18,
+    "integrity": "pass"
+  }
+}
