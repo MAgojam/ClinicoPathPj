@@ -1,0 +1,40 @@
+{
+  "version": "0.3.33",
+  "date": "2026-10-28",
+  "analysis": "pyoutlierdetection",
+  "feature": "optional native flagged measurement observed-value/limit details",
+  "full_python_tests": 281,
+  "focused_outlier_tests": 8,
+  "native_r_assertions": 59,
+  "native_exit_code": 0,
+  "native_failures": 0,
+  "native_warnings": 0,
+  "packaged_runtime_cases": 19,
+  "checks": [
+    "source IDs, raw values, limits and flag basis",
+    "multiple flagged variables in one source row",
+    "flagged measurements beyond first 1000 source rows are eligible",
+    "first 500 matches displayed; all flagged counts and saved flags unchanged",
+    "zero matches explicitly reported",
+    "zero-spread infinite-Z basis labeled without serializing infinite scores",
+    "native off/incomplete/recovery clearing",
+    "existing scientific R-wrapper argument positions preserved"
+  ],
+  "engine_unchanged_from": "0.3.32",
+  "full_suite_note": "Full 281-test suite passed; after reordering only the additive SPEC option to preserve earlier wrapper positions, focused tests and generator/native checks passed again.",
+  "harness_note": "An empty Python runtime table is omitted from the response rather than emitted as an empty rows key; native schema table remains empty, covered separately.",
+  "environment_messages": [
+    "R printed Operation not permitted around passing assertions; exit zero"
+  ],
+  "gui": "new native details table installation/rendering/OMV/export qualification pending",
+  "limits": [
+    "display cap 500 measurements, not 500 rows",
+    "no new statistical method or recoding",
+    "clinical and platform qualification remain open"
+  ],
+  "package_sha256": "eeace9d94922bfe6d0789853ae3dc44efc138fa16b23e7e6548ddcb18c4cdf12",
+  "sources": {
+    "inst/python/cpj_outliers.py": "d17fae187860a512910da84c5be904f361a4a26f130c9d354d43da59ce615d84",
+    "inst/python/analyses/descriptives/pyoutlierdetection.py": "8f2cf68f06efec1ace1742b0e3968e743ef35d0736c43056cd3d58f0e624df3a"
+  }
+}
