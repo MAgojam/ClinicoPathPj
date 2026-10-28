@@ -1,0 +1,22 @@
+{
+  "version": "0.3.24",
+  "analysis": "pyjjcorrmat",
+  "date": "2026-10-27",
+  "focused_python_tests": 8,
+  "native_r_assertions": 1007,
+  "failures": 0,
+  "warnings": 0,
+  "oracle": "independent base-R lm.fit residuals, cor, pt and Fisher-z formulas; seven adjustment choices, plus zero-order suite",
+  "dom": "local labels, keyboard/host propagation and no native dispatch passed",
+  "gui": "macOS arm64 / jamovi 28.13: invalid/constant/valid recovery, second-engine save/reopen/rerun and native PNG export pass; separate desktop report dated 2026-10-28",
+  "limitations": [
+    "partial Pearson only",
+    "common complete-case cohort",
+    "singular systems unavailable",
+    "not full parity or clinical qualification"
+  ],
+  "source_sha256": "baf50cb4872112b220b0e19cacee69ad0b6166359206b109b9c64ea94ac09aa7",
+  "source_check": "generator freshness and hand-written-source diff checks pass; compiler-generated h.R adds four trailing-space lines",
+  "packaged_runtime": "17 cases pass, including analytical partial Pearson fixture",
+  "compiler": "passed"
+}

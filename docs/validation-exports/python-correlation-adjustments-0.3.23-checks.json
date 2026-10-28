@@ -17,7 +17,7 @@
       "Error: Operation not permitted"
     ]
   },
-  "gui": "new adjustment controls pending; prior keyboard/export evidence retains tested scope",
+  "gui": "macOS arm64 jamovi 28.13: Hochberg/Hommel/BY reruns match R; BY save/second fresh-engine reopen; Hochberg recalculation passed; see separate desktop record",
   "sources": {
     "inst/python/cpj_correlation.py": "325a0ff131362147e12b120796b11c73cb314a805b306f2ffdb9ceabe4a16d8d",
     "tools/correlation-adjustment-reference.R": "93761b003e3f5c297c256fa6ef8e663bf371f9752f6ac07764b72fb87e3520b2",

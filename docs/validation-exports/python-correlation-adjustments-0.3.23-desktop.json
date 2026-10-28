@@ -1,0 +1,40 @@
+{
+  "version": "0.3.23",
+  "analysis": "pyjjcorrmat",
+  "date": "2026-10-27",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI sideload succeeded",
+    "fresh-engine reopen of synthetic 0.3.22 fixture",
+    "all seven adjustment controls visible",
+    "Hochberg, Hommel and BY reruns completed",
+    "native table and full-precision local inspector matched base R",
+    "BY saved in new fixture",
+    "second fresh engine restored BY option and result",
+    "fresh Hochberg recalculation after reopening"
+  ],
+  "observed_adjusted_p": {
+    "hochberg": 0.020157263008230647,
+    "hommel": 0.020157263008230647,
+    "BY": 0.04938529437016508
+  },
+  "pair": [
+    "Marker_C",
+    "Marker_A"
+  ],
+  "cohort": {
+    "input": 8,
+    "common": 6,
+    "pair_n": 7,
+    "excluded": 1,
+    "planned_tests": 6
+  },
+  "fixture": "python-correlation-adjustments-0.3.23-validation.omv",
+  "sha256": "f537331aee614d4b04c9ef6ab09b3414b241a9e129259f4fa8f8ee6de0b201dc",
+  "limits": [
+    "one macOS arm64 configuration",
+    "native export remains prior 0.3.20 evidence",
+    "not full baseline parity, cross-platform or clinical qualification"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.3.24",
+  "date": "2026-10-28",
+  "analysis": "pyjjcorrmat",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI package installation",
+    "fresh-engine reopen of earlier fixture",
+    "pairwise partial rejected with explanation",
+    "constant adjustment system unavailable",
+    "remove constant and recover valid three-marker partial",
+    "native/local estimates match independent R residual regressions",
+    "new OMV save and native PNG export",
+    "second fresh-engine reopen preserves partial/listwise/BY",
+    "zero-order then partial reruns reproduce result"
+  ],
+  "observed": {
+    "pair": [
+      "Marker_C",
+      "Marker_B"
+    ],
+    "input": 8,
+    "n": 6,
+    "excluded": 2,
+    "controls": 1,
+    "df": 3,
+    "r": 0.6836774085481553,
+    "lower": -0.500458221705379,
+    "upper": 0.9767701326843897,
+    "p": 0.203125888572847,
+    "adjusted_BY": 0.3723974623835528
+  },
+  "artifacts": {
+    "python-correlation-partial-0.3.24-validation.omv": "f356f948cd06f83ca9e783398e84bd7582b4c2c92fcbf5309b008eb817417441",
+    "python-correlation-partial-0.3.24-native.png": "96a1bb8e71e85067013bd67f46e944ac231fa1665006df66680b9bd4170435a4"
+  },
+  "limits": [
+    "one macOS configuration",
+    "no full-parity, cross-platform or clinical qualification"
+  ]
+}
