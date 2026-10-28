@@ -1,0 +1,43 @@
+{
+  "version": "0.3.25",
+  "date": "2026-10-28",
+  "analysis": "pyjjcorrmat",
+  "platform": "macOS arm64",
+  "jamovi": "28.13",
+  "checks": [
+    "GUI module update loaded in fresh engine",
+    "new tied-data analysis: Pearson/nonpartial/Holm defaults retained",
+    "partial Spearman control and disabled Pearson CI control",
+    "native/local result matched independent R ranked residual fixture",
+    "no Spearman confidence interval fabricated",
+    "new OMV save and visually inspected native PNG export",
+    "second fresh engine restored partial/Spearman settings and result",
+    "zero-order then partial rerun reproduced result"
+  ],
+  "observed": {
+    "pair": [
+      "Marker_A",
+      "Marker_B"
+    ],
+    "controls": [
+      "Control_Z"
+    ],
+    "n": 6,
+    "excluded": 0,
+    "control_count": 1,
+    "df": 3,
+    "r": 0.1601592641029555,
+    "p": 0.7969540733546534,
+    "adjusted_holm": 1,
+    "ci": null
+  },
+  "artifacts": {
+    "python-correlation-partial-spearman-0.3.25-validation.omv": "4f580bc3d6be3cfc766059b1f519b0c66903a65982b27c725aca9c7c051e1a1b",
+    "python-correlation-partial-spearman-0.3.25-native.png": "cac79c7a728007be410fc26333cd88b826e943964bf20c9ea424c363e797e9ac"
+  },
+  "limits": [
+    "one macOS configuration",
+    "approximate t inference; no Spearman CI",
+    "not full baseline parity, cross-platform or clinical qualification"
+  ]
+}
