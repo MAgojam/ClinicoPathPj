@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.43",
+  "analysis": "pytableone",
+  "scope": "Standard overall-cohort descriptive core; partial baseline port, no inference or full parity claim",
+  "baseline": {
+    "module": "ClinicoPathDescriptives",
+    "version": "1.0.82.03",
+    "commit": "7162149586afc8992f1ba17e56887e2fbcb0835d",
+    "source_hashes": "registry preserved"
+  },
+  "python": {
+    "status": "pass",
+    "full_tests": 335,
+    "seconds": 355.399,
+    "focused_final_tests": 38,
+    "report_wording_change": "Focused checks repeated after supplied-to-retained wording correction; statistical engine unchanged"
+  },
+  "native_R": {
+    "focused_status": "pass",
+    "assertions": 267,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "R": "4.6.0",
+    "tableone": "0.13.2",
+    "oracles": [
+      "Base R mean/sd/quantile type 7, table/categorical denominators",
+      "tableone::CreateTableOne raw ContTable/CatTable",
+      "Units, class metadata, actual/literal missingness and R6 result clearing"
+    ],
+    "full_suite": {
+      "pass": 3775,
+      "errors": 5,
+      "status": "environment failures retained",
+      "cause": "ps::ps_pids macOS sandbox process inspection"
+    },
+    "focused_bridge_outside_sandbox": {
+      "status": "pass",
+      "assertions": 25,
+      "fail": 0,
+      "warn": 0,
+      "skip": 0,
+      "scope": "Cancellation, timeout, restart, abrupt exit and child cleanup",
+      "full_suite_repeated_outside_sandbox": false
+    },
+    "retained_initial_failures": [
+      "Null dimensions initially passed through I(NULL); fixed before installed GUI testing",
+      "Matrix/list native fixtures reach earlier row-alignment/jmvcore guards; expectations corrected",
+      "R6 fixture now loads every selected test variable initially"
+    ],
+    "interrupted_attempt": "An outside-sandbox full-suite attempt was interrupted before tests; targeted bridge suite used installed library instead"
+  },
+  "compiler": {
+    "status": "pass",
+    "build_log": "cpj-tableone-release-build.log"
+  },
+  "package_runtime": {
+    "status": "pass",
+    "cases": 23,
+    "integrity": "ok"
+  },
+  "GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Manage installed > Sideload; installed Python code and example bytes match JMO",
+    "fresh_engine": true,
+    "checks": [
+      "Data Library typed example opens with preconfigured analysis",
+      "Mean/SD and median/quartile visibility",
+      "25/21-row retention with all-missing field omitted before exclusion",
+      "Binary second-level and all-level display",
+      "Both saved states reopen with their options; installed backend recalculation",
+      "Optional explanation appears and clears",
+      "Native HTML exports"
+    ],
+    "plots": "No plot introduced; plot-export gate not applicable"
+  },
+  "saved_artifacts": {
+    "status": "pass",
+    "states": {
+      "available": {
+        "retained": 25,
+        "excluded": 0,
+        "omitted": 1,
+        "numeric_variables": 2,
+        "categorical_rows": 2,
+        "oracle": "CSV counts and Python statistics, native display precision",
+        "saved_input": "all 25 source rows, original order, explicit continuous Age/Code"
+      },
+      "complete": {
+        "retained": 21,
+        "excluded": 4,
+        "omitted": 1,
+        "numeric_variables": 2,
+        "categorical_rows": 4,
+        "oracle": "CSV counts and Python statistics, native display precision",
+        "saved_input": "all 25 source rows, original order, explicit continuous Age/Code"
+      }
+    }
+  },
+  "freshness": "generator --check and migration-status --check pass",
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 23,
+    "planned": 38,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "open_gates": [
+    "Other Table One engines/styles and baseline formatting",
+    "Frequency weights",
+    "Full baseline parity",
+    "Other platforms and broader accessibility",
+    "Clinical/release review"
+  ],
+  "reproduce": "python3 tools/check-table-one-artifacts.py",
+  "package": {
+    "file": "ClinicoPathPj_0.3.43.jmo",
+    "sha256": "ebb4aa283c3da7ad951952b90c5c623b44d29fa3482b237bc166a7ac14ac239b"
+  },
+  "artifact_sha256": {
+    "python-table-one-0.3.43-available.html": "a6f127a98f2a9963ee643d67085b1b5cfb06b876cb2947e3e0e7e005bf18f2f4",
+    "python-table-one-0.3.43-available.omv": "e1af287502f08dad763a24e8d63664f9c52cecb267c9de5448d149a347bca4c2",
+    "python-table-one-0.3.43-complete.html": "d7054e33ff7b674e4e7aa2b2d45a6a1de76d207caee016b07dff1d5998a58604",
+    "python-table-one-0.3.43-complete.omv": "4820002c84b90ae5d6893d65b64e589a8585f82b6933c85a7b226b2a67ae9fc7"
+  },
+  "example_sha256": {
+    "python_table_one_examples.csv": "26456a4579fd141513e12fbefdd46313f670abe7c05e1ad4d162d5b63fd90292",
+    "python_table_one_examples.omv": "668b14268710cce854d18ea2c4667e41df98f822bb1b4865b913a128b0bce73d"
+  },
+  "log_sha256": {
+    "cpj-tableone-focused.log": "0cf8d81f9fd62aa1e689c119dd4f99921f25530ac63c32f50aa92219499ef4d0",
+    "cpj-tableone-full-native.log": "fe2c4e55f096e6bd48833f5b1849b7184c710d77020c93c0e5a0863fb0accd19",
+    "cpj-tableone-native-qualified.log": "a91724ded1f7050fceaa7f173b3f4b0df989298c2093949ee81ac06ead96d2b1",
+    "cpj-tableone-native-report-fix.log": "0f1947dd39b1ec36529df11d63304258f70e9f3180eef6b1a825f442d3d12ad5",
+    "cpj-tableone-native-fixed.log": "049e7ee7a7f9bef9b210deaaeda4fc0f159733d65b5c265e6d3b802515abaa73",
+    "cpj-tableone-build.log": "906946fa964ff226e177d8dbda73bb14794f2aa8cde87157154b926182326a48",
+    "cpj-tableone-final-build.log": "883589da5388e88ccba205e59ac25f689dd0fe361bd5d925b0dfc2f86af8f4ab",
+    "cpj-tableone-full-python.log": "ebd22bdfabd37810451612f9411780c65443dbc1ac14a32b650fad4d8961f143",
+    "cpj-tableone-release-build.log": "883589da5388e88ccba205e59ac25f689dd0fe361bd5d925b0dfc2f86af8f4ab",
+    "cpj-tableone-bridge-unrestricted.log": "02e6213d5007c7db06f4d88a25301d6df9375f0dd427cdd13a0fbe68cae5d470",
+    "cpj-tableone-build-bridge-fix.log": "ec8e51eb864e6d34391d2c4c76390149681f9a56c5e814c59b8454fa2cce8b18",
+    "cpj-tableone-native-fixture-failures.log": "049e7ee7a7f9bef9b210deaaeda4fc0f159733d65b5c265e6d3b802515abaa73",
+    "cpj-tableone-native-list-fixture.log": "69734a645065d7641e3ac3f3216fea8511589cd8f39f654af7ce1b0375e5385e",
+    "cpj-tableone-focused-final.log": "d89eaf6df8aef0e6d3fd80c99ce599e98658db10cad7b288410eb049c46e6048",
+    "cpj-tableone-native-final.log": "69734a645065d7641e3ac3f3216fea8511589cd8f39f654af7ce1b0375e5385e",
+    "cpj-tableone-full-native-unrestricted.log": "800a08e66aab0dd3ee01798997c48fea3662c0f9d5b8fc8055eacdc96ff4673b",
+    "cpj-tableone-native.log": "6575f9659c650179c2cff628aecf9bd6ef97e48d8385a03df9b451acd471367c",
+    "cpj-tableone-native-initial-failures.log": "6575f9659c650179c2cff628aecf9bd6ef97e48d8385a03df9b451acd471367c"
+  }
+}
