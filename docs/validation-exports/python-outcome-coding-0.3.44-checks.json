@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.44",
+  "analysis": "pyoutcomeorganizer",
+  "scope": "Partial status-only core: explicit event/numeric 0/1, four-category vital-status and competing interchange; no time transformations or inference",
+  "baseline": {
+    "module": "jsurvival",
+    "version": "1.1.1",
+    "commit": "283a8275e3dd6704f6bba2164215442d3d293b8c",
+    "provenance": "sibling manifest",
+    "files": {
+      "jamovi/outcomeorganizer.a.yaml": "5f89908efaeff168cc463aa713f6ab1d1cef38c0c01852327ae2e6bf90e15e0e",
+      "jamovi/outcomeorganizer.r.yaml": "e59962c43a7e8443ef16b3de00b4d7ffa1fbfeccb0b75bb85f7beefe5f3021b4",
+      "jamovi/outcomeorganizer.u.yaml": "6dd7740cd6abadd064d5758d5ee263455f20ac8c2c5091341ec416e58aeb77c0",
+      "R/outcomeorganizer.b.R": "a9236d65295b8898fd33ce0fe68157b79539193947d7f4abda3d35f1005727c0"
+    }
+  },
+  "shared_reference": {
+    "file": "R/utils-eventindicator.R",
+    "commit": "283a8275e3dd6704f6bba2164215442d3d293b8c",
+    "sha256": "fb2370fdcc1a84143fd1e819e487a6e142f06f0c7fc872a8df37225626dcff40"
+  },
+  "python": {
+    "full_run_status": "pass",
+    "full_tests": 344,
+    "seconds": 506.542,
+    "final_policy_focused_status": "pass",
+    "final_policy_focused_tests": 46,
+    "current_collection": 345,
+    "full_collection_repeated_after_final_policy_test": false,
+    "limits": "Final focused checks cover the added policy authoring test and generator changes; statistical engine unchanged after full run"
+  },
+  "native_R": {
+    "final_compiled_focused_status": "pass",
+    "per_file": {
+      "outcomes-python": {
+        "passed": 71,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "warnings": 0
+      },
+      "pyd3cutoff": {
+        "passed": 27,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "warnings": 0
+      },
+      "pyobservablecutoff": {
+        "passed": 27,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "warnings": 0
+      },
+      "pysvgcutoff": {
+        "passed": 20,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "warnings": 0
+      },
+      "outlier-screening-python": {
+        "passed": 69,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "warnings": 0
+      }
+    },
+    "outcome_assertions": 71,
+    "regression_assertions": 143,
+    "total_final_assertions": 214,
+    "earlier_full_run": {
+      "passed": 3838,
+      "errors": 2,
+      "warnings": 0,
+      "skipped": 0,
+      "cause": "Broad input-error clearing conflicted with existing greyed-results expectations in pyd3cutoff and pyobservablecutoff",
+      "resolution": "Explicit clearOnInputError boolean enabled only for outcome transformation; both legacy files pass in the final compiled native tests"
+    },
+    "clean_full_run_after_scoping": false,
+    "environment_messages": "Focused logs emit nonfatal Error: Operation not permitted messages; assertion results and exit status recorded separately"
+  },
+  "compiler": {
+    "status": "pass",
+    "generator_freshness": "pass",
+    "migration_status_freshness": "pass"
+  },
+  "package_runtime": {
+    "status": "pass",
+    "cases": 24,
+    "integrity": "ok"
+  },
+  "GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Manage installed > Sideload",
+    "fresh_engine": true,
+    "installed_runtime_matches_final_JMO": true,
+    "checks": [
+      "CSV Data Library example opens",
+      "Visible explicit event/state level controls; no first-level guessing",
+      "Saved nominal status output",
+      "Competing and multistate option/count changes",
+      "Fresh-engine save/reopen/recalculation",
+      "Final compiled clearOnInputError=TRUE observed in error call",
+      "Final invalid-state OMV has all 13 saved statuses missing",
+      "Valid-state recovery restores counts/statuses",
+      "Native HTML and standalone PNG exports"
+    ],
+    "limits": [
+      "Actual GUI filtering not qualified in this turn; sparse original row IDs tested natively",
+      "Pre-launch/transport failure recovery remains a separate lifecycle boundary",
+      "Other platforms and accessibility not qualified"
+    ]
+  },
+  "saved_artifacts": {
+    "status": "pass",
+    "states": {
+      "competing": {
+        "input": 13,
+        "coded": 12,
+        "missing": 1,
+        "counts": [
+          9,
+          2,
+          1
+        ],
+        "saved_status": "All source rows and missingness agree with independent mapping"
+      },
+      "multistate": {
+        "input": 13,
+        "coded": 12,
+        "missing": 1,
+        "counts": [
+          6,
+          3,
+          2,
+          1
+        ],
+        "saved_status": "All source rows and missingness agree with independent mapping"
+      }
+    },
+    "invalid_output": "All 13 saved statuses cleared; source values unchanged",
+    "native_png_dimensions": [
+      1600,
+      1000
+    ]
+  },
+  "initial_failures_retained": [
+    "Two initial Python fixture errors: omitted row IDs and expecting an absent disabled preview table",
+    "First full Python run had one outdated four-family menu expectation; fixed to include Survival Py",
+    "Initial native outcome test: 63 passes and four stale-payload failures",
+    "First broad error-clearing fix: two legacy greyed-result lifecycle errors; narrowed through explicit policy"
+  ],
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 24,
+    "planned": 37,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "open_gates": [
+    "Clean full-native rerun after policy scoping",
+    "Recurrence composites",
+    "Patient hierarchy and priority timing",
+    "Interval/administrative censoring and paired follow-up output",
+    "Full baseline parity",
+    "Broader platform/accessibility",
+    "Clinical/release review"
+  ],
+  "reproduce": "python3 tools/check-outcome-artifacts.py",
+  "package": {
+    "file": "ClinicoPathPj_0.3.44.jmo",
+    "sha256": "b0f20e8790ddcb3bd1baf248777bd8df18d7e5687de191a71a3b0ac399e4ee2e"
+  },
+  "artifact_sha256": {
+    "python-outcome-coding-0.3.44-competing.html": "3cff8ba24242181f22ec0e328c89703632c4deecea6e62e1b50fe3b65421f521",
+    "python-outcome-coding-0.3.44-competing.omv": "2e767601cf576a95db53657329594e626508510ce9416f339764ca11c76b422f",
+    "python-outcome-coding-0.3.44-invalid.omv": "86b90ae0c49feb1ba09cc59532232c7e06509c59e71bdab7d6a8daf816bf73bc",
+    "python-outcome-coding-0.3.44-multistate.html": "cb9a0bd6ea60820025916ba9a0f1253186ddc3af888c2706db30579b67e3c44b",
+    "python-outcome-coding-0.3.44-multistate.omv": "8154ceaf04ad55de22e7644334e0f1893bba397e9837b9bd538225dafa47785b",
+    "python-outcome-coding-0.3.44-native.png": "62f51cbb4518df1b1f623adb5c51d10d0f520e89aae4881c8a6b8993e3bc63f2"
+  },
+  "source_example_sha256": "7e9a1b4ab284ca3f0fffc7b293aac5bee922dd0921448def31b396de49cfe91f",
+  "log_sha256": {
+    "cpj-outcomes-final-native.log": "b86cbe650456fd1ab4aca64aab899eb8b2fc28b342e055715129509019e9273d",
+    "cpj-outcomes-focused.log": "8e1fed12be0b5c2523ad6704490e609c6a38585658a25b9accfe96effb3ca866",
+    "cpj-outcomes-native.log": "d32e11a07f2f5cfa252f377b7f7b40338deb452a064686d17f88ef9c55b1b310",
+    "cpj-outcomes-full-python-final.log": "4a24bc0093ecc0a1806ed38ddaef657123aac388b42b88531f6c97b4e1f29c49",
+    "cpj-outcomes-native-sample.log": "dce5a599a42ed649297980c0ec2f042e59d17fbd0659e05a6c54555a3206fc6f",
+    "cpj-outcomes-native-stale-failures.log": "d32e11a07f2f5cfa252f377b7f7b40338deb452a064686d17f88ef9c55b1b310",
+    "cpj-outcomes-final-policy-focused.log": "01a5130f84434796fcf3848e9a8db02f83c21f0ad81c4788020b601d2ff15024",
+    "cpj-outcomes-build-lifecycle.log": "5c686e03551b77acf82fda8f506ac328404af3c5d16d0713214d94b939d5b167",
+    "cpj-outcomes-full-native.log": "709c3c276d0d56a9affea1ee91df0fa0afdd47442fa31e34bad040e93443787c",
+    "cpj-outcomes-focused-initial-fixtures.log": "8e1fed12be0b5c2523ad6704490e609c6a38585658a25b9accfe96effb3ca866",
+    "cpj-outcomes-build.log": "a49350ed7453db24c862a34fc7b8d1ffc3dd912011d034e4a670b069cc6751a1",
+    "cpj-outcomes-full-python.log": "90ead94c7d789bf75dcb43b831cba10e3eeac3bfd8a90bf20eb23d50f9c81165",
+    "cpj-outcomes-final-build.log": "5c686e03551b77acf82fda8f506ac328404af3c5d16d0713214d94b939d5b167",
+    "cpj-outcomes-full-python-initial-menu-fixture.log": "90ead94c7d789bf75dcb43b831cba10e3eeac3bfd8a90bf20eb23d50f9c81165"
+  }
+}
