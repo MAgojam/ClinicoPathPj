@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-28",
+  "version": "0.3.37",
+  "scope": "Optional full-path column for compact native pyvartree tables",
+  "python": {
+    "tests": 293,
+    "focused": 8,
+    "seconds": 216.361,
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-paths-full-python.log"
+  },
+  "native_R": {
+    "assertions": 95,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-paths-native.log",
+    "checks": [
+      "independent base-R counts and percentages",
+      "hidden paths retained",
+      "visible/hidden table invariance",
+      "fresh/reused agreement",
+      "valid/incomplete/valid recovery",
+      "original first four wrapper positions",
+      "native plot rendering"
+    ],
+    "environment_note": "Operation not permitted messages persist with exit 0 and passing assertions"
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-paths-build.log"
+  },
+  "packaged_runtime": {
+    "cases": 20,
+    "status": "pass",
+    "record": "python-tree-paths-0.3.37-package.json",
+    "new_variant": "showPaths=True retains identical tables and plots"
+  },
+  "freshness": "generator/status/diff checks pass",
+  "engine": {
+    "unchanged_from": "0.3.36",
+    "sha256": "33d396a192a525ebabd317dea2e1787dabc8a8f9f0491a0a80b653a2941e48e8"
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version": "0.3.37",
+    "old_OMV_compatibility": "0.3.36 fixture reopened and recalculated without changing original file",
+    "compact_visual": "all nine default columns fit the inspected results pane",
+    "toggles": "full JSON paths appear/disappear; counts and cohort unchanged",
+    "save_reopen": "separate compact and expanded files reopened after full restart; saved false/true options verified; both forced through fresh recalculation",
+    "native_HTML_export": "compact has 9 columns; expanded has 10 with all 15 exact paths",
+    "limitation": "Long category labels, other themes/platforms, broader accessibility and baseline feature parity remain separate gates"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "nodes": 15,
+    "complete": 36,
+    "compact_columns": 9,
+    "expanded_columns": 10,
+    "native_export_counts": "independent CSV-prefix agreement",
+    "all_paths_retained_in_both_OMV": true
+  },
+  "reproduce": "python3 tools/check-tree-path-artifacts.py",
+  "package": {
+    "name": "ClinicoPathPj_0.3.37.jmo",
+    "sha256": "4c38ddd469b85b53c129c35cee5a41e2c3945613668febfb78beb37023eb2583"
+  },
+  "migration": "20 partial baseline targets; 41 planned; no full-parity/release-ready claim",
+  "artifact_sha256": {
+    "python-variable-tree-paths-0.3.37-compact.html": "9e42b6eacab6f46e558ba9dfcd7d5ddfb1943f0753acf406a07e67dc8c965e86",
+    "python-variable-tree-paths-0.3.37-compact.omv": "92255e24b35e4a487ea74ee253d45eaaf3988eababa44a91d3a73e4c0b44c52e",
+    "python-variable-tree-paths-0.3.37-expanded.html": "39353c78fc2a94188b45c245e299584bef5400c9b8e4f4c4170f4b8d7ecd381d",
+    "python-variable-tree-paths-0.3.37-expanded.omv": "a20026d66c0a1e1998c856596252318597397a1db44b8931d40b6b5cd8e27a15"
+  }
+}

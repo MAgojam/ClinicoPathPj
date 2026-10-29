@@ -1,0 +1,140 @@
+{
+  "version": "0.3.36",
+  "date": "2026-10-28",
+  "scope": "Synthetic tree CSV import repair and bounded native tree/outlier lifecycle qualification",
+  "python": {
+    "tests": 292,
+    "focused_tree_tests": 7,
+    "seconds": 250.503,
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-import-full-python.log"
+  },
+  "native_tree_R": {
+    "assertions": 83,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-import-native-final.log",
+    "environment_note": "Operation not permitted messages appear despite exit 0 and passing assertions",
+    "oracle": "Independent base-R prefix filtering and blank/NA-token CSV import; leaf counts compared independently of importer-defined factor order"
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-import-final-build.log"
+  },
+  "freshness": "generator/status/diff checks pass",
+  "runtime_byte_comparison": {
+    "compared_python_assets": 1272,
+    "changed": [
+      "ClinicoPathPj/R/ClinicoPathPj/python/registry.json"
+    ],
+    "interpretation": "Only registry evidence changed; all Python engines, analyses, renderers and vendor bytes match 0.3.35"
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version_confirmed": "0.3.36",
+    "fresh_engine_sessions": true,
+    "tree": {
+      "original_import_complete": 34,
+      "original_import_excluded": 4,
+      "repaired_import_complete": 36,
+      "repaired_import_excluded": 2,
+      "input": 38,
+      "nodes": 15,
+      "leaves": 6,
+      "mouse_disclosure": "pass",
+      "focused_Enter_and_Space": "pass",
+      "OMV_save_fresh_reopen": "pass",
+      "forced_recalculation": "plot off/on; cohort/counts restored",
+      "native_export_dimensions": [
+        2000,
+        1300
+      ]
+    },
+    "outlier": {
+      "method": "default robust Z",
+      "input": 33,
+      "complete": 31,
+      "excluded": 2,
+      "detail_row": "31",
+      "observed_values": {
+        "Marker_A": 200,
+        "Marker_B": -100
+      },
+      "native_details_and_both_plots": "pass",
+      "OMV_save_fresh_reopen": "pass",
+      "forced_recalculation": "details off/on; results restored",
+      "nominal_output": {
+        "not_flagged": 30,
+        "flagged": 1,
+        "missing": 2
+      },
+      "native_percentile_export_dimensions": [
+        2000,
+        1600
+      ]
+    },
+    "scope_limit": "Final rebuild changes registry evidence only; GUI computations use identical numerical/analysis/rendering assets",
+    "open_gates": [
+      "broader keyboard and accessibility",
+      "table export",
+      "long-label table width",
+      "other GUI methods",
+      "themes",
+      "other platforms",
+      "full baseline parity",
+      "clinical/release review"
+    ]
+  },
+  "persisted_artifact_check": {
+    "status": "pass",
+    "original_tree_complete": 34,
+    "tree": {
+      "input": 38,
+      "complete": 36,
+      "excluded": 2
+    },
+    "screening": {
+      "input": 33,
+      "not_flagged": 30,
+      "flagged": 1,
+      "missing": 2
+    },
+    "png_dimensions": {
+      "python-variable-tree-0.3.36-native.png": [
+        2000,
+        1300
+      ],
+      "python-outlier-distributions-0.3.36-native.png": [
+        2000,
+        1600
+      ]
+    }
+  },
+  "reproduce_artifact_check": "python3 tools/check-native-core-artifacts.py",
+  "package": {
+    "name": "ClinicoPathPj_0.3.36.jmo",
+    "sha256": "d47cd24514b16b7fec827acfa7340795aaade22f8c70d6cc8ff7489dc22769c9"
+  },
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 20,
+    "planned": 41,
+    "full_parity": 0,
+    "utilities": 10
+  },
+  "artifact_sha256": {
+    "python-variable-tree-0.3.35-import-failure.omv": "561e845fb901beee61760f47c11c896663eae507737e948f1758388521f87153",
+    "python-variable-tree-0.3.36-desktop.omv": "3386492f4f3077e72309ba72decac7d262ba532d76311e5deb390bc9c924df94",
+    "python-variable-tree-0.3.36-native.png": "8ea2b6b629a0b8d48b2cd4f1ed26f9281d81b49806148b05954413c2498446e3",
+    "python-outlier-screening-0.3.36-desktop.omv": "5fb85fe1b0c96cfe0ea9580ed00e1f201754d4ab4b871a8a7dc912d6c93692fa",
+    "python-outlier-distributions-0.3.36-native.png": "41b81a6b7c6cf16390b162b944ac73261729cdd9c697d12be641756a10005817"
+  },
+  "packaged_runtime": {
+    "cases": 20,
+    "status": "pass",
+    "record": "python-native-core-0.3.36-package.json"
+  }
+}

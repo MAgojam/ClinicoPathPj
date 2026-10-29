@@ -1,0 +1,95 @@
+{
+  "version": "0.3.35",
+  "date": "2026-10-28",
+  "scope": "Partial pyvartree categorical prefix-count core; full baseline parity not claimed",
+  "python": {
+    "full_tests": 291,
+    "focused_tree_tests": 6,
+    "status": "pass",
+    "full_seconds": 178.336,
+    "full_log": "/private/tmp/cpj-tree-full-python.log",
+    "focused_log": "/private/tmp/cpj-tree-python.log"
+  },
+  "native_R": {
+    "assertions": 78,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "exit_code": 0,
+    "oracle": "Independent base-R complete-case filtering, observed prefixes, parent/cohort denominators",
+    "lifecycle": "valid/incomplete/valid, optional HTML/plot clearing, raster 1000x650",
+    "log": "/private/tmp/cpj-tree-native-final.log",
+    "environment_note": "Operation not permitted messages despite successful assertions and exit 0",
+    "harness_correction": "Evaluated programmatic variable arguments passed via do.call rather than NSE-captured symbol"
+  },
+  "packaged_runtime": {
+    "cases": 20,
+    "status": "pass",
+    "record": "python-variable-tree-0.3.35-package.json",
+    "new_case": "Counts, disclosure HTML, native raster dimensions, packaged synthetic CSV",
+    "synthetic": {
+      "input": 38,
+      "complete": 36,
+      "excluded": 2,
+      "nodes": 15,
+      "leaves": 6,
+      "leaf_counts": [
+        12,
+        6,
+        4,
+        5,
+        7,
+        2
+      ]
+    }
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-tree-final-build.log"
+  },
+  "freshness": "generator/status/diff checks pass",
+  "metadata_rebuild": {
+    "compared_python_assets": 1272,
+    "changed": [
+      "ClinicoPathPj/R/ClinicoPathPj/python/registry.json"
+    ]
+  },
+  "visual": {
+    "png": "python-variable-tree-0.3.35-preview.png",
+    "status": "Python-rendered static PNG inspected; not desktop evidence",
+    "html": "python-variable-tree-0.3.35-preview.html",
+    "markup": "stdlib parser confirms nine disclosure headings and no scripts",
+    "DOM": "jsdom unavailable to shell Node; no DOM or native keyboard interaction claimed"
+  },
+  "package": {
+    "file": "ClinicoPathPj_0.3.35.jmo",
+    "sha256": "ddfc7989e4930e8a2c08f39650058518b5cec777d47a70fc93418fde08a50aa1"
+  },
+  "desktop": {
+    "status": "pending",
+    "reason": "Sky Computer Use native pipe startup failed",
+    "gates": [
+      "install",
+      "control/rendering",
+      "keyboard",
+      "CSV import tokens",
+      "native export",
+      "OMV save and fresh-engine reopen"
+    ]
+  },
+  "platform_and_clinical": "No new platform qualification, clinical validation or release clearance",
+  "inventory": {
+    "targets": 61,
+    "partial": 20,
+    "planned": 41,
+    "full_parity": 0,
+    "utilities": 10,
+    "implementation_entries": 30
+  },
+  "log_sha256": {
+    "cpj-tree-full-python.log": "bf87eaada76bf9dc6dbd69d718a1d0d0eff7a129f02a2844d20d81a93dc63164",
+    "cpj-tree-python.log": "32dec731fe11df2f3d19d21b5d9ec57c37c5aa4bd523966aa95aeced16d0d8d1",
+    "cpj-tree-native-final.log": "ee4523ece1bf9d0be5f87fce00c9c74473154d5ef20e1e61c7e1869984b52371",
+    "cpj-tree-final-build.log": "609d9caec6fe59b4362ae404e6e7b449224f89eb2c7666fd35ecc425d5a027b4"
+  }
+}

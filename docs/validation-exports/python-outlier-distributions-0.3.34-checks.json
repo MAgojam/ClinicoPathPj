@@ -1,0 +1,68 @@
+{
+  "version": "0.3.34",
+  "date": "2026-10-28",
+  "scope": "Optional native empirical percentile distribution panels for pyoutlierdetection",
+  "python_focused": {
+    "tests": 12,
+    "status": "pass",
+    "log": "/private/tmp/cpj-percentiles-focused-final.log"
+  },
+  "native_R": {
+    "assertions": 69,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "exit_code": 0,
+    "oracle": "base R quantile(type=7); existing screening oracles retained",
+    "log": "/private/tmp/cpj-percentiles-native.log",
+    "environment_note": "Operation not permitted messages appear despite exit 0 and passing assertions"
+  },
+  "packaged_runtime": {
+    "cases": 19,
+    "status": "pass",
+    "new_plot_render": "Extracted package rendered native plot at 1000x800; PNG dimensions checked",
+    "evidence": "python-outlier-distributions-0.3.34-package.json"
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-percentiles-build.log"
+  },
+  "generator_freshness": "pass",
+  "screening_engine": {
+    "unchanged_from": "0.3.33",
+    "sha256": "d17fae187860a512910da84c5be904f361a4a26f130c9d354d43da59ce615d84"
+  },
+  "package": {
+    "name": "ClinicoPathPj_0.3.34.jmo",
+    "sha256": "a6dc574a1ddfe326e2b87afd0752203b24f5ba53a156f8a475aeef56980192ba"
+  },
+  "visual_inspection": {
+    "asset": "python-outlier-distributions-0.3.34-preview.png",
+    "status": "inspected local Python-rendered two-marker PNG; separate scales and screening-limit lines visible; not desktop evidence"
+  },
+  "desktop": {
+    "status": "pending",
+    "reason": "Sky Computer Use native pipe startup failed",
+    "gates": [
+      "new-analysis installation",
+      "new-control rendering",
+      "native plot export",
+      "OMV save and fresh-engine reopen"
+    ]
+  },
+  "platforms": "No new platform qualification",
+  "clinical_release": "Not established; partial exploratory analysis",
+  "log_sha256": {
+    "cpj-percentiles-focused-final.log": "7d6ac9ddb61fb870ce8fe6853fc0dac9de7b6d26179c88d05d8c8dfe29cacbfa",
+    "cpj-percentiles-native.log": "1f586b248541ba6d66782ffcc8181bad616f4334cfb8863208621cae0bb2914a",
+    "cpj-percentiles-build.log": "15eb1e68223302af57ec5d75677943484bd2459a4bbe8294cc8100e4f8cee1b5",
+    "cpj-percentiles-full-python.log": "96fd13bbd77898c2cb754b26ea61a30aa015e3b0776077c3ddd383a876afaf25"
+  },
+  "python_full": {
+    "tests": 285,
+    "status": "pass",
+    "seconds": 162.257,
+    "log": "/private/tmp/cpj-percentiles-full-python.log",
+    "note": "Focused checks rerun after strengthening explicit saved-output invariance assertions; implementation unchanged"
+  }
+}

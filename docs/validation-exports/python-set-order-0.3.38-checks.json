@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.38",
+  "scope": "Close bounded set-pattern ordering GUI gate; reconcile tree export status; no new numerical implementation",
+  "focused_python": {
+    "tests": 15,
+    "status": "pass",
+    "log": "/private/tmp/cpj-set-order-focused.log"
+  },
+  "native_R": {
+    "assertions": 106,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "status": "pass",
+    "log": "/private/tmp/cpj-set-order-native.log",
+    "environment_note": "Operation not permitted message despite exit 0 and passing assertions"
+  },
+  "full_python": {
+    "status": "historical unchanged-runtime baseline",
+    "tests": 293,
+    "version": "0.3.37",
+    "record": "python-tree-paths-0.3.37-checks.json",
+    "not_rerun_reason": "All analysis/engine/renderer/dependency assets are byte-identical; current focused/native/package and artifact checks supplement prior full suite"
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-order-qualification-build.log"
+  },
+  "packaged_runtime": {
+    "cases": 20,
+    "status": "pass",
+    "record": "python-set-order-0.3.38-package.json"
+  },
+  "runtime_identity": {
+    "compared_python_assets": 1272,
+    "changed": [
+      "ClinicoPathPj/R/ClinicoPathPj/python/registry.json"
+    ],
+    "all_analyses_engines_renderers_dependencies_identical": true
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "tested_asset_version": "0.3.37 assets, byte-identical in 0.3.38",
+    "final_package_installed_via_GUI": "0.3.38",
+    "final_fresh_engine_reopen_and_forced_rerun": "pass",
+    "old_file_compatibility": "Original 0.3.30 unequal fixture reopened and recalculated; original file preserved",
+    "orders": [
+      "frequency",
+      "membership"
+    ],
+    "reversal_and_stable_ties": "pass",
+    "both_static_plots": "pass",
+    "local_inspection": {
+      "1011": "0 rows, source rows none",
+      "1100": "10 rows, original source rows 27\u201336"
+    },
+    "saved_options": "Both saved orders reopen with correct native option; frequency forced through membership/frequency recalculation after full restart",
+    "HTML_exports": "All 16 counts, order and marginal/missing counts independently agree with CSV",
+    "PNG_dimensions": [
+      1800,
+      1200
+    ],
+    "classification_invariance": "Saved integer codes, labels and input-row values identical across both orders and original 0.3.30 fixture"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "input": 62,
+    "complete": 60,
+    "excluded": 2,
+    "patterns": 16,
+    "frequency_order": [
+      "0000",
+      "1100",
+      "1000",
+      "0100",
+      "1010",
+      "0010",
+      "0110",
+      "0001",
+      "1110",
+      "0101",
+      "1001",
+      "1101",
+      "0011",
+      "0111",
+      "1111",
+      "1011"
+    ],
+    "frequency_counts": [
+      12,
+      10,
+      8,
+      6,
+      5,
+      4,
+      3,
+      3,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "saved_codes_and_labels_unchanged": true,
+    "original_fixture": "0.3.30",
+    "native_matrix_png": [
+      1800,
+      1200
+    ]
+  },
+  "reproduce": "python3 tools/check-set-order-artifacts.py",
+  "tree_reconciliation": "Registry now records completed 0.3.37 compact/full native HTML export and option persistence; original evidence retained",
+  "package": {
+    "name": "ClinicoPathPj_0.3.38.jmo",
+    "sha256": "1a6056c9a6c029f88dffe62a452697bde25ef42945d20e2d43b86d34e252288f"
+  },
+  "open_gates": [
+    "broader accessibility",
+    "long labels and themes",
+    "other platforms",
+    "full UpSet/Venn and baseline parity",
+    "clinical/release review"
+  ],
+  "inventory": {
+    "partial": 20,
+    "planned": 41,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "artifact_sha256": {
+    "python-set-order-0.3.38-frequency.omv": "49d03838ec60893ea73c6016177fe86e03b1270ecbea9161bd2c1fd688950f17",
+    "python-set-order-0.3.38-frequency.html": "cb7d1626f59a9004e5619ee2525cbd1e05fd387949e48b8a5aac8778ee7e958d",
+    "python-set-order-0.3.38-membership.omv": "53441c38225b867e8879af17194db1a67a66f8a9a5a92fc406ea4e34bd4d55ea",
+    "python-set-order-0.3.38-membership.html": "b6982ac00f2e9668e15518540dc632851e59c1ad40850f6784402bcd17440387",
+    "python-set-order-0.3.38-frequency.png": "5a7313390752c94b6a4f9b8e1bf5d28187d3005e1b5b13c63023fe6818622676"
+  },
+  "log_sha256": {
+    "cpj-set-order-focused.log": "d120bdf19b3fb257d2d4acbfa9da1877710ec3bbb2000247e1f6ee64cc329f05",
+    "cpj-set-order-native.log": "357198218314d0c47f5c3c7c9d466498dfef98a74666c1a1f2900179e5c8c12f",
+    "cpj-order-qualification-build.log": "e6f75525d3e72bf40bd1bcb1d3bda5c21c9367d716d66425a2dd0792bd3f2167"
+  }
+}
