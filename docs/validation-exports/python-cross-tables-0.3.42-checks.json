@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.42",
+  "analysis": "pycrosstable",
+  "scope": "Default-style grouped/overall native summary and supported independent-test subset; no full parity claim",
+  "baseline": {
+    "module": "ClinicoPathDescriptives",
+    "version": "1.0.82.03",
+    "commit": "7162149586afc8992f1ba17e56887e2fbcb0835d",
+    "source_hashes": "registry preserved"
+  },
+  "python": {
+    "status": "pass",
+    "full_tests": 323,
+    "seconds": 368.154,
+    "focused_analysis_and_generator_tests": 43,
+    "oracles": [
+      "Independent counts, Pearson definition and hand exact rank probability",
+      "Conditional tied-rank label enumeration including unequal group sizes",
+      "Type-7 quartiles and numerical bounds",
+      "Actual/literal missing levels and collision-free labels"
+    ]
+  },
+  "native_R": {
+    "status": "pass",
+    "assertions": 275,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "exit_code": 0,
+    "R": "4.6.0",
+    "gtsummary": "2.6.1",
+    "oracles": [
+      "mean/sd/quantile type 7",
+      "wilcox.test exact/tied/normal and kruskal.test",
+      "chisq.test uncorrected and fisher.test",
+      "p.adjust including unavailable p-values",
+      "Installed gtsummary default supported p-values"
+    ],
+    "initial_failures": {
+      "statistical": "R 4.6 uses the conditional exact distribution for small tied Wilcoxon samples: initial normal p=0.19303 vs exact p=0.1926407; implemented and independently checked exact tied ranks",
+      "fixture": "Removed an expected-vector names attribute, without changing its statistical values",
+      "retained_log": "/private/tmp/cpj-crosstable-native-initial-failures.log"
+    },
+    "boundary": "49+49 tied fixture p=7.850029e-29; relative agreement with R at 1e-10 tolerance",
+    "lifecycle": "Role cleared/restored; display column visibility and fresh-object equivalence",
+    "environment_note": "Operation not permitted messages despite exit 0 and zero failed/warning assertions"
+  },
+  "compiler": {
+    "status": "pass",
+    "column_visibility": "Only declared List choices accepted; native mean/median columns compiled and exercised",
+    "generated_policy": "SPEC/registry YAML/backend; compiler-owned header"
+  },
+  "packaged_runtime": {
+    "status": "pass",
+    "cases": 22,
+    "record": "python-cross-tables-0.3.42-package.json",
+    "new_variants": [
+      "Untied exact rank test",
+      "Conditional tied exact p=178/924",
+      "Typed OMV metadata and every source value checked against independent CSV"
+    ],
+    "corrected_checker_assumption": "Compiler packages the listed typed OMV, not the unlisted raw CSV; verifier now decodes the packaged typed dataset and compares to the repository CSV"
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version": "0.3.42",
+    "installation": "Final archive sideloaded through GUI; full restart before final reopening",
+    "typed_example": "GUI-saved Age and Code Continuous, Group/Marker Nominal; original integer CSV imported Age as nominal, so typed OMV replaces CSV in Data Library",
+    "library": "Final installed entry opens preconfigured mean/SD, per-variable, Holm with 24 retained rows and exact tied Age method",
+    "saved_states": "Both available and complete files reopen after full restart with roles, display choice, missingness and Holm retained",
+    "forced_recalculation": "Complete state 21 \u2192 24 \u2192 21; median \u2192 mean \u2192 median native column reversal passes",
+    "categorical_selection": "Sparse complete-case tables switch to exact Fisher 2\u00d72",
+    "export": "Both native HTML exports independently checked; no plot introduced or plot-export claim"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "states": {
+      "available": {
+        "retained": 24,
+        "summary": "mean",
+        "numeric_strata": 3,
+        "categorical_rows": 17,
+        "adjustment": "Holm",
+        "adjusted_p": "independent base-R tests at native display precision",
+        "saved_input": "all 25 source profiles and original row order retained"
+      },
+      "complete": {
+        "retained": 21,
+        "summary": "median",
+        "numeric_strata": 3,
+        "categorical_rows": 12,
+        "adjustment": "Holm",
+        "adjusted_p": "independent base-R tests at native display precision",
+        "saved_input": "all 25 source profiles and original row order retained"
+      }
+    }
+  },
+  "final_rebuild": {
+    "reason": "Typed Data Library example and registry evidence",
+    "unchanged_python_area_assets_excluding_registry": 1384,
+    "final_archive": "Installed and fresh-engine qualified"
+  },
+  "freshness": "generator --check, migration-status --check and scoped diff check pass",
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 22,
+    "planned": 39,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "open_gates": [
+    "Larger exact RxC tests",
+    "Alternate R table engines/styles and SMDs",
+    "Full baseline parity",
+    "Broader accessibility/themes",
+    "Other platforms",
+    "Clinical/release review"
+  ],
+  "reproduce": "python3 tools/check-cross-table-artifacts.py",
+  "package": {
+    "file": "ClinicoPathPj_0.3.42.jmo",
+    "sha256": "dcb25c617cce0ef4565943ce9b2eea6ad72e6f7a97578e805f801be44edbb528"
+  },
+  "artifact_sha256": {
+    "python-cross-tables-0.3.42-available.html": "e362bb4efc8f7a5bfbd4d77d20bd8b679feda42fd3270902c030fa86824a4f73",
+    "python-cross-tables-0.3.42-available.omv": "3307c89410563b6b99957880b53f2e7dcc22ba0fa14ed25a2b919b1ee00c490e",
+    "python-cross-tables-0.3.42-complete.html": "91a0a7720826734ac887028ea16c81d76032a8778638f0d86132c644c9b6f9c1",
+    "python-cross-tables-0.3.42-complete.omv": "3e7beb65479b4a3e100ee4c5f156492aef87f102a13cf14016d18ae3fbebeca6",
+    "python_cross_table_examples.omv": "9e19d4a525b92acd19dffe1e2308f5392e512c122010cdabde85f71567c8da57",
+    "python_cross_table_examples.csv": "b969628e1f7b8d0e5614f013f3de5fd9c755b4c0213ead3be8e9cd5534cd45bd"
+  },
+  "log_sha256": {
+    "cpj-crosstable-focused-final.log": "337f389c95bcfb0042b785fa09390df0a07eeeec10e60e214873714797ffcae3",
+    "cpj-crosstable-full-python-final.log": "9b497276f04bd4ad9f1b49823d93c108d528462cb57e3296cd70b0b9bccf7954",
+    "cpj-crosstable-native-initial-failures.log": "452e730f966918ce3a14b125ec9669236caa8ac7f48ffefbd4394806744d140a",
+    "cpj-crosstable-native-final.log": "d2ba86c9d6642eed887c10e220bda9408b994a3d80d593c45b017e6713d059a1",
+    "cpj-crosstable-build-final.log": "0c241ac22961749ff94d9ae07f82773a32e0d58d4dc0fef70d0544e93930050a",
+    "cpj-crosstable-build-typed-example.log": "d3b099dcbcb38f3d3df8a023509d2b9d7cf0f2ae0e7546e2e7006ded329de1fa",
+    "cpj-crosstable-package-typed.err": "b97760654b392e60c1722e5197517d4c3182c068426046add246b8cfcb226002",
+    "cpj-crosstable-package-typed-final.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
