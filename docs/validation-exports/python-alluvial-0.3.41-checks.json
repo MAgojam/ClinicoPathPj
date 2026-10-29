@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.41",
+  "analysis": "pyalluvial",
+  "scope": "Unweighted categorical row-count core: 2\u20134 axes, missing inclusion/exclusion, native tables, static/local shared geometry",
+  "baseline": {
+    "module": "ClinicoPathDescriptives",
+    "version": "1.0.82.03",
+    "commit": "7162149586afc8992f1ba17e56887e2fbcb0835d",
+    "registry_hashes": "preserved",
+    "default": "excl=false retains missing-category rows"
+  },
+  "python": {
+    "status": "pass",
+    "full_tests": 311,
+    "seconds": 200.948,
+    "focused_alluvial_tests": 8,
+    "oracles": [
+      "Independent Counter joint/marginal counts",
+      "Ribbon-width and node-tiling conservation",
+      "True/literal missing labels and collision fixtures",
+      "All-missing/four-axis and explicit resource limits"
+    ]
+  },
+  "native_R": {
+    "status": "pass",
+    "alluvial_assertions": 71,
+    "tree_regression_assertions": 251,
+    "plot_regression_assertions": 10,
+    "failed": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "oracle": "Independent base-R per-path/category masks; nominal actual-NA versus literal NA",
+    "lifecycle": "Valid \u2192 unselected \u2192 valid, exclusion versus fresh result, optional view clearing and Python native raster",
+    "environment_note": "Operation not permitted messages despite exit 0 and zero failed/warning assertions"
+  },
+  "local_JS": {
+    "status": "pass",
+    "harness": "tools/check-alluvial-interaction.js",
+    "checks": [
+      "select highlights all segments of exact path",
+      "hover replaces highlight",
+      "mouseleave restores selected flow",
+      "Clear restores all flows"
+    ],
+    "limit": "offline event harness is separate from GUI/accessibility evidence"
+  },
+  "compiler": {
+    "status": "pass",
+    "generated_sources": "SPEC/registry-generated YAML/backend, compiler-generated header"
+  },
+  "packaged_runtime": {
+    "status": "pass",
+    "cases": 21,
+    "record": "python-alluvial-0.3.41-package.json",
+    "alluvial_render": "Packaged Python renderer produces 1100\u00d7700 PNG from 9/1 count fixture"
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version": "0.3.41",
+    "installation": "GUI sideload followed by full application restart",
+    "example": "Categorical Flow Examples from module Data Library",
+    "inclusion": "22 retained, 0 excluded, six paths with distinct missing categories",
+    "exclusion": "20 retained, 2 excluded, four paths [12,5,2,1]",
+    "keyboard": "Native select Down/Return chooses flow #0: 12 rows, 60%; Clear restores all flows",
+    "visual": "Unequal static/local ribbon widths inspected; native PNG inspected",
+    "exports": [
+      "native HTML tables",
+      "native 2200\u00d71400 PNG"
+    ],
+    "persistence": "OMV saved; full restart; roles, exclusion and view options restored; forced 20 \u2192 22 \u2192 20 rerun passes",
+    "local_state": "Highlight transient and reset on rerun"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "input_rows": 22,
+    "retained_complete": 20,
+    "excluded": 2,
+    "native_path_counts": [
+      12,
+      5,
+      2,
+      1
+    ],
+    "marginal_categories": 6,
+    "saved_input": "all source values and row order retained",
+    "png_dimensions": [
+      2200,
+      1400
+    ],
+    "percentages": "independent CSV counts at native display precision"
+  },
+  "final_rebuild": {
+    "reason": "Record completed bounded coverage in registry",
+    "unchanged_python_area_assets_excluding_registry": 1382,
+    "GUI_evidence": "Initial 0.3.41 package; all computation, renderer and template assets identical to final package; registry evidence metadata updated"
+  },
+  "freshness": "generator --check, migration-status --check and scoped diff check pass",
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 21,
+    "planned": 40,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "open_gates": [
+    "Weights/condensation/numeric binning and other baseline options",
+    "Full easyalluvial/ggalluvial feature parity or visual equivalence",
+    "Broader accessibility/themes",
+    "Additional platforms",
+    "Clinical/release review"
+  ],
+  "reproduce": "python3 tools/check-alluvial-artifacts.py",
+  "package": {
+    "file": "ClinicoPathPj_0.3.41.jmo",
+    "sha256": "74743a2df2c87d4ff024e8ebc35abbe8a985535fe5c7e641da296f72213aeee9"
+  },
+  "artifact_sha256": {
+    "python-alluvial-0.3.41-desktop.omv": "33cc1372ff083b383074c41f443667050324a1f3d800905b5840ecedb71d04eb",
+    "python-alluvial-0.3.41-desktop.png": "5c589151727f1daeede28c5871cc0f18ff3ff63b2b060113b23265c68c14262f",
+    "python-alluvial-0.3.41-desktop.html": "37508e393409a690338e1a5ddce87f1ef16238e22df83ea11b999b4ecc3f0e9c"
+  },
+  "log_sha256": {
+    "cpj-alluvial-focused.log": "9f8fe48a54c3b9de236076144e62c5d85ef42b121bcf1ac3352c1dec1605d438",
+    "cpj-alluvial-full-python.log": "da713a9ac65c52927f97972f914a42838c4f05cb83e2fc20631dc7fe59b5d992",
+    "cpj-alluvial-native.log": "12d1ce00ff03627de8ac1a7c96a82346da17b0ab022487a0d2074d202cf14993",
+    "cpj-alluvial-native-regression.log": "66ace180c34d4a992a4266498c82003e26240f5e3dfd36a25d06929b2022dad1",
+    "cpj-alluvial-build.log": "67a45d39b16352b674fac3215a5d5320d3c62592660d156f2a4b0fb00f6c4977",
+    "cpj-alluvial-build-final.log": "67a45d39b16352b674fac3215a5d5320d3c62592660d156f2a4b0fb00f6c4977"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.40",
+  "scope": "Optional reference-level percentages in pyvartree, alongside independent categorical and numeric outputs",
+  "baseline": {
+    "module": "ClinicoPathDescriptives",
+    "commit": "7162149586afc8992f1ba17e56887e2fbcb0835d",
+    "oracle": "Public vtree 5.7.0 %npct%: matching / nonmissing reference values within node",
+    "scope_limit": "No full vtree parity claim"
+  },
+  "python": {
+    "status": "pass",
+    "full_tests": 303,
+    "seconds": 174.845,
+    "focused_tree_and_generator": 47
+  },
+  "native_R": {
+    "status": "pass",
+    "assertions": 251,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "exit_code": 0,
+    "oracles": [
+      "Independent base-R per-node masks",
+      "Public vtree widget diagram: 50%, 67%, 0% with missing reference values"
+    ],
+    "compatibility": "Existing calls without percvarLevel work; NULL public default and prior scientific argument positions preserved",
+    "environment_note": "Operation not permitted messages despite exit 0 and zero failed/warning assertions"
+  },
+  "compiler": {
+    "status": "pass",
+    "generated_headers": "Compiler owned; generator-owned optional Level wrapper defaults load after headers"
+  },
+  "packaged_runtime": {
+    "status": "pass",
+    "cases": 20,
+    "record": "python-tree-reference-0.3.40-package.json",
+    "variants": "Packaged eight-row fixture with combined reference/numeric annotations and unchanged counts"
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version": "0.3.40",
+    "fresh_engine": "Full restart after install and again before reopening saved analysis",
+    "roles": "Tumor, Grade; MarkerScore; MarkerStatus explicitly Positive; allnodes numeric location",
+    "incomplete_level": "Information notice leaves categorical/numeric outputs available",
+    "on_off": "Reference table/labels clear and restore; numeric mean 18.5 retained",
+    "save_reopen": "Roles, level and toggles retained; forced reference off/on recalculation passes after full restart",
+    "root_reference": "2 matches / 4 valid = 50%; 3 missing within 7 categorical rows",
+    "leaves": "100%, 50%, 0%, undefined",
+    "export": "Native HTML export independently agrees with all eight CSV-derived node summaries",
+    "static_plot": "No new plot geometry; earlier count-plot PNG export evidence remains historical"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "nodes": 8,
+    "input_rows": 8,
+    "categorical_complete": 7,
+    "root_reference_valid": 4,
+    "root_reference_missing": 3,
+    "root_matches": 2,
+    "root_reference_percent": 50,
+    "all_missing_reference": "undefined",
+    "numeric_summaries": "independently checked at native display precision",
+    "saved_input": "eight rows and four original columns retained"
+  },
+  "reproduce": "python3 tools/check-tree-reference-artifacts.py",
+  "freshness": "generate --check, migration-status --check and scoped diff check pass",
+  "open_gates": [
+    "Full vtree baseline parity",
+    "Broader accessibility/themes",
+    "Other platforms",
+    "Clinical/release review"
+  ],
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 20,
+    "planned": 41,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "package": {
+    "file": "ClinicoPathPj_0.3.40.jmo",
+    "sha256": "345fe754aa5653cf40eaeacae85e906f5636d8fbc7bba8835e64d99271f58bef"
+  },
+  "artifact_sha256": {
+    "python-tree-reference-0.3.40-desktop.omv": "7dd2589a45695184b2fba165a6f895ad615e223599e45da6f41d9eb0c27bad29",
+    "python-tree-reference-0.3.40-desktop.html": "ee184006ecfc00cd7d016a550a197500abe1ea204106577cebff371416754bb1"
+  },
+  "log_sha256": {
+    "cpj-tree-reference-full-python.log": "b8f02a6cc540aa429228cb361ff132f724a63e42f31f373006475a4cb0faed33",
+    "cpj-tree-reference-focused.log": "08571cee6a541b564e2e7e27ce613be1b6c24d4f074a382a88618e3618dda51f",
+    "cpj-tree-reference-native.log": "8ad3d3d47507a0ba5f3ae22e3a88adef998726735b1b3596e71469b447e12a17",
+    "cpj-tree-reference-build.log": "f9f46d78c7fe195b454bf877b5ef377ae8cd2522d175a14893b5036ea3c234a0"
+  }
+}

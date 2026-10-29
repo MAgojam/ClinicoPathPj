@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.39",
+  "scope": "Optional continuous within-node mean/sample SD, valid/missing n and leaf/all-node locations in pyvartree",
+  "baseline": {
+    "module": "ClinicoPathDescriptives",
+    "commit": "7162149586afc8992f1ba17e56887e2fbcb0835d",
+    "source": "R/vartree.b.R summaryvar mean/SD specification and summarylocation leafonly default",
+    "scope_limit": "Existing complete-categorical-cohort policy retained; no full vtree parity claim"
+  },
+  "python": {
+    "full_tests": 299,
+    "seconds": 228.052,
+    "focused_tree_and_generator_tests": 43,
+    "status": "pass",
+    "full_log": "/private/tmp/cpj-node-summary-full-python.log",
+    "focused_log": "/private/tmp/cpj-node-summary-focused-final.log",
+    "oracles": [
+      "independent statistics.mean/stdev",
+      "explicit missing/zero/singleton fixtures",
+      "large/tiny values and numeric limits"
+    ]
+  },
+  "native_R": {
+    "assertions": 188,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0,
+    "status": "pass",
+    "log": "/private/tmp/cpj-node-summary-native.log",
+    "oracle": "Independent base-R categorical masks and mean/sd at each requested node, both locations",
+    "lifecycle": "summary role present/cleared/restored, feature on/off, preserved categorical tables and plot state",
+    "environment_note": "Operation not permitted messages despite exit 0 and passing assertions"
+  },
+  "compiler": {
+    "status": "pass",
+    "log": "/private/tmp/cpj-node-summary-build-final.log",
+    "corrected_initial_issue": "Moved enable from unsupported TargetLayoutBox property to its VariablesListBox child; generator now rejects that container property"
+  },
+  "generator": {
+    "appended_variable_role": "Allowed with explicit UI; legacy scientific option order retained; inferred-UI restriction preserved",
+    "regression": "full suite and focused tests include variable order and invalid container enable checks"
+  },
+  "packaged_runtime": {
+    "cases": 20,
+    "status": "pass",
+    "record": "python-tree-summary-0.3.39-package.json",
+    "new_variants": [
+      "all-node numeric summary with unchanged categorical output/plots",
+      "packaged eight-row missing-score fixture"
+    ]
+  },
+  "native_GUI": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installed_version": "0.3.39",
+    "summary_roles": "single supplier, optional numeric target, leaf/all-node control and waiting-role information notice verified",
+    "leaves": "two-valid, singleton and all-missing statistics shown",
+    "allnodes": {
+      "input": 8,
+      "categorical_complete": 7,
+      "excluded": 1,
+      "root_valid": 4,
+      "root_missing": 3,
+      "root_mean": 18.5,
+      "root_SD_label": "8.69866"
+    },
+    "on_off": "native numeric table and local annotations clear/restore; categorical cohort unchanged",
+    "save_reopen": "Both leaf/all-node files reopen after full restart with numeric role, toggle and location retained",
+    "fresh_recalculation": "allnodes \u2192 leafonly \u2192 allnodes passes after restart",
+    "export": "Native HTML numeric table independently matches CSV-derived statistics at display precision",
+    "compatibility": "0.3.37 categorical-only OMV reopens with summaries off and recalculates 36-complete/6-leaf tree; new copy preserves input data and labels; original hash unchanged"
+  },
+  "artifact_check": {
+    "status": "pass",
+    "nodes": 8,
+    "input": 8,
+    "categorical_complete": 7,
+    "root_valid": 4,
+    "root_missing": 3,
+    "root_mean": 18.5,
+    "root_sample_sd": 8.698658900466592,
+    "export_precision": "compared at each native displayed rounding precision",
+    "saved_input_scores": "unchanged",
+    "old_categorical_input_and_labels": "unchanged"
+  },
+  "reproduce": "python3 tools/check-tree-summary-artifacts.py",
+  "freshness": "generator/status/diff checks pass",
+  "open_gates": [
+    "full vtree baseline feature parity",
+    "broader keyboard/accessibility and themes",
+    "other platforms",
+    "clinical/release review"
+  ],
+  "package": {
+    "file": "ClinicoPathPj_0.3.39.jmo",
+    "sha256": "d81c8996236b792c846cadd412a14801c9bbd3dc7bfbfe6071b6cfaf72fafc17"
+  },
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 20,
+    "planned": 41,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "artifact_sha256": {
+    "python-tree-summary-0.3.39-leaves.omv": "70be77f3165d17fac26ea1ae6b54ee3ccef481a54bddee17fb7fb5d2360d5988",
+    "python-tree-summary-0.3.39-allnodes.omv": "3a7da85205469c2ef85118e017ade823e34ac1d57a5c473c04458fe6d65ebb9c",
+    "python-tree-summary-0.3.39-allnodes.html": "4b10c4960b12d115ed8ee143c6ae2e553394aec10ad8d06310c717cd228d3824",
+    "python-tree-summary-0.3.39-compatibility.omv": "29b3e80fa04469416a1bc8d9008f282e88a1ec2ef757f115a70a33839670bd6f"
+  },
+  "log_sha256": {
+    "cpj-node-summary-full-python.log": "f7c9918147aa1134265ed76fc3c74abeccdc42ce88cc807003bf5c531bcf0f36",
+    "cpj-node-summary-focused-final.log": "d9909932712d4f2eea9c12720556afc82ed48bd40dbd421e0bfe17c321d3cbcf",
+    "cpj-node-summary-native.log": "54d2abb809c35d3ba7a56153f3d4b1383a8a442e53e2f666cdc2bd15ef77bd17",
+    "cpj-node-summary-build-final.log": "0aac58abf879e11b0b36c88b72e7d993c6e7927413e9e2150435f5818bec0f6f"
+  }
+}
