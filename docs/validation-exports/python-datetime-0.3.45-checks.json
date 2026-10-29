@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-29",
+  "version": "0.3.45",
+  "analysis": "pydatetimeconverter",
+  "scope": "Partial explicit-format UTC date/Excel/Unix conversion and saved components; no format guessing, named timezones or two-digit years",
+  "baseline": {
+    "module": "jsurvival",
+    "version": "1.1.1",
+    "commit": "283a8275e3dd6704f6bba2164215442d3d293b8c",
+    "provenance": "sibling manifest",
+    "files": {
+      "jamovi/datetimeconverter.a.yaml": "a8d7160a48a2bdc1be4c9a4c56308e2cb0e40b92cfb647568d1a2c34698d9cd7",
+      "jamovi/datetimeconverter.r.yaml": "9235339b15caf026bf42d0183b9e44959e2c90c8b5c9286e93b5ca850a95287e",
+      "jamovi/datetimeconverter.u.yaml": "3706ab5fc2444fefc3c6a9c8f189f179f07e335c1ea9bd733d4d5e3ba9f209f4",
+      "R/datetimeconverter.b.R": "0b993257e0667c87034265e72bee6e163432a7ed718f0c46680ff4e68ae59b55"
+    }
+  },
+  "default_differences": "New UTC core uses explicit ymd/UTC; original R auto/system defaults remain unchanged in jsurvival",
+  "environment": {
+    "Python": "3.11.9",
+    "R": "4.6.0",
+    "jamovi": "28.13",
+    "platform": "macOS arm64",
+    "extra_packages_installed": false,
+    "capability_probe": {
+      "datetime": true,
+      "_strptime": true,
+      "zoneinfo": false,
+      "tzdata": false
+    }
+  },
+  "python": {
+    "full_status": "pass",
+    "full_tests": 354,
+    "seconds": 369.284,
+    "full_run_before_output_title_fix": true,
+    "final_focused_status": "pass",
+    "final_converter_generator_tests": 41,
+    "calculation_engine_unchanged_by_output_title_fix": true
+  },
+  "native_R": {
+    "final_status": "pass",
+    "passed": 163,
+    "failed": 0,
+    "errors": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "oracles": [
+      "lubridate explicit UTC parsers for 12 text formats",
+      "lubridate calendar components and Jan-1-block weeks",
+      "base R as.POSIXct and ties-to-even round for numeric epochs",
+      "All 1440 Excel minute positions",
+      "True/literal missingness, sparse source IDs and saved-output lifecycle"
+    ],
+    "nonfatal_environment_messages": "Error: Operation not permitted appears in focused logs; no test errors/failures/warnings/skips"
+  },
+  "previous_0344_full_native_qualification": {
+    "version": "0.3.44",
+    "passed": 3852,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "warnings": 0,
+    "log_sha256": "8bd5236c7ea5b51957537f1aa36a4b0aba8ea506ee0d81a048cc1c7436c16e9e",
+    "scope": "Unchanged existing module before the new converter; not a full 0.3.45 native-run claim"
+  },
+  "full_native_0345_run": false,
+  "compiler": {
+    "status": "pass",
+    "generator_freshness": "pass",
+    "migration_status_freshness": "pass",
+    "final_qualification_rebuild": "Registry/documentation only; all tested Python/runtime assets and R bridge SHA-256 hashes unchanged"
+  },
+  "package_runtime": {
+    "status": "pass",
+    "cases": 25,
+    "integrity": "ok"
+  },
+  "GUI": {
+    "installation": "Modules > Manage installed > Sideload",
+    "final_installed_runtime_matches_JMO": true,
+    "fresh_engine": true,
+    "checks": [
+      "Data Library source CSV loads",
+      "UTC fixed label visible; explicit format selection",
+      "Calendar counts 7/4/1",
+      "Four correctly named saved columns",
+      "All-unparsed counts 0/11/1 clear all four saved columns",
+      "Source replacement and Excel counts 11/0/1 recover output",
+      "Native HTML exports",
+      "Calendar and Excel .omv reopen with correct roles/formats/output settings",
+      "Fresh-engine explanation on/off reruns and clears optional text",
+      "Final registry-only build sideloaded and reopened in a fresh engine"
+    ],
+    "plots": "No new plot; plot export not applicable",
+    "limits": [
+      "Actual GUI filtering not qualified; sparse original row IDs tested natively",
+      "Pre-launch/transport recovery remains a separate boundary",
+      "Other platforms/accessibility and clinical/release review open"
+    ]
+  },
+  "saved_artifacts": {
+    "status": "pass",
+    "states": {
+      "calendar": {
+        "parsed": 7,
+        "invalid": 4,
+        "missing": 1,
+        "saved_output": "Four named columns match independent UTC/calendar arithmetic on every source row",
+        "source": "All 12 original profiles, four input columns and row order preserved"
+      },
+      "excel": {
+        "parsed": 11,
+        "invalid": 0,
+        "missing": 1,
+        "saved_output": "Four named columns match independent UTC/calendar arithmetic on every source row",
+        "source": "All 12 original profiles, four input columns and row order preserved"
+      }
+    },
+    "unparsed": "All four saved outputs missing for all 12 rows; original values unchanged"
+  },
+  "initial_failure": {
+    "kind": "Saved output names were blank despite correct values",
+    "cause": "Emitter supplied measure_type without explicit output title; bridge metadata call replaced schema defaults",
+    "fix": "Every saved output now supplies explicit title and description",
+    "retained_fixture": "python-datetime-0.3.45-initial-unnamed.omv",
+    "qualification": "Final Python/native/package checks and fresh GUI file verify named outputs"
+  },
+  "inventory": {
+    "baseline_targets": 61,
+    "partial": 25,
+    "planned": 36,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "open_gates": [
+    "Auto format/epoch detection",
+    "Two-digit-year policies",
+    "Named/system timezones and DST",
+    "Native Date/POSIX input classes",
+    "Full baseline parity",
+    "Broader platforms/accessibility",
+    "Clinical/release review"
+  ],
+  "reproduce": "python3 tools/check-datetime-artifacts.py",
+  "package": {
+    "file": "ClinicoPathPj_0.3.45.jmo",
+    "sha256": "eb33c2b15816561d7b38d3e342aa7bb7e3c990c1d539f645426a64e6666179d7"
+  },
+  "artifact_sha256": {
+    "python-datetime-0.3.45-calendar.html": "75ec42663a59f2e839a942850821f847d05b08c1334387355fb23b42e10f739c",
+    "python-datetime-0.3.45-calendar.omv": "c93a5435c2f0bff20fc9634935ba77b72754cc8b9e5fd46fff67038d5ce90337",
+    "python-datetime-0.3.45-excel.html": "48c2011c537c2f6137fd7a5c576130b1b5b1946b7d5139ccdd40271ec55fecff",
+    "python-datetime-0.3.45-excel.omv": "695fcb935656d11b00aba8f96057f29e99e0d2c0245cea8e2a026a458061cb12",
+    "python-datetime-0.3.45-initial-unnamed.omv": "4671f7fe1628f61c4e6d66e733ddcdbacd563c993ddd0646ac9c538b3fb9769c",
+    "python-datetime-0.3.45-unparsed.omv": "8984e98e3d17fbbd7df29b43582260cf46ef5a0e54d020117c2187e38e787e51"
+  },
+  "source_example_sha256": "fb9c27c284b9a46448be7c1eb7e66a6e87a27cea0b2f01c25281b247610eccd4",
+  "log_sha256": {
+    "cpj-datetime-release-build.log": "9b955aca2238f7281e86157bf4510fd9b276c27f93ab40a4bf76d60d4abf9bde",
+    "cpj-datetime-final-focused.log": "1bddbba4cc82162be8245c451249ebf67c5fd2db85fb00b1fa1c73da953367c1",
+    "cpj-datetime-native.log": "3776cb245e08ed951e410c8c1505ed0c5dc494f04a39baa0c943eebd2b097b21",
+    "cpj-datetime-build.log": "95d8f25f4f4902b4dc3d72a65a751a7405dbf7c644778687c53b9eeae901d1a3",
+    "cpj-datetime-final-native.log": "2661329e1eca8ac45ff843d44f43a743e88c35553cc29ad69a1e8c21e05f4ae4",
+    "cpj-datetime-focused.log": "9a0e899d706a698fe58773de412d15dda760e32bda3f298e9b8b0541860d9854",
+    "cpj-datetime-final-build.log": "9b955aca2238f7281e86157bf4510fd9b276c27f93ab40a4bf76d60d4abf9bde",
+    "cpj-datetime-full-python.log": "474c1c799e3b1dd59d0c9659890c82242adba89a8f69b89120771fce757c7e91"
+  }
+}

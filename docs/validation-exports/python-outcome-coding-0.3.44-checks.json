@@ -80,8 +80,17 @@
       "cause": "Broad input-error clearing conflicted with existing greyed-results expectations in pyd3cutoff and pyobservablecutoff",
       "resolution": "Explicit clearOnInputError boolean enabled only for outcome transformation; both legacy files pass in the final compiled native tests"
     },
-    "clean_full_run_after_scoping": false,
-    "environment_messages": "Focused logs emit nonfatal Error: Operation not permitted messages; assertion results and exit status recorded separately"
+    "clean_full_run_after_scoping": true,
+    "environment_messages": "Focused logs emit nonfatal Error: Operation not permitted messages; assertion results and exit status recorded separately",
+    "later_full_native_qualification": {
+      "version": "0.3.44",
+      "passed": 3852,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "warnings": 0,
+      "log_sha256": "8bd5236c7ea5b51957537f1aa36a4b0aba8ea506ee0d81a048cc1c7436c16e9e"
+    }
   },
   "compiler": {
     "status": "pass",
@@ -163,7 +172,6 @@
     "full_parity": 0
   },
   "open_gates": [
-    "Clean full-native rerun after policy scoping",
     "Recurrence composites",
     "Patient hierarchy and priority timing",
     "Interval/administrative censoring and paired follow-up output",

@@ -1,0 +1,140 @@
+{
+  "version": "0.3.46",
+  "analysis": "pytimeinterval",
+  "classification": "partial core; no full baseline parity or clinical release claim",
+  "numerical": {
+    "focused_python_tests": 8,
+    "native_base_R_and_lifecycle": {
+      "passed": 45,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    "full_python_regression": {
+      "tests": 362,
+      "seconds": 591.084,
+      "status": "pass"
+    }
+  },
+  "compiler": {
+    "build": "pass",
+    "generator_freshness": "pass",
+    "registry_status_freshness": "pass"
+  },
+  "packaged_runtime": {
+    "integrity": "ok",
+    "cases": 26,
+    "statuses": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "ok"
+    ]
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Sideload; full application restart",
+    "installed_archive_match": [
+      "manifest",
+      "R database",
+      "registry",
+      "interval helper"
+    ],
+    "rerun": "report toggle after full application restart; n=9 total=861 restored",
+    "states": {
+      "days": {
+        "used": 10,
+        "total": 871,
+        "saved_alignment": "pass"
+      },
+      "landmark": {
+        "used": 7,
+        "total": 826,
+        "saved_alignment": "pass"
+      },
+      "negative": {
+        "used": 0,
+        "total": null,
+        "saved_alignment": "pass"
+      },
+      "excluded": {
+        "used": 9,
+        "total": 861,
+        "saved_alignment": "pass"
+      },
+      "html": {
+        "summary_and_12_source_rows": "pass"
+      }
+    },
+    "native_static_plot_export": "not applicable: no plot"
+  },
+  "limits": [
+    "calendar basis and full baseline parity pending",
+    "full 0.3.46 native inventory suite not run; prior 0.3.44 3852 assertions are historical",
+    "sandbox subprocess checks emit Operation not permitted independently of 45 passing native assertions",
+    "Windows/Linux/other macOS architectures not qualified",
+    "no clinical review or accessibility certification"
+  ],
+  "sha256": {
+    "ClinicoPathPj_0.3.46.jmo": "ddb83dd152ab3dece155460b72ee40254c35e631a7abdf9c1837de70ace49599",
+    "inst/python/cpj_intervals.py": "f6744879ed3f34e6e03dee599d81f7b7b8a277ccbebcaf78f5aca6208eb922ee",
+    "inst/python/analyses/jsurvival/pytimeinterval.py": "891d7233b396c4b46ebf111640e590628f205a075c3c8fe52c8ff51c1adc432b",
+    "inst/python/registry.json": "55f06c0f0621b395b6c620b673d5b4561f5a8859cbc56197da5053b2bb1d9727",
+    "R/pytimeinterval.b.R": "88d1b64a2a357a3caea3b9660396240d25d86fa2e81d66ae74f05e05272ae9a1",
+    "R/pytimeinterval.h.R": "387dcd1ba99f048f6a1bb9585ae70539531fcd2fb536821934a7156050d51e27",
+    "data/python_interval_examples.csv": "ba46fdb950941e91865f7b3af7a250d0f8be98795a180147adcf12f586148571",
+    "tests/python/test_intervals.py": "442caa538290b2b33be5b218a369512c48bf9675348832673668c27215e276e1",
+    "tests/testthat/test-intervals-python.R": "b26e5c87e29a820c9377d96c238a05ede1e5958f2dfbca261e14bf98e60addfc",
+    "docs/validation-exports/python-interval-0.3.46-days.omv": "7f716bdcb0b3eea639555d027b64e314268df173f8dcf7ab2b9036c57250b9b6",
+    "docs/validation-exports/python-interval-0.3.46-landmark.omv": "d35c614d5ee88c965e474fcb8e6be185f45f1382e2d828f3ed98c9f9c54aefbf",
+    "docs/validation-exports/python-interval-0.3.46-negative.omv": "9744ff2af7be9f93b9137c39c154232c7513129ac78fc35a12f07bae149001a0",
+    "docs/validation-exports/python-interval-0.3.46-excluded.omv": "39c08b99552d706e4d193fe95916d3db06a78aef9e1ec9d575d4a7239a1539d8",
+    "docs/validation-exports/python-interval-0.3.46-excluded.html": "79376452ce997f238dc9cb6b7f1e616a4d82dd094a8de411336c6761487f7c69"
+  },
+  "inventory": {
+    "baseline_partial": 26,
+    "baseline_planned": 35,
+    "utilities": 10,
+    "executable_entry_points": 36,
+    "full_parity": 0
+  },
+  "reproduce": [
+    "python3 tools/generate.py --check",
+    "python3 tools/migration-status.py --check",
+    "bundled Python unittest discovery: see tools/check.sh",
+    "testthat::test_file(\"tests/testthat/test-intervals-python.R\") against build/R4.6.0-arm64-macos",
+    "bundled Python tools/check-core-package.py",
+    "python3 tools/check-interval-artifacts.py"
+  ],
+  "log_sha256": {
+    "cpj-interval-build.log": "8dc7ee684439a328cc6f54a28fabf5ae5ca97c3c34db3890d7db9fa6966b2683",
+    "cpj-interval-python.log": "3e3a06de183e8ded03ff51760be0163dca97e63b584dfd61ca1282a7a2b097dc",
+    "cpj-interval-native.log": "7dc2bf23797fc2ba08e0056440f93f34165a2f3545824793afe8fd1364b78df7",
+    "cpj-interval-native-first.log": "a219a030608b856ad13beed0b0ea904687feda682be8fd990a1a2b7c63e42735",
+    "cpj-interval-package.log": "621be1bf20f03a5b1b9f5ed3d019e7ab33c540eae35ae640ecabe2dcf472df35"
+  }
+}
