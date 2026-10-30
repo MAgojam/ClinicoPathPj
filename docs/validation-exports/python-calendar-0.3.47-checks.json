@@ -1,0 +1,126 @@
+{
+  "version": "0.3.47",
+  "analysis": "pytimeinterval",
+  "scope": "Explicit calendar-anniversary option; standardized default preserved; partial port",
+  "reference": {
+    "original_baseline_preserved": true,
+    "calendar_feature_commit": "381df71e98e4fb460d44e5a6cc439a04289acfdd",
+    "cases": 408,
+    "fixture": "tests/fixtures/timeinterval-calendar-reference.R",
+    "difference": "Corrected adjacent-anniversary span replaces original calendar-month divisor; explicit new option only"
+  },
+  "numerical": {
+    "focused_python": 10,
+    "full_python": {
+      "tests": 364,
+      "seconds": 375.425,
+      "status": "pass"
+    },
+    "native_R": {
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    }
+  },
+  "final_label_only_build": {
+    "focused_interval_and_generator_tests": 42,
+    "engine_hash_unchanged": true,
+    "compiler": "pass",
+    "generator_and_status_freshness": "pass",
+    "installed_archive_bytes": [
+      "manifest",
+      "R database",
+      "registry",
+      "interval engine"
+    ],
+    "packaged_runtime": {
+      "cases": 26,
+      "integrity": "ok",
+      "status": "pass",
+      "includes": "standardized and calendar pytimeinterval requests"
+    }
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Sideload",
+    "fresh_engine": "full application restart",
+    "old_OMV_default": "standardized, forced rerun total 861 days",
+    "calendar_OMV": "basis retained; summary n=5, total about 16 months, mean about 3.20",
+    "final_unit_control": "Months",
+    "native_HTML": "six preview rows and independent summary check",
+    "artifacts": {
+      "standardized": {
+        "used": 5,
+        "values": [
+          0.9527720739219713,
+          0.919917864476386,
+          0.9856262833675564,
+          11.991786447638603,
+          0.919917864476386,
+          null
+        ],
+        "basis_metadata": "pass"
+      },
+      "calendar": {
+        "used": 5,
+        "values": [
+          1.0,
+          1.0,
+          1.032258064516129,
+          12.0,
+          0.9655172413793104,
+          null
+        ],
+        "basis_metadata": "pass"
+      },
+      "legacy": {
+        "all_source_and_saved_values_unchanged": "pass"
+      },
+      "html": {
+        "summary_and_six_source_rows": "pass"
+      }
+    },
+    "final_forced_rerun": "Report toggled after final package restart; calendar values and n=5 retained; saved"
+  },
+  "inventory": {
+    "partial": 26,
+    "planned": 35,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "limits": [
+    "Full 0.3.47 native inventory not rerun",
+    "Sandbox native subprocess checks emitted Operation not permitted messages; assertion counts are separate",
+    "No additional platform/accessibility/clinical qualification",
+    "Automatic/numeric parsing, named timezones and time-aware outcomes remain pending"
+  ],
+  "sha256": {
+    "ClinicoPathPj_0.3.47.jmo": "3e4ac61bf617074a88d2d6ee85af1b8ad54254ffa618306f53301420d81523cd",
+    "inst/python/cpj_intervals.py": "c8af3bcaab2a88f8dbacf6289b35d4819079e60e6d4e477d3735cbdea899d9fc",
+    "inst/python/analyses/jsurvival/pytimeinterval.py": "b0aa3b06ea75d909415efe168830f3f5550623de074929d61a1c0af698997d06",
+    "inst/python/registry.json": "f45c5fb960c13a8da0b5ae9652dfea54f2d0282095f2d94ce9ad45999e4014e5",
+    "R/pytimeinterval.b.R": "e1d9eb445d0a115557cbc3a6c0328253aad78528e58a6b4a97e71aa1eb1af9de",
+    "R/pytimeinterval.h.R": "22414b11e37d15c0f74e67f6c8c6056825f4d4175b1c4476261784b7ed80022c",
+    "data/python_calendar_interval_examples.csv": "2eec4a8dc625ee22cd6c77d187c5f191fe4ec1b8efca5afa4dab0f1d95ef5329",
+    "tests/fixtures/timeinterval-calendar-reference.R": "f2722ef98761ea8dd4e458e85a0435cc15d088ff2b3c286c1965efc05c96f4ea",
+    "tests/fixtures/timeinterval-calendar.json": "3b5b11237a263462e3d0b4634676bdb2a8620562d557ed6b29ff73bd92c5ac69",
+    "tests/python/test_intervals.py": "ff561283acee3cff35982bf1bb7e04ce31e1a258981ead86742bae6651f83046",
+    "tests/testthat/test-intervals-python.R": "175c2293e35e9e0fdfb7ef72c77996951cae93ea7cb37db63ba4c99f3806266f",
+    "docs/validation-exports/python-calendar-0.3.47-standardized.omv": "5c05806b99c88b291760d65ac64b83c575e4e709eb87012297db6a65a0f76efb",
+    "docs/validation-exports/python-calendar-0.3.47-calendar.omv": "f793f0a24418327c27c8d2ac551aecc74776d469d1213a02aa44e3cce71c3573",
+    "docs/validation-exports/python-calendar-0.3.47-legacy.omv": "d3216b86cf6ff394250629ebe6fbdd86586924eafd666aa2ffacd868e943a161",
+    "docs/validation-exports/python-calendar-0.3.47-calendar.html": "8738316dd98ec4b3679f7937260b6622c9b6973d28339cc55ec173d0ecf71bcf"
+  },
+  "log_sha256": {
+    "cpj-calendar-build.log": "2ceecc628cad3e714dc28c4406d80799ddab276cbdf262c1c653ef0c492aac76",
+    "cpj-calendar-python.log": "5e4cd9a37ff97f15d5d5bbd6be745100e3d408b658051dcd187a4522516edfe4",
+    "cpj-calendar-native.log": "8b64168fb0374f29fd214da9e26e49678988d59b0b4cd77dbf071905926baf71",
+    "cpj-calendar-package.log": "3d8b0379e105f5b05632eb1d0d31e7c126e93d251c7c15a6841db84f92cdb84e",
+    "cpj-calendar-final-build.log": "28a2da6832bd406dedb0a71328a7e20cb9641c0979e2e2c528ab8c86c91b3183",
+    "cpj-calendar-final-focused.log": "152c5fc3df3b3f3e4450adbd4246dfe52d5d80e9884b2dce0f79bd8858cc86c7",
+    "cpj-calendar-final-package.log": "3d8b0379e105f5b05632eb1d0d31e7c126e93d251c7c15a6841db84f92cdb84e"
+  }
+}
