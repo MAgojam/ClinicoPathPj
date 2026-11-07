@@ -1,0 +1,80 @@
+{
+  "version": "0.3.54",
+  "date": "2026-11-07",
+  "analysis": "pyfirstevent",
+  "scope": "Optional saved exact-label identity flag; endpoint computations/defaults unchanged",
+  "python": {
+    "focused": 53,
+    "focused_status": "pass",
+    "full": 407,
+    "full_status": "pass",
+    "full_seconds": 297.531,
+    "resource_limits": "unchanged",
+    "threads": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1"
+  },
+  "native_R": {
+    "passed": 81,
+    "failed": 0,
+    "errors": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "scope": "Focused first-event oracle/output lifecycle suite against completed build; full native inventory not run",
+    "environment_diagnostics": "Sandbox Operation not permitted lines retained separately from testthat results"
+  },
+  "compiler": "Full compiler build and R staged installation passed",
+  "package": {
+    "path": "ClinicoPathPj_0.3.54.jmo",
+    "cases": 28,
+    "status": "pass",
+    "sha256": "89c2ba18e1e5565e0f9c7f766df3ab787f82baa77c0525ec448ff0db8e13b986",
+    "installed_byte_comparison": "Manifest, UI, R database, identity helper, first-event Python source, registry and typed example match"
+  },
+  "gui": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13.0",
+    "installation": "Modules > Manage installed > Sideload",
+    "old_file": "0.3.53 reopened with new output off; original file preserved",
+    "new_output": "Native nominal column Unknown ID / Unique ID / Repeated ID",
+    "states": {
+      "valid": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "strict": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "unique": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "disabled": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "pending": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "reopened": {
+        "source_columns_unchanged": true,
+        "identity_flags_aligned": true,
+        "endpoint_outputs_aligned": true
+      },
+      "native_HTML_and_embedded_PNG": "pass"
+    },
+    "fresh_engine": "Saved recovered state reopened; audit off/on forced backend rerun and saved again",
+    "export": "Native HTML identity policy/audit and embedded 1437x798 PNG; unequal 3/6 bars visually inspected"
+  },
+  "remaining": [
+    "Full native inventory",
+    "Additional platforms and accessibility certification",
+    "Direct Save Image export",
+    "Patient-history aggregation policy, clinical review and full migration parity"
+  ]
+}
