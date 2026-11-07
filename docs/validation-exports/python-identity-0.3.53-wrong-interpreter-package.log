@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tools/check-core-package.py", line 437, in <module>
+    check(Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/f'ClinicoPathPj_{VERSION}.jmo')
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tools/check-core-package.py", line 231, in check
+    rendered=json.loads(response.read_text());assert rendered['status']=='ok',rendered.get('error')
+AssertionError: {'message': "ImportError: cannot import name '_c_internal_utils' from partially initialized module 'matplotlib' (most likely due to a circular import) (/private/var/folders/cd/2ybg5n514bdfsg2n2wnsspmw0000gn/T/cpj-package-check-sk5mkavd/ClinicoPathPj/R/ClinicoPathPj/python/_vendor/matplotlib/__init__.py)"}

@@ -1,0 +1,110 @@
+{
+  "version": "0.3.51",
+  "date": "2026-10-30",
+  "analysis": "pyfirstevent",
+  "scope": "Two explicit binary component status/time pairs at a common observation horizon; no clinical endpoint adjudication or model fit",
+  "python": {
+    "focused": 46,
+    "firstevent_tests": 8,
+    "full": 391,
+    "full_seconds": 385.961,
+    "status": "pass",
+    "post_regression_changes": "Plot-option label and registry GUI qualification metadata only; final compiler, archive execution and generator freshness pass"
+  },
+  "native_R": [
+    {
+      "file": "test-first-event-python.R",
+      "passed": 22,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    {
+      "file": "test-interval-censoring-python.R",
+      "passed": 29,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    {
+      "file": "test-composite-outcomes-python.R",
+      "passed": 45,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    }
+  ],
+  "environment": "Native log includes sandbox Operation not permitted diagnostics; zero testthat failures/warnings/skips. Full native inventory was not run.",
+  "compiler": {
+    "build": "pass",
+    "generator_freshness": "pass",
+    "status_freshness": "pass"
+  },
+  "packaged_runtime": {
+    "cases": 28,
+    "integrity": "ok",
+    "final_qualified_archive": "pass"
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Manage installed > Sideload",
+    "typed_example": "Opened through jamovi file chooser; packaged Data Library manifest and bytes verified",
+    "fresh_engine_reopen_and_rerun": "pass",
+    "installed_matches_archive": [
+      "jamovi.yaml",
+      "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+      "R/ClinicoPathPj/python/registry.json",
+      "R/ClinicoPathPj/python/cpj_firstevent.py",
+      "R/ClinicoPathPj/python/analyses/jsurvival/pyfirstevent.py",
+      "data/python_first_event_examples.omv"
+    ],
+    "artifacts": {
+      "valid": {
+        "source_columns_unchanged": "pass",
+        "three_saved_columns_aligned": "pass",
+        "usable": 9
+      },
+      "incomplete": {
+        "source_columns_unchanged": "pass",
+        "three_saved_columns_aligned": "pass",
+        "usable": 0
+      },
+      "reopened": {
+        "source_columns_unchanged": "pass",
+        "three_saved_columns_aligned": "pass",
+        "usable": 9
+      },
+      "native_HTML_tables_and_embedded_PNG": "pass"
+    },
+    "export": "Native HTML and embedded PNG extracted byte-for-byte, visually inspected; no direct Save Image claim"
+  },
+  "remaining": [
+    "Administrative censoring and patient hierarchy",
+    "Clinical endpoint definitions and independent-censoring assumptions",
+    "Full native R inventory",
+    "Other architectures/platforms",
+    "Accessibility certification",
+    "Fitted survival and full baseline feature parity"
+  ],
+  "archive_sha256": "3aea8c79153a5fa870231073ad51c60a5a46a99e78c305491f2ef4f2a023090d",
+  "source_sha256": {
+    "inst/python/cpj_firstevent.py": "ba8c7a2ea49a033d0fd0c35fe3b6859ac918babae732bbee74e2663d9c52382a",
+    "inst/python/analyses/jsurvival/pyfirstevent.py": "ddbdcb7adae892b95fa17a20a784f4651596c2002450342b1656a4495b4e7019",
+    "inst/python/registry.json": "9f2b503844f1b9b43b1b23836a1931de0c7995b35c2e8dbd9404b31c534378d9"
+  },
+  "artifacts_sha256": {
+    "python-firstevent-0.3.51-focused.log": "54d535f981033d37ecdba2e5dd9f386e2d8a356532fd48dc9ddc2fe2ab69d05b",
+    "python-firstevent-0.3.51-incomplete.omv": "18a85a0b3f48b43eaeb64f62e5eae0780ef1577ebf1addbfbe252785db0c9b02",
+    "python-firstevent-0.3.51-native.log": "8f8101963fbe179b1fadd90c42a8192928b916215783bfc0df04d1ead738b6f4",
+    "python-firstevent-0.3.51-package.log": "57aca1494d5b02869df552a1a7521bca9b936ee06ef75e09c186d423cb7f4448",
+    "python-firstevent-0.3.51-python.log": "8411b9856134437ece2ffd44813f0f214ec4e0ce25b1844bc2a826bffde9fdec",
+    "python-firstevent-0.3.51-reopened.html": "5b4fcea332a62aa96d6c78638e9d05583024e21bd7e161a7dae90b37b913b98d",
+    "python-firstevent-0.3.51-reopened.omv": "92d6016b0ab2551f79f7096b97eb399424ad66c8cfcf98bfc0861e3b15e21079",
+    "python-firstevent-0.3.51-reopened.png": "c0f92d5d08b5cd6d1824ec915b1898ba663eae9bdce96fc511c34da3df803228",
+    "python-firstevent-0.3.51-valid.omv": "556c73ac3a613948f2ef5ad21cb31046e0b1a019d4dcc5cf72b3a6f549f77a2a"
+  }
+}

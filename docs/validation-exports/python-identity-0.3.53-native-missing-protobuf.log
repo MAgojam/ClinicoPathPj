@@ -1,0 +1,83 @@
+
+══ Testing test-first-event-python.R ═══════════════════════════════════════════
+
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 3 ]
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 4 ]Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 4 ]Error: Operation not permitted
+Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 5 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 6 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 7 ]Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 8 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 9 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 10 ]Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 11 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 12 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 13 ]Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 14 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 15 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 16 ]Error: Operation not permitted
+
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 17 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 18 ]
+[ FAIL 1 | WARN 0 | SKIP 0 | PASS 19 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 19 ]Error: Operation not permitted
+Error: Operation not permitted
+
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 20 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 21 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 22 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 23 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 24 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 25 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 26 ]Error: Operation not permitted
+
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 27 ]
+[ FAIL 2 | WARN 0 | SKIP 0 | PASS 28 ]
+[ FAIL 3 | WARN 0 | SKIP 0 | PASS 28 ]
+
+Error: Operation not permitted
+── Error ('test-first-event-python.R:22:15'): literal rows, sparse IDs and stale-output recovery are preserved ──
+Error in `RProtoBuf_new(jamovi.coms.ResultsElement, name = private$.name, title = self$title, stale = private$.stale, state = state, status = s, visible = v, refs = self$getRefs())`: could not find function "RProtoBuf_new"
+Backtrace:
+    ▆
+ 1. ├─testthat::expect_equal(...) at test-first-event-python.R:23:5
+ 2. │ └─testthat::quasi_label(enquo(object), label)
+ 3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+ 4. └─output("timeOut")
+ 5.   └─a$results$get(name)$asProtoBuf(incAsText = TRUE) at test-first-event-python.R:22:15
+ 6.     └─super$asProtoBuf(incAsText = incAsText, status = status, includeState = includeState)
+
+── Error ('test-first-event-python.R:69:15'): cutoff lifecycle clears and restores all outputs without changing defaults ──
+Error in `RProtoBuf_new(jamovi.coms.ResultsElement, name = private$.name, title = self$title, stale = private$.stale, state = state, status = s, visible = v, refs = self$getRefs())`: could not find function "RProtoBuf_new"
+Backtrace:
+    ▆
+ 1. ├─testthat::expect_equal(...) at test-first-event-python.R:70:5
+ 2. │ └─testthat::quasi_label(enquo(object), label)
+ 3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+ 4. └─output("timeOut")
+ 5.   └─a$results$get(name)$asProtoBuf(incAsText = TRUE) at test-first-event-python.R:69:15
+ 6.     └─super$asProtoBuf(incAsText = incAsText, status = status, includeState = includeState)
+
+── Error ('test-first-event-python.R:124:14'): strict ID gate clears saved outputs and recovers with unique IDs ──
+Error in `RProtoBuf_new(jamovi.coms.ResultsElement, name = private$.name, title = self$title, stale = private$.stale, state = state, status = s, visible = v, refs = self$getRefs())`: could not find function "RProtoBuf_new"
+Backtrace:
+    ▆
+ 1. ├─testthat::expect_equal(as.numeric(saved()), c(1, 2, NA)) at test-first-event-python.R:125:5
+ 2. │ └─testthat::quasi_label(enquo(object), label)
+ 3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+ 4. └─saved()
+ 5.   └─a$results$timeOut$asProtoBuf(incAsText = TRUE) at test-first-event-python.R:124:14
+ 6.     └─super$asProtoBuf(incAsText = incAsText, status = status, includeState = includeState)
+
+[ FAIL 3 | WARN 0 | SKIP 0 | PASS 28 ]
+Error: !any(d$error) is not TRUE
+Execution halted

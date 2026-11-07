@@ -1,0 +1,159 @@
+{
+  "version": "0.3.53",
+  "date": "2026-11-07",
+  "analysis": "pyfirstevent",
+  "status": "Experimental; documented synthetic record-level workflow qualified on macOS arm64 jamovi 28.13",
+  "implemented": [
+    "Optional exact text/factor subject identity audit",
+    "All-record counts and bounded repeated-ID table",
+    "Subject annotations in preview",
+    "Explicit one-record-per-ID requirement with output clearing",
+    "Staged pinned-dependency extraction"
+  ],
+  "python": {
+    "focused": 9,
+    "focused_status": "pass",
+    "full_run": 405,
+    "passed": 402,
+    "failed": 3,
+    "failures": "SIGALRM runtime subprocess limits; isolated rerun 3/3 pass without relaxing limits",
+    "full_run_seconds": 867.8,
+    "isolated_seconds": 8.765,
+    "limits": "Unchanged",
+    "environment": "OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1, VECLIB_MAXIMUM_THREADS=1"
+  },
+  "native_R": {
+    "file": "test-first-event-python.R",
+    "passed": 76,
+    "failed": 0,
+    "errors": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "scope": "Final completed build; standalone protobuf/PYTHONHOME initialized; full native inventory not run",
+    "reproduce": "PYTHONHOME=/Applications/jamovi.app/Contents/Resources Rscript --vanilla tools/check-first-event-native.R [completed-library-directory]"
+  },
+  "archive": {
+    "path": "ClinicoPathPj_0.3.53.jmo",
+    "cases": 28,
+    "status": "pass",
+    "build": "Full compiler and R staged install",
+    "sha256": "e24739f9a606d0d8a7dd79e8e534fabbfc804f42cdffb2fb315216187b6f8e20",
+    "installed_byte_matches": [
+      "jamovi.yaml",
+      "ui/pyfirstevent.js",
+      "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+      "R/ClinicoPathPj/python/cpj_identity.py",
+      "R/ClinicoPathPj/python/analyses/jsurvival/pyfirstevent.py",
+      "R/ClinicoPathPj/python/registry.json",
+      "R/ClinicoPathPj/python/_vendor/PIL/__init__.py",
+      "data/python_first_event_identity.omv"
+    ]
+  },
+  "gui": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13.0",
+    "installation": "Modules > Manage installed > Sideload",
+    "subject_ID_selection": "pass after explicit factor/id role and supplier correction",
+    "strict_failure_recovery": "pass",
+    "fresh_engine_reopen_and_forced_rerun": "pass",
+    "saved_artifacts": {
+      "inputpending": {
+        "source_columns_unchanged": "pass",
+        "three_outputs_aligned": "pass",
+        "events": 0,
+        "censored": 0
+      },
+      "valid": {
+        "source_columns_unchanged": "pass",
+        "three_outputs_aligned": "pass",
+        "events": 6,
+        "censored": 3
+      },
+      "strict": {
+        "source_columns_unchanged": "pass",
+        "three_outputs_aligned": "pass",
+        "events": 0,
+        "censored": 0
+      },
+      "unique": {
+        "source_columns_unchanged": "pass",
+        "three_outputs_aligned": "pass",
+        "events": 6,
+        "censored": 3
+      },
+      "reopened": {
+        "source_columns_unchanged": "pass",
+        "three_outputs_aligned": "pass",
+        "events": 6,
+        "censored": 3
+      },
+      "native_HTML_audit_preview_and_embedded_PNG": "pass",
+      "PNG_dimensions": [
+        1437,
+        798
+      ]
+    },
+    "export": "Native HTML plus embedded PNG, visually inspected; direct Save Image not tested"
+  },
+  "remaining": [
+    "Clean all-green full Python run",
+    "Full native inventory",
+    "Other platforms, accessibility certification and clinical review",
+    "Patient aggregation/history policies and full migration parity"
+  ],
+  "previous_attempt": {
+    "version": "0.3.53",
+    "date": "2026-11-07",
+    "analysis": "pyfirstevent",
+    "status": "source candidate; qualification incomplete",
+    "implemented": [
+      "Optional exact text/factor subject identity audit",
+      "All-record counts and bounded repeated-ID table",
+      "Subject annotations in preview",
+      "Explicit one-record-per-ID requirement with output clearing",
+      "Staged pinned-dependency extraction"
+    ],
+    "python": {
+      "final_focused_tests": 9,
+      "scope": "Six identity tests and three dependency-staging tests",
+      "status": "pass",
+      "full_regression": "Not qualified; earlier incomplete dependencies and runtime alarms, later run interrupted under process pressure",
+      "test_environment": "OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1, VECLIB_MAXIMUM_THREADS=1"
+    },
+    "native_R": {
+      "file": "test-first-event-python.R",
+      "passed": 76,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    "archive": {
+      "path": "packages/candidates/ClinicoPathPj_0.3.53.jmo",
+      "cases": 28,
+      "integrity": "ok",
+      "scope": "Restored dependency archive before GUI selector metadata correction; run() computation AST matches current source",
+      "final_selector_build": "Incomplete: compiler R install stage was interrupted; candidate still has previous selector restriction",
+      "sha256": "93b96d455a47151ad7e6e94f6647b9adc7ca62f1ec04d7c4951839309f2f9e6a"
+    },
+    "gui": {
+      "pending_fixture": "python-identity-0.3.53-pending.omv",
+      "text_id_issue": "Record text ID could not enter permitted id/factor box; source now follows unrestricted IHC selector pattern with strict backend validation",
+      "feature_acceptance": "not qualified",
+      "timeouts": 2,
+      "installed_version": "0.3.52 restored through GUI Sideload; installed manifest, R database and first-event engine match verified archive",
+      "pending_output_clearing": "pass: all three persisted outputs missing in 12-row saved fixture"
+    },
+    "remaining": [
+      "Clean full regression",
+      "Complete final selector build and archive checks",
+      "Native text/factor ID switching, strict gate, exports and fresh-engine reopening",
+      "Patient aggregation, clinical review and broader platforms"
+    ]
+  },
+  "integration": {
+    "generator_freshness": "pass",
+    "migration_status_freshness": "pass",
+    "whitespace_check": "Existing compiler-generated pyoutcomeorganizer.h.R whitespace warnings retained; generated files were not hand-edited"
+  }
+}

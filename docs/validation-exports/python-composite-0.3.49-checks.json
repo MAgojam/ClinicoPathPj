@@ -1,0 +1,133 @@
+{
+  "version": "0.3.49",
+  "date": "2026-10-30",
+  "analysis": "pyoutcomeorganizer",
+  "scope": "Single-event RFS/PFS/DFS component-OR and progression-only TTP status; no first-event times",
+  "original_baseline_preserved": true,
+  "new_options_appended": true,
+  "python": {
+    "focused_tests": 48,
+    "full_tests": 376,
+    "full_seconds": 674.421,
+    "status": "pass"
+  },
+  "native_R": [
+    {
+      "file": "test-composite-outcomes-python.R",
+      "passed": 45,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    {
+      "file": "test-outcomes-python.R",
+      "passed": 71,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    }
+  ],
+  "compiler": {
+    "build": "pass",
+    "generator_freshness": "pass",
+    "registry_status_freshness": "pass"
+  },
+  "packaged_runtime": {
+    "cases": 26,
+    "integrity": "ok",
+    "extra_composite_request": "pass"
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Sideload; full restart",
+    "installed_matches_archive": [
+      "manifest",
+      "R database",
+      "registry",
+      "outcome engine"
+    ],
+    "fresh_engine": "TTP file reopened; switch to RFS recalculated status, tables and plot",
+    "conditional_controls": "TTP disables unused outcome event selector; composite tables/preview columns shown; native R OS reversal clears composite rows",
+    "native_exports": "HTML with embedded PNG; standalone PNG extracted byte-for-byte, not direct Save Image dialog",
+    "visual_plot_inspection": "TTP counts3/3 and RFS counts1/5 match native table counts; labels readable",
+    "artifacts": {
+      "rfs": {
+        "known": 6,
+        "events": 5,
+        "unknown": 3,
+        "source_and_saved_alignment": "pass"
+      },
+      "incomplete": {
+        "known": 0,
+        "events": 0,
+        "unknown": 9,
+        "source_and_saved_alignment": "pass"
+      },
+      "ttp": {
+        "known": 6,
+        "events": 3,
+        "unknown": 3,
+        "source_and_saved_alignment": "pass",
+        "native_HTML_and_embedded_PNG": "pass"
+      },
+      "rfs-reopened": {
+        "known": 6,
+        "events": 5,
+        "unknown": 3,
+        "source_and_saved_alignment": "pass",
+        "native_HTML_and_embedded_PNG": "pass"
+      }
+    }
+  },
+  "inventory": {
+    "partial": 26,
+    "planned": 35,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "limits": [
+    "No full native inventory run for0.3.49",
+    "First-event times, patient hierarchy and interval/administrative censoring remain pending",
+    "No new platform/accessibility/clinical qualification",
+    "Sandbox subprocess diagnostics Operation not permitted are separate from native assertions"
+  ],
+  "harness_history": [
+    "Existing unsupported-pfs assertion updated because pfs is now supported; generator expression expectations extended deliberately",
+    "Initial native fixture used logical NA instead of numeric NA; fixture corrected without backend change",
+    "Early package check preceded archive creation; completed archive passes"
+  ],
+  "sha256": {
+    "ClinicoPathPj_0.3.49.jmo": "326f80a1db19a9d567a256ce87f653b8b9b889bd6b50f5ea8b93ecc8c949ea22",
+    "inst/python/cpj_outcomes.py": "a8c2c637203f61b8875d159edb53d4d35da6321b5ea1722522878e9da56d63f9",
+    "inst/python/analyses/jsurvival/pyoutcomeorganizer.py": "72d7b43b9aa010040f019eaf737ba66b10a0dfecf16ad5ceeb8cc4580606e99b",
+    "inst/python/registry.json": "f2c52a349a9473cebb87238cbb11f9c91bee1207a513cc57663809a490975c82",
+    "tools/generate.py": "369a2f0cad1b3f99b0ff5c251888408109b9eeb40f89c2ffd29c53763539b98b",
+    "R/pyoutcomeorganizer.b.R": "957a5b2b87136477ba9581865d9acd1cca5e5046fc62569163c0dfb6b6478c05",
+    "R/pyoutcomeorganizer.h.R": "dbf8f6ad395a7189b4ccf9bda84650141abc2d335023266a37d65822ab6fb1cc",
+    "R/zzz-optional-level-defaults.R": "e7212743d8fbd092b5520712214205bd2a256c0d81d37c8bbb2cec7d1ed728e9",
+    "data/python_composite_outcome_examples.csv": "6304ee968b21308f2a008716b284ee467c85b6174351116f64e8315fc32979b7",
+    "tests/reference/outcome-composite-status.R": "59df0a9b65a1c36d87e9854e6dbd19fda9bdb615fc2588009b18168bed87c19b",
+    "tests/python/test_composite_outcomes.py": "bd20bfdaa21c45211d85f3b654f94c0e6d0161fed15af81aa0568ed0718956d3",
+    "tests/testthat/test-composite-outcomes-python.R": "d114c6be318fc1341b2df60f6dac127f381f5175ef6e0e9470c0166b655b68ed",
+    "docs/validation-exports/python-composite-0.3.49-rfs.omv": "b313413d033a53029227308208a36e1c1ac09cacdd3c0cee42140867479ac90d",
+    "docs/validation-exports/python-composite-0.3.49-incomplete.omv": "b75c4afbeba8bdb982cd7d551e654fed511635981e35e33d296f23d8f8b116e7",
+    "docs/validation-exports/python-composite-0.3.49-ttp.omv": "79c28d4941acf100244017b766ac21208771548256bc063d1f65c23e951e8220",
+    "docs/validation-exports/python-composite-0.3.49-rfs-reopened.omv": "789719f3517d47f719cfe57e04cdc81759bf9178ad6b1a933057122b7b9e6dfc",
+    "docs/validation-exports/python-composite-0.3.49-ttp.html": "1b1e5964af3f46f93bc3bebb2eddd309fdf12a755405834240810d6445886629",
+    "docs/validation-exports/python-composite-0.3.49-ttp.png": "01eea20f552bd956d70b06a91ef5bd9b52bfa61d82ff48fa09373c45ab4d281b",
+    "docs/validation-exports/python-composite-0.3.49-rfs-reopened.html": "dae7611dec421a0152edac1c93b040517e0f32a2eca4cb913427e91d589fbded",
+    "docs/validation-exports/python-composite-0.3.49-rfs-reopened.png": "c756b292959ff04de8103534ad3f693385548503188ea35a9d583671fa16adfb"
+  },
+  "log_sha256": {
+    "cpj-composite-build.log": "0e5f7d2a591cabbb980da8519744a4fcf1cfa1db2c4b9d5350f807c6ee5379f6",
+    "cpj-composite-focused-pass.log": "d7938318fcefb0b6446958519e77e1b5cd234e44417268113ec37407822b415c",
+    "cpj-composite-python.log": "bb857b49f55efdc70eb8dfb37e6a098c5bdb9e75da3d252578a3d0cee225b75a",
+    "cpj-composite-native.log": "a61ffb16944e66f54811ce1b169d14cd8f364c6e26cf67f51ab5ce716ad0c164",
+    "cpj-composite-native-first.log": "76d71b5a62e982f3fe3be5fc5c9126f0e3a6407273987031bfc8012c6a00bb26",
+    "cpj-composite-package.log": "6f43f8f9382a3cc2954ea73bb5f05ec78b06ef42b8426bb6809329052ce38ef5",
+    "cpj-composite-package-early.log": "995a9e0470f3db2ec068fb3b81a3f621627390e862f552d2d4d839f1986181bc"
+  }
+}

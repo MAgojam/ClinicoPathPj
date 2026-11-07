@@ -1,0 +1,15 @@
+test_bounded_repeats_and_missing_audit_gate (test_identity.Identity.test_bounded_repeats_and_missing_audit_gate) ... ok
+test_exact_labels_missing_and_repeated_counts (test_identity.Identity.test_exact_labels_missing_and_repeated_counts) ... ok
+test_factor_labels_actual_na_unused_levels_and_literal_na (test_identity.Identity.test_factor_labels_actual_na_unused_levels_and_literal_na) ... ok
+test_order_permutation_and_counts_match_independent_positions (test_identity.Identity.test_order_permutation_and_counts_match_independent_positions) ... ok
+test_runtime_identity_preserves_endpoint_outputs_and_sparse_rows (test_identity.Identity.test_runtime_identity_preserves_endpoint_outputs_and_sparse_rows) ... ok
+test_strict_validation_and_invalid_storage (test_identity.Identity.test_strict_validation_and_invalid_storage) ... ok
+test_bad_checksum_retains_previous_bundle (test_vendor_staging.VendorStaging.test_bad_checksum_retains_previous_bundle) ... ok
+test_failed_extraction_retains_previous_bundle (test_vendor_staging.VendorStaging.test_failed_extraction_retains_previous_bundle) ... ok
+test_success_replaces_whole_bundle (test_vendor_staging.VendorStaging.test_success_replaces_whole_bundle) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 11.042s
+
+OK
+Bundled 1 pinned packages (test)

@@ -1,0 +1,27 @@
+interval-censoring-python: 1Error: Operation not permitted
+...........Error: Operation not permitted
+.......
+
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+══ Failed ══════════════════════════════════════════════════════════════════════
+── 1. Error ('test-interval-censoring-python.R:5:5'): interval2 types agree with
+Error: 'left' contains infinite values; recode them as missing first.
+Backtrace:
+     ▆
+  1. └─ClinicoPathPj::pyintervalcensoring(...) at test-interval-censoring-python.R:5:5
+  2.   └─analysis$run()
+  3.     ├─jmvcore (local) try(...)
+  4.     │ └─base::eval(expr)
+  5.     └─private$.run()
+  6.       └─ClinicoPathPj:::.cpjRun(...)
+  7.         └─base::lapply(...)
+  8.           └─ClinicoPathPj (local) FUN(X[[i]], ...)
+  9.             └─ClinicoPathPj:::.cpjColumn(x, column)
+ 10.               └─jmvcore::reject("{}", msg = paste0("'", name, "' contains infinite values; recode them as missing first."))
+
+══ DONE ════════════════════════════════════════════════════════════════════════
+Error:
+! Test failures.
+Execution halted

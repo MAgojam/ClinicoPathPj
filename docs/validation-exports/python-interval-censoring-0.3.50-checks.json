@@ -1,0 +1,114 @@
+{
+  "version": "0.3.50",
+  "date": "2026-10-30",
+  "analysis": "pyintervalcensoring",
+  "scope": "Numeric interval2 endpoint preparation; no fitted survival model",
+  "python": {
+    "focused_tests": 39,
+    "full_run": {
+      "tests": 383,
+      "passed": 382,
+      "failed": 1,
+      "reason": "Stale expected utility count 10 vs 11 in registry assertion"
+    },
+    "registry_rerun": {
+      "tests": 6,
+      "passed": 6,
+      "changed": "Expected utility count updated to 11; implementation unchanged"
+    },
+    "full_suite_repeated_after_test_only_fix": false
+  },
+  "native_R": {
+    "tests": [
+      {
+        "file": "test-interval-censoring-python.R",
+        "passed": 29,
+        "failed": 0,
+        "errors": 0,
+        "warnings": 0,
+        "skipped": 0
+      },
+      {
+        "file": "test-pydescriptives.R",
+        "passed": 33,
+        "failed": 0,
+        "errors": 0,
+        "warnings": 0,
+        "skipped": 0
+      },
+      {
+        "file": "test-migration.R",
+        "passed": 12,
+        "failed": 0,
+        "errors": 0,
+        "warnings": 0,
+        "skipped": 0
+      }
+    ],
+    "survival": "3.8.12"
+  },
+  "compiler": {
+    "build": "pass",
+    "generator_freshness": "pass",
+    "registry_status_freshness": "pass"
+  },
+  "packaged_runtime": {
+    "cases": 27,
+    "integrity": "ok",
+    "signed_infinity_tokens": "pass"
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Sideload, full restart",
+    "installed_matches_archive": {
+      "jamovi.yaml": "identical",
+      "R/ClinicoPathPj/R/ClinicoPathPj.rdb": "identical",
+      "R/ClinicoPathPj/python/registry.json": "identical",
+      "R/ClinicoPathPj/python/cpj_censoring.py": "identical",
+      "data/python_interval_censoring_examples.omv": "identical"
+    },
+    "fresh_engine_reopen_and_rerun": "pass",
+    "lifecycle": "valid > incomplete > same-column > recovered; save and fresh-engine reopen",
+    "artifacts": {
+      "valid": {
+        "source_bounds_and_saved_alignment": "pass",
+        "informative": 8
+      },
+      "incomplete": {
+        "source_bounds_and_saved_alignment": "pass",
+        "informative": 0
+      },
+      "same-column": {
+        "source_bounds_and_saved_alignment": "pass",
+        "informative": 7
+      },
+      "reopened": {
+        "source_bounds_and_saved_alignment": "pass",
+        "informative": 8
+      },
+      "native_HTML_and_embedded_PNG": "pass"
+    },
+    "plot_export": "Native HTML embedded PNG, extracted byte-for-byte; not a direct Save Image test"
+  },
+  "remaining": [
+    "Fitted interval-censored survival",
+    "First-event times and hierarchy/censoring policies",
+    "Other platforms",
+    "Clinical review",
+    "Full baseline feature parity"
+  ],
+  "archive_sha256": "a0fd04fddb9d8e3f01c4bcca18b597e602f9844436b5ec3e03a9f5476449db4e",
+  "artifacts_sha256": {
+    "python-interval-censoring-0.3.50-before-optin.log": "22c357284223eac8ee4a412eb49ad1d95ab16076ee85962c73b99fc85d8d45b4",
+    "python-interval-censoring-0.3.50-incomplete.omv": "74e47801e0b794f4b35043110de69868ea8be58431bf332804660ff3b2ff0e49",
+    "python-interval-censoring-0.3.50-native.log": "addaa7b1c00d35ad21108e471796cbf565b014557893048bf60ce531b1111130",
+    "python-interval-censoring-0.3.50-python.log": "63e896fe38747669ee3c9f182e1e4540d7a18b5d0644fc7fbce6e4bba505e999",
+    "python-interval-censoring-0.3.50-registry.log": "587286a13e76d3ddd68680e5b791334579a7d6a5cbfefea7233b709432291000",
+    "python-interval-censoring-0.3.50-reopened.html": "a993cba5983c5f4d57d220bd82752da6121588c50189c0fe6b86602ec179da99",
+    "python-interval-censoring-0.3.50-reopened.omv": "29fdf453f96c9d8400a6248f7033f149f00624fecfbba755f58bf6fe07d77d6d",
+    "python-interval-censoring-0.3.50-reopened.png": "f7619bf3df834780145514a0ea7020a3ca25caed14a14dde85dd7bfb50d2d522",
+    "python-interval-censoring-0.3.50-same-column.omv": "a2782dfd034eb59cc1897fedeecff42c134be8ed6def0a21383066bc3de0fbc5",
+    "python-interval-censoring-0.3.50-valid.omv": "c93083acfe299cd51681d374e6813f943e60acbe82debbbe6fc1bb0d7eec61a8"
+  }
+}

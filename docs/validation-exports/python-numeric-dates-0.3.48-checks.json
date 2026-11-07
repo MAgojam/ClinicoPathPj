@@ -1,0 +1,140 @@
+{
+  "version": "0.3.48",
+  "date": "2026-10-30",
+  "analyses": [
+    "pydatetimeconverter",
+    "pytimeinterval"
+  ],
+  "scope": "Explicit packed YYYYMMDD and explicit numeric interval dates; unchanged YMD/UTC/standardized defaults",
+  "python": {
+    "focused": 25,
+    "full": {
+      "tests": 370,
+      "seconds": 344.956,
+      "status": "pass"
+    }
+  },
+  "native_R": [
+    {
+      "file": "test-numeric-dates-python.R",
+      "passed": 33,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    {
+      "file": "test-datetime-python.R",
+      "passed": 163,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    },
+    {
+      "file": "test-intervals-python.R",
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "warnings": 0,
+      "skipped": 0
+    }
+  ],
+  "compiler": {
+    "build": "pass",
+    "generator_freshness": "pass",
+    "registry_status_freshness": "pass"
+  },
+  "packaged_runtime": {
+    "cases": 26,
+    "integrity": "ok",
+    "status": "pass",
+    "extra_requests": [
+      "packed converter",
+      "packed interval",
+      "calendar interval"
+    ]
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13",
+    "installation": "Modules > Sideload; full restart",
+    "installed_matches_archive": [
+      "manifest",
+      "R database",
+      "registry",
+      "datetime engine",
+      "interval engine"
+    ],
+    "reopen_and_rerun": "Full application restart; both report controls toggled to force recalculation; interval 456 days and conversion 5 parsed/1 invalid preserved; saved",
+    "native_HTML": "combined interval and converter tables",
+    "saved_artifacts": {
+      "packed": {
+        "used": 5,
+        "sum_days": 456,
+        "source_and_saved_alignment": "pass"
+      },
+      "malformed": {
+        "used": 4,
+        "sum_days": 91,
+        "source_and_saved_alignment": "pass"
+      },
+      "rejected": {
+        "used": 0,
+        "sum_days": null,
+        "source_and_saved_alignment": "pass"
+      },
+      "excel": {
+        "used": 5,
+        "sum_days": 456,
+        "source_and_saved_alignment": "pass"
+      },
+      "combined": {
+        "used": 5,
+        "sum_days": 456,
+        "source_and_saved_alignment": "pass"
+      },
+      "HTML": {
+        "native_summary_quality_and_six_conversion_rows": "pass"
+      }
+    }
+  },
+  "inventory": {
+    "partial": 26,
+    "planned": 35,
+    "utilities": 10,
+    "full_parity": 0
+  },
+  "limits": [
+    "Full native inventory not rerun; focused numerical and lifecycle evidence only",
+    "Sandbox subprocess diagnostics Operation not permitted are separate from passing native assertions",
+    "No additional platform/accessibility/clinical qualification",
+    "Automatic format inference, two-digit-year policies, native R date classes, named timezones and time-aware outcome preparation remain pending"
+  ],
+  "sha256": {
+    "ClinicoPathPj_0.3.48.jmo": "e44e8983dd7d20e7ef3f3d5b1dd4fe0669dd5ff0205f2a4e8c65870b4e52cead",
+    "inst/python/cpj_datetime.py": "36588c35a8123572f351b71662d91493404b63a2c02a132e59ce1b02e5cec03a",
+    "inst/python/cpj_intervals.py": "658a32661cd9230a086de1658c58ddb3bae3c20da2644423b4bc005c96b4371a",
+    "inst/python/analyses/jsurvival/pydatetimeconverter.py": "76130e70d2a90c0700181400ec9c441e0d5fdd9b1d5365c5bc8235743d021453",
+    "inst/python/analyses/jsurvival/pytimeinterval.py": "c527d61948a9ed478a39c701cfce18898db6ed747fec0febb27fd30a31e855c5",
+    "inst/python/registry.json": "3875f42dc7301c531eb79958cf7afcc0ea9e059c1231cb5364baf8e7f3ebddfd",
+    "R/pydatetimeconverter.h.R": "e05252cd9aba7e635589ed0fef0032521d4259a9090c8ba3189827feb18646ca",
+    "R/pytimeinterval.h.R": "344917e659b1308f5c8fcc15fb9d3bb9a758c6c9c1848f31f852a9b4bcd27d3f",
+    "data/python_numeric_date_examples.csv": "79c0996d733e07bbff74685f5411638adb4e8ba6f38f42d0dfe99a791d26ea21",
+    "tests/python/test_numeric_dates.py": "b09d382fe22bc4dbc21367430b29976c9c84fc0b46b364fa0adb3ebfc60d4d90",
+    "tests/testthat/test-numeric-dates-python.R": "fdbcc742cdd4ba383d4fb7a125386b187d0e9fca09c9a6caa91b7e327631e110",
+    "docs/validation-exports/python-numeric-dates-0.3.48-packed.omv": "61820169aee19175f873cd4ea641090ae9c2213eeaeaf87a956a8039ce1eb52e",
+    "docs/validation-exports/python-numeric-dates-0.3.48-malformed.omv": "d72b33721df72d29ba8b926a1816314c629d097a15acfc5df8a1a24cdce60191",
+    "docs/validation-exports/python-numeric-dates-0.3.48-rejected.omv": "443be2ee4126f1a7611c359f9b17ca7e705cc6a9264fb5babbaacbeab3558ec1",
+    "docs/validation-exports/python-numeric-dates-0.3.48-excel.omv": "fe7012fb9f36ae1a96ee8b5bb081786373960b4accd9cbe923c2a4767735da70",
+    "docs/validation-exports/python-numeric-dates-0.3.48-combined.omv": "60e321419cab938972826e36a3a63e7985fd8be3f30e96b74b525f20178b88c8",
+    "docs/validation-exports/python-numeric-dates-0.3.48-combined.html": "a4a52547dba8c28e043e5706cf19deffcbfbc39451b3f5ed0463fbc5d2f1f705"
+  },
+  "log_sha256": {
+    "cpj-numeric-build.log": "34de98eee67affeb5356c2b337e4f567116711f7a0ed0a5e2155ad56efd35975",
+    "cpj-numeric-focused.log": "3129d6ec0d7cfccebf27a3c33e1ad69877fe929a0f58c66b9f31a7c637948298",
+    "cpj-numeric-python.log": "0ae2b0fd7dd8d4b2aa275ae4c6c08f06a2149bd9fda681b6397f21588d8fd361",
+    "cpj-numeric-native.log": "78f0f4f5a345ccd0b8575e1700087c3d6f2e40e409dc4f10eb642004f722169a",
+    "cpj-numeric-package.log": "27fcc62d78c9ba2f0df366a0505d75abcc941cd7f7c281dbb7012984718f2b91"
+  }
+}

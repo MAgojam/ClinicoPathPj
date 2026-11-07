@@ -1,0 +1,27 @@
+....F......F.......................................
+======================================================================
+FAIL: test_runtime_identity_preserves_endpoint_outputs_and_sparse_rows (test_identity.Identity.test_runtime_identity_preserves_endpoint_outputs_and_sparse_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tests/python/test_identity.py", line 55, in test_runtime_identity_preserves_endpoint_outputs_and_sparse_rows
+    original=run_analysis('pyfirstevent',data,dict(opts,audit_subject=False))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tests/python/cpjtest.py", line 26, in run_analysis
+    raise AssertionError(f"runtime exited with {done.returncode}: {done.stderr}")
+AssertionError: runtime exited with -14: 
+
+======================================================================
+FAIL: test_bounded_preview_and_same_roles (test_firstevent.FirstEvent.test_bounded_preview_and_same_roles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tests/python/test_firstevent.py", line 81, in test_bounded_preview_and_same_roles
+    r=run_analysis('pyfirstevent',dict(t=number(range(30)),s=factor(['Y']*30,levels=['N','Y'])),
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tests/python/cpjtest.py", line 26, in run_analysis
+    raise AssertionError(f"runtime exited with {done.returncode}: {done.stderr}")
+AssertionError: runtime exited with -14: 
+
+----------------------------------------------------------------------
+Ran 51 tests in 359.769s
+
+FAILED (failures=2)

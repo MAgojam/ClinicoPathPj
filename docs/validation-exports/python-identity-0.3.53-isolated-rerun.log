@@ -1,0 +1,8 @@
+test_routes_do_not_change_python_statistics (test_service_menus.ServiceMenus.test_routes_do_not_change_python_statistics) ... ok
+test_runtime_and_aligned_output (test_single_quality.SingleQuality.test_runtime_and_aligned_output) ... ok
+test_runtime_optional_text_and_no_inferential_outputs (test_tableone.TableOne.test_runtime_optional_text_and_no_inferential_outputs) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 8.765s
+
+OK
