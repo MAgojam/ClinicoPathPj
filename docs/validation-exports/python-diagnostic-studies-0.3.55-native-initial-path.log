@@ -1,0 +1,75 @@
+
+══ Testing test-diagnostic-studies-python.R ════════════════════════════════════
+
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
+[ FAIL 0 | WARN 1 | SKIP 0 | PASS 0 ]
+[ FAIL 1 | WARN 1 | SKIP 0 | PASS 0 ]
+[ FAIL 1 | WARN 2 | SKIP 0 | PASS 0 ]
+[ FAIL 2 | WARN 2 | SKIP 0 | PASS 0 ]
+[ FAIL 2 | WARN 3 | SKIP 0 | PASS 0 ]
+[ FAIL 3 | WARN 3 | SKIP 0 | PASS 0 ]
+
+── Warning ('test-diagnostic-studies-python.R:7:5'): raw study estimates agree with base R score intervals ──
+cannot open file 'data/python_diagnostic_study_examples.csv': No such file or directory
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:7:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+── Error ('test-diagnostic-studies-python.R:7:5'): raw study estimates agree with base R score intervals ──
+Error in `file(file, "rt")`: cannot open the connection
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:7:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+── Warning ('test-diagnostic-studies-python.R:28:5'): numeric factor labels are participant counts and large counts survive transport ──
+cannot open file 'data/python_diagnostic_study_examples.csv': No such file or directory
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:28:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+── Error ('test-diagnostic-studies-python.R:28:5'): numeric factor labels are participant counts and large counts survive transport ──
+Error in `file(file, "rt")`: cannot open the connection
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:28:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+── Warning ('test-diagnostic-studies-python.R:38:5'): study review clears stale results and recovers across input transitions ──
+cannot open file 'data/python_diagnostic_study_examples.csv': No such file or directory
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:38:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+── Error ('test-diagnostic-studies-python.R:38:5'): study review clears stale results and recovers across input transitions ──
+Error in `file(file, "rt")`: cannot open the connection
+Backtrace:
+    ▆
+ 1. └─study_fixture() at test-diagnostic-studies-python.R:38:5
+ 2.   └─utils::read.csv(...) at test-diagnostic-studies-python.R:3:18
+ 3.     └─utils::read.table(...)
+ 4.       └─base::file(file, "rt")
+
+[ FAIL 3 | WARN 3 | SKIP 0 | PASS 0 ]
+{
+  "passed": 0,
+  "failed": 0,
+  "errors": 3,
+  "warnings": 3,
+  "skipped": 0
+} 
+Error: summary$errors == 0 is not TRUE
+Execution halted

@@ -1,0 +1,357 @@
+{
+  "package": "ClinicoPathPj_0.3.56.jmo",
+  "integrity": "ok",
+  "module": "ClinicoPathPj",
+  "version": "0.3.56",
+  "analyses": [
+    {
+      "analysis": "pyfirstevent",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "mapping",
+        "counts",
+        "preview"
+      ],
+      "plots": [
+        "distribution"
+      ]
+    },
+    {
+      "analysis": "pyintervalcensoring",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "counts",
+        "preview"
+      ],
+      "plots": [
+        "distribution"
+      ]
+    },
+    {
+      "analysis": "pytimeinterval",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "statistics",
+        "uncertainty",
+        "preview"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pydatetimeconverter",
+      "status": "ok",
+      "tables": [
+        "quality",
+        "preview"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pyoutcomeorganizer",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "mapping",
+        "frequencies",
+        "preview"
+      ],
+      "plots": [
+        "distribution"
+      ]
+    },
+    {
+      "analysis": "pytableone",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "continuous",
+        "categories",
+        "eligibility"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pycrosstable",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "continuous",
+        "tests",
+        "typing",
+        "categories"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pyalluvial",
+      "status": "ok",
+      "tables": [
+        "flows",
+        "categories"
+      ],
+      "plots": [
+        "flowPlot"
+      ]
+    },
+    {
+      "analysis": "pyvartree",
+      "status": "ok",
+      "tables": [
+        "nodes"
+      ],
+      "plots": [
+        "leafPlot"
+      ]
+    },
+    {
+      "analysis": "pyoutlierdetection",
+      "status": "ok",
+      "tables": [
+        "variables",
+        "rowPreview",
+        "flaggedValues"
+      ],
+      "plots": [
+        "countPlot",
+        "distributionPlot"
+      ]
+    },
+    {
+      "analysis": "pyvenn",
+      "status": "ok",
+      "tables": [
+        "sets",
+        "intersections",
+        "membershipTable"
+      ],
+      "plots": [
+        "intersectionPlot"
+      ]
+    },
+    {
+      "analysis": "pyjjcorrmat",
+      "status": "ok",
+      "tables": [
+        "cohorts",
+        "correlations"
+      ],
+      "plots": [
+        "matrix"
+      ]
+    },
+    {
+      "analysis": "pyihcheatmap",
+      "status": "ok",
+      "tables": [
+        "selectionSummary",
+        "merges",
+        "scatterCohort",
+        "scatterRows",
+        "markerSummary",
+        "rowOrder"
+      ],
+      "plots": [
+        "rowDendrogram",
+        "markerDendrogram",
+        "scatter",
+        "heatmap"
+      ]
+    },
+    {
+      "analysis": "pybridgecompare",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "metrics",
+        "rocSummary"
+      ],
+      "plots": [
+        "staticDotplot",
+        "staticROC"
+      ]
+    },
+    {
+      "analysis": "pysvgcutoff",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "metrics",
+        "rocSummary"
+      ],
+      "plots": [
+        "staticDotplot",
+        "staticROC"
+      ]
+    },
+    {
+      "analysis": "pycheckdata",
+      "status": "ok",
+      "tables": [
+        "overview",
+        "distribution",
+        "methods",
+        "outliers"
+      ],
+      "plots": [
+        "plot"
+      ]
+    },
+    {
+      "analysis": "pyobservablecutoff",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "metrics",
+        "rocSummary"
+      ],
+      "plots": [
+        "staticDotplot",
+        "staticROC"
+      ]
+    },
+    {
+      "analysis": "pyd3cutoff",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "metrics",
+        "rocSummary"
+      ],
+      "plots": [
+        "staticDotplot",
+        "staticROC"
+      ]
+    },
+    {
+      "analysis": "pydataquality",
+      "status": "ok",
+      "tables": [
+        "overview",
+        "completeness",
+        "rowMissing",
+        "duplicates",
+        "duplicatePatterns"
+      ],
+      "plots": [
+        "previewMap"
+      ]
+    },
+    {
+      "analysis": "pyagepyramid",
+      "status": "ok",
+      "tables": [
+        "dataSummary",
+        "population"
+      ],
+      "plots": [
+        "pyramid"
+      ]
+    },
+    {
+      "analysis": "pysummarydata",
+      "status": "ok",
+      "tables": [
+        "descriptives",
+        "diagnostics",
+        "outlierSummary",
+        "outlierRows"
+      ],
+      "plots": [
+        "distribution"
+      ]
+    },
+    {
+      "analysis": "pycategorize",
+      "status": "ok",
+      "tables": [
+        "summary",
+        "freqTable",
+        "breakpointsTable",
+        "preview"
+      ],
+      "plots": [
+        "plot",
+        "histogram"
+      ]
+    },
+    {
+      "analysis": "pydecisioncalculator",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "accuracy",
+        "ratios"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pysequentialtests",
+      "status": "ok",
+      "tables": [
+        "strategies",
+        "workload"
+      ],
+      "plots": [
+        "accuracyPlot"
+      ]
+    },
+    {
+      "analysis": "pydecision",
+      "status": "ok",
+      "tables": [
+        "counts",
+        "accuracy",
+        "ratios"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pychisqposttest",
+      "status": "ok",
+      "tables": [
+        "overall",
+        "cells",
+        "pairs"
+      ],
+      "plots": []
+    },
+    {
+      "analysis": "pybenford",
+      "status": "ok",
+      "tables": [
+        "test",
+        "frequencies"
+      ],
+      "plots": [
+        "digitPlot"
+      ]
+    },
+    {
+      "analysis": "pydecisioncurve",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "curves"
+      ],
+      "plots": [
+        "netBenefitPlot"
+      ]
+    },
+    {
+      "analysis": "pydiagnosticmeta",
+      "status": "ok",
+      "tables": [
+        "cohort",
+        "studies",
+        "excluded"
+      ],
+      "plots": [
+        "sensitivityPlot",
+        "specificityPlot"
+      ]
+    }
+  ]
+}

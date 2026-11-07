@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tools/check-core-package.py", line 452, in <module>
+    check(Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/f'ClinicoPathPj_{VERSION}.jmo')
+  File "/Users/serdarbalci/Documents/GitHub/ClinicoPathPj/tools/check-core-package.py", line 100, in check
+    assert archive.read(f'ClinicoPathPj/R/ClinicoPathPj/python/{file}')==(ROOT/'inst/python'/file).read_bytes()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

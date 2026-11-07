@@ -1,0 +1,65 @@
+{
+  "version": "0.3.56",
+  "date": "2026-11-07",
+  "status": "experimental partial study-review core; no full migration or clinical release claim",
+  "archive_sha256": "0a500542ad09536d04cdb62926e4fbaa058d3b71bf9a9bf7a092c7e72315a08c",
+  "installed_archive_members_verified": [
+    "jamovi.yaml",
+    "ui/pydiagnosticmeta.js",
+    "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+    "R/ClinicoPathPj/python/cpj_diagnostic_studies.py",
+    "R/ClinicoPathPj/python/cpj_study_inspector.py",
+    "R/ClinicoPathPj/python/templates/diagnostic-studies.html",
+    "R/ClinicoPathPj/python/analyses/oncopath/pydiagnosticmeta.py",
+    "R/ClinicoPathPj/python/registry.json",
+    "data/python_diagnostic_study_examples.omv"
+  ],
+  "build": "Full compiler/R build followed by one reviewed HTML asset refresh; every other archive member unchanged; final native and packaged runtime checks rerun. Initial stale-asset rejection retained separately.",
+  "tests": {
+    "focused_python": 54,
+    "full_python": 419,
+    "native_R_assertions": 52,
+    "packaged_runtime_cases": 29,
+    "javascript": "pass",
+    "generator_and_status_freshness": "pass"
+  },
+  "artifacts": {
+    "compatible": "pass: source inputs unchanged",
+    "explorer": "pass: source inputs unchanged",
+    "disabled": "pass: source inputs unchanged",
+    "pending": "pass: source inputs unchanged",
+    "strict": "pass: source inputs unchanged",
+    "excluded": "pass: earlier synthetic TP=1.5 exclusion inputs retained",
+    "reopened": "pass: source inputs unchanged",
+    "native_HTML_audit_and_static_counterparts": {
+      "sensitivity": [
+        1437,
+        1277
+      ],
+      "specificity": [
+        1437,
+        1277
+      ]
+    }
+  },
+  "desktop": {
+    "platform": "macOS Apple Silicon; jamovi 28.13",
+    "installation": "GUI Modules Sideload; fresh engine",
+    "old_0_3_55_compatibility": "pass; inspector defaults off",
+    "paired_selection": "study buttons and specificity point select both forests",
+    "keyboard": "Up/Down, Home/End endpoints observed",
+    "hover": "pointerenter/leave delivered via native drag; preview row3 restores selected row5",
+    "local_selection_persistence": "fresh-engine reopening explorer fixture resets to source row1",
+    "pending_strict_excluded": "inspector content absent; valid recovery observed",
+    "native_images_failure_limit": "AX retains named Image elements on pending/strict states; backend state-clearing tests pass. Visual blank-placeholder appearance not independently certified.",
+    "export": "GUI Web Page export; two static PNGs extracted from embedded native images, each1437x1277"
+  },
+  "remaining": [
+    "Applied study filters",
+    "Pooling, bivariate models, SROC and baseline method parity",
+    "Direct Save Image menu qualification",
+    "200-row native GUI interaction",
+    "Broader accessibility/theme and Windows/Linux qualification",
+    "Full native module regression and clinical review"
+  ]
+}

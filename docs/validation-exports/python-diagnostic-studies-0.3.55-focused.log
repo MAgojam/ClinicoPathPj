@@ -1,0 +1,55 @@
+test_all_excluded_is_auditable_and_strict_rejection_is_fatal (test_diagnostic_studies.DiagnosticStudies.test_all_excluded_is_auditable_and_strict_rejection_is_fatal) ... ok
+test_factor_id_actual_na_literal_na_and_exact_labels (test_diagnostic_studies.DiagnosticStudies.test_factor_id_actual_na_literal_na_and_exact_labels) ... ok
+test_literal_counts_exclusions_zero_cells_and_identity (test_diagnostic_studies.DiagnosticStudies.test_literal_counts_exclusions_zero_cells_and_identity) ... ok
+test_permutation_and_confidence_width_preserve_points (test_diagnostic_studies.DiagnosticStudies.test_permutation_and_confidence_width_preserve_points) ... ok
+test_roles_storage_dimensions_and_limits (test_diagnostic_studies.DiagnosticStudies.test_roles_storage_dimensions_and_limits) ... ok
+test_runtime_sparse_rows_and_forest_payload (test_diagnostic_studies.DiagnosticStudies.test_runtime_sparse_rows_and_forest_payload) ... ok
+test_transport_integer_ceiling_and_infinity (test_diagnostic_studies.DiagnosticStudies.test_transport_integer_ceiling_and_infinity) ... ok
+test_wilson_agrees_with_base_R_score_intervals (test_diagnostic_studies.DiagnosticStudies.test_wilson_agrees_with_base_R_score_intervals) ... ok
+test_column_visibility_accepts_only_declared_list_choices (test_generator.GeneratedFiles.test_column_visibility_accepts_only_declared_list_choices) ... ok
+test_committed_files_are_current (test_generator.GeneratedFiles.test_committed_files_are_current) ... ok
+test_explicit_ui_can_append_variable_without_shifting_legacy_options (test_generator.GeneratedFiles.test_explicit_ui_can_append_variable_without_shifting_legacy_options) ... ok
+test_numeric_only_options_are_marked_for_conversion (test_generator.GeneratedFiles.test_numeric_only_options_are_marked_for_conversion) ... ok
+test_optional_levels_get_public_defaults_without_global_event_gating (test_generator.GeneratedFiles.test_optional_levels_get_public_defaults_without_global_event_gating) ... ok
+test_pywelch_contract (test_generator.GeneratedFiles.test_pywelch_contract) ... ok
+test_render_is_deterministic (test_generator.GeneratedFiles.test_render_is_deterministic) ... ok
+test_two_bool_result_visibility_is_bounded_and_preserved (test_generator.GeneratedFiles.test_two_bool_result_visibility_is_bounded_and_preserved) ... ok
+test_variables_are_sent_as_arrays (test_generator.GeneratedFiles.test_variables_are_sent_as_arrays) ... ok
+test_column_visibility (test_generator.NewTypes.test_column_visibility) ... ok
+test_image_rules (test_generator.NewTypes.test_image_rules) ... ok
+test_integer_rules (test_generator.NewTypes.test_integer_rules) ... ok
+test_level_role (test_generator.NewTypes.test_level_role) ... ok
+test_list_rules (test_generator.NewTypes.test_list_rules) ... ok
+test_valid_and_emitted (test_generator.NewTypes.test_valid_and_emitted) ... ok
+test_analysis_is_not_executed (test_generator.ReadSpec.test_analysis_is_not_executed) ... ok
+test_computed_values_rejected (test_generator.ReadSpec.test_computed_values_rejected) ... ok
+test_duplicate_keys_rejected (test_generator.ReadSpec.test_duplicate_keys_rejected) ... ok
+test_missing_spec_rejected (test_generator.ReadSpec.test_missing_spec_rejected) ... ok
+test_explicit_numeric_factor_conversion_is_bridge_only (test_generator.Validation.test_explicit_numeric_factor_conversion_is_bridge_only) ... ok
+test_format_tokens (test_generator.Validation.test_format_tokens) ... ok
+test_level_needs_single_variable (test_generator.Validation.test_level_needs_single_variable) ... ok
+test_name_is_independent_of_source_filename (test_generator.Validation.test_name_is_independent_of_source_filename) ... ok
+test_names_jamovi_or_r_cannot_use (test_generator.Validation.test_names_jamovi_or_r_cannot_use) ... ok
+test_number_default_in_range (test_generator.Validation.test_number_default_in_range) ... ok
+test_numeric_options_can_have_one_sided_bounds (test_generator.Validation.test_numeric_options_can_have_one_sided_bounds) ... ok
+test_option_value_types (test_generator.Validation.test_option_value_types) ... ok
+test_reserved_names (test_generator.Validation.test_reserved_names) ... ok
+test_titles_that_break_the_build_or_the_display (test_generator.Validation.test_titles_that_break_the_build_or_the_display) ... ok
+test_unsupported_option_type (test_generator.Validation.test_unsupported_option_type) ... ok
+test_valid_spec_passes (test_generator.Validation.test_valid_spec_passes) ... ok
+test_variable_after_other_options (test_generator.Validation.test_variable_after_other_options) ... ok
+test_exact_target_set_and_frozen_bytes (test_migration.Registry.test_exact_target_set_and_frozen_bytes) ... ok
+test_existing_python_contracts_are_preserved (test_migration.Registry.test_existing_python_contracts_are_preserved) ... ok
+test_organized_ui_is_complete_and_rejects_broken_bindings (test_migration.Registry.test_organized_ui_is_complete_and_rejects_broken_bindings) ... ok
+test_planned_sources_and_invalid_paths_cannot_execute (test_migration.Registry.test_planned_sources_and_invalid_paths_cannot_execute) ... ok
+test_saved_column_metadata_rejects_invalid_measure_types_and_names (test_migration.Registry.test_saved_column_metadata_rejects_invalid_measure_types_and_names) ... ok
+test_saved_columns_keep_original_filtered_rows_and_missing_positions (test_migration.Registry.test_saved_columns_keep_original_filtered_rows_and_missing_positions) ... ok
+test_family_menus_are_compact_and_preserve_namespace (test_service_menus.ServiceMenus.test_family_menus_are_compact_and_preserve_namespace) ... ok
+test_generator_checks_execution_and_timing_bindings (test_service_menus.ServiceMenus.test_generator_checks_execution_and_timing_bindings) ... ok
+test_native_summary_reports_the_actual_applied_rule (test_service_menus.ServiceMenus.test_native_summary_reports_the_actual_applied_rule) ... ok
+test_routes_do_not_change_python_statistics (test_service_menus.ServiceMenus.test_routes_do_not_change_python_statistics) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 8.412s
+
+OK

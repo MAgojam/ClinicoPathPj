@@ -1,0 +1,1 @@
+generate.py: pydiagnosticmeta.py: column studies.tp: format must be comma-separated ['log10', 'pc', 'pvalue', 'zto']

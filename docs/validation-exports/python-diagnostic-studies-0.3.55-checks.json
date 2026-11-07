@@ -1,0 +1,78 @@
+{
+  "version": "0.3.55",
+  "date": "2026-11-07",
+  "analysis": "pydiagnosticmeta",
+  "status": "Partial baseline port; documented study-review core qualified on macOS arm64",
+  "scope": "Raw diagnostic-study review only; all pooled/meta-analysis models omitted",
+  "baseline": "Frozen OncoPath 1.1.2 references/hashes preserved; current production R sources read only",
+  "python": {
+    "focused": 50,
+    "base_R_score_fixtures": 100,
+    "full": 415,
+    "full_seconds": 250.528,
+    "status": "pass",
+    "resource_limits": "unchanged"
+  },
+  "native_R": {
+    "passed": 43,
+    "failed": 0,
+    "errors": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "scope": "Focused diagnostic-study raw counts, score CI, numeric-factor transport, large count and lifecycle suite",
+    "limitations": "Full native inventory not run; sandbox Operation not permitted diagnostics retained"
+  },
+  "package": {
+    "path": "ClinicoPathPj_0.3.55.jmo",
+    "cases": 29,
+    "status": "pass",
+    "sha256": "d3d1e939e8a466a24660fc394e7e8c33641e007a1cca4f6661f4b8bab096a887",
+    "build": "Full compiler/R build followed by coverage-only registry metadata refresh; every non-registry archive member verified byte-identical; final archive rerun passed all 29 cases",
+    "installed_matches": [
+      "jamovi.yaml",
+      "ui/pydiagnosticmeta.js",
+      "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+      "R/ClinicoPathPj/python/cpj_diagnostic_studies.py",
+      "R/ClinicoPathPj/python/analyses/oncopath/pydiagnosticmeta.py",
+      "R/ClinicoPathPj/python/registry.json",
+      "data/python_diagnostic_study_examples.omv"
+    ]
+  },
+  "gui": {
+    "platform": "macOS arm64 jamovi 28.13",
+    "installation": "Modules > Manage installed > Sideload",
+    "data_library": "Diagnostic Study Review Examples opened successfully",
+    "results": "12 supplied, 8 retained, 4 excluded, 3 retained zero-cell rows, 1 unknown ID, 1 repeated ID",
+    "lifecycle": "Valid > strict failure > valid > missing TN > valid > all-excluded TP=1.5 copy > original valid; saved states checked independently",
+    "fresh_engine": "Final archive sideloaded and jamovi restarted; recovered OMV reopened, report toggled to force backend rerun, saved again",
+    "saved_artifacts": {
+      "valid": "pass: original study inputs retained",
+      "pending": "pass: original study inputs retained",
+      "strict": "pass: original study inputs retained",
+      "excluded": "pass: TP deliberately set to 1.5 for all-excluded GUI check; other inputs retained",
+      "reopened": "pass: original study inputs retained",
+      "native_HTML_tables_and_embedded_forests": {
+        "sensitivity": [
+          1437,
+          1277
+        ],
+        "specificity": [
+          1437,
+          1277
+        ]
+      }
+    },
+    "images": "Both 1437x1277 embedded PNG forests visually inspected; direct Save Image not qualified"
+  },
+  "environment_and_harness": {
+    "initial_native": "CSV path fixed for testthat working directory; plain text-factor fixture correctly rejected, then replaced with numeric values metadata to emulate jamovi numeric Nominal storage",
+    "compiler_preflight": "Unsupported dp:0 formatting rejected by generator; removed before successful final build"
+  },
+  "remaining": [
+    "All pooled/bivariate/PHM/SROC models, weights, heterogeneity, moderators and publication bias",
+    "Interactive linked study selection",
+    "Full native inventory, additional platforms and accessibility certification",
+    "Direct Save Image export and clinical review",
+    "Full baseline parity"
+  ]
+}
