@@ -1,0 +1,121 @@
+{
+  "version": "0.3.57",
+  "date": "2026-11-07",
+  "status": "Experimental partial study-review implementation; no pooling or clinical release claim",
+  "archive_sha256": "a26c83423b497e3150e575d35acb4e3de1752bdcb4b184c3a27602422e5d2b86",
+  "installed_archive_members_verified": [
+    "jamovi.yaml",
+    "ui/pydiagnosticmeta.js",
+    "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+    "R/ClinicoPathPj/python/analyses/oncopath/pydiagnosticmeta.py",
+    "R/ClinicoPathPj/python/cpj_study_inclusion.py",
+    "R/ClinicoPathPj/python/cpj_study_inspector.py",
+    "R/ClinicoPathPj/python/templates/diagnostic-studies.html",
+    "R/ClinicoPathPj/python/registry.json"
+  ],
+  "tests": {
+    "focused_python": 58,
+    "native_R_assertions": 74,
+    "packaged_runtime_cases": 29,
+    "packaged_inclusion_subcases": [
+      "initial all eligible",
+      "one-row applied subset",
+      "explicit empty",
+      "stale after raw-count change"
+    ],
+    "javascript": "pass: separate inspection and inclusion, preview/restore/Apply, empty/stale and absent bridge",
+    "full_python": {
+      "ran": 423,
+      "passed": 422,
+      "failed": 1,
+      "failure": "Unrelated test_correlation runtime exited -14 (execution alarm) while build/full suite overlapped",
+      "isolated_failed_test_recheck": "pass; 0.905s",
+      "claim": "Full run was not uniformly green; all individual tests passed across the recorded runs"
+    },
+    "compiler": "pass",
+    "freshness": "generator and status pass",
+    "diff": "hand-written files pass; compiler-generated h.R introduces trailing whitespace, left untouched",
+    "native_environment": "Sandbox Operation not permitted diagnostics retained; zero native test failures/errors/warnings/skips"
+  },
+  "desktop": {
+    "platform": "macOS Apple Silicon / jamovi28.13",
+    "installation": "Modules > Manage installed > Sideload, followed by restart",
+    "compatibility": "Older0.3.56 file opens with inclusion disabled",
+    "preview": "Preview2 while applied8 observed; only Apply updates native results",
+    "native_subset": "8 eligible,2 included,6 omitted; original source rows1,7",
+    "confidence": "99 percent preserves inclusion and recomputes per-study intervals",
+    "empty": "No native study rows or plot resources; inspector remains available",
+    "stale": "TP row1 changed80 to81; old snapshot invalidates inclusion and clears native rows/plots",
+    "reapply": "Reviewed rows1,7 applied to new count snapshot; native results recover",
+    "fresh_engine": "Quit/relaunch then reopen restores applied2 and first transient inspected row",
+    "export": "Native HTML contains subset table/99 percent intervals and2 static forest PNGs; inspector contains8 eligible rows"
+  },
+  "artifacts": {
+    "compatible": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 2,
+      "expected_raw_data": "pass"
+    },
+    "two": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 2,
+      "expected_raw_data": "pass"
+    },
+    "empty": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 0,
+      "expected_raw_data": "pass"
+    },
+    "stale": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 0,
+      "expected_raw_data": "pass"
+    },
+    "reapplied": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 2,
+      "expected_raw_data": "pass"
+    },
+    "reopened": {
+      "rows": 12,
+      "columns": 5,
+      "native_images": 2,
+      "expected_raw_data": "pass"
+    },
+    "export": {
+      "audit": [
+        12,
+        8,
+        4,
+        3,
+        1,
+        1
+      ],
+      "inclusion": [
+        8,
+        2,
+        6
+      ],
+      "source_rows": [
+        1,
+        7
+      ],
+      "confidence": 99,
+      "independent_display_intervals": "pass",
+      "inspector_eligible_rows": 8
+    }
+  },
+  "remaining": [
+    "Pooled models, weighting and SROC",
+    "Selection-adjusted inference",
+    "New inclusion checklist at200 rows in native GUI",
+    "Broader accessibility/theme/platform qualification",
+    "Direct vector exports",
+    "Full native module regression and clinical review"
+  ]
+}

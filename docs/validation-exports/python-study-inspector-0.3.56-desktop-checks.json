@@ -1,0 +1,54 @@
+{
+  "saved_source_rows": 200,
+  "native_export_rows": 200,
+  "audit": [
+    200,
+    200,
+    0,
+    75,
+    0,
+    0
+  ],
+  "independent_display_comparisons": 1200,
+  "independent_payload_comparisons": 1200,
+  "payload_tolerance": 1e-12,
+  "percentage_tolerance": 0.05,
+  "percentage_tolerance_unit": "percentage points",
+  "direct_png_dimensions": [
+    1800,
+    1600
+  ],
+  "direct_png_integrity": "CRC and decompression pass",
+  "saved_native_png_resources": 2,
+  "date": "2026-11-07",
+  "module_version": "0.3.56",
+  "scope": "Supplemental desktop qualification; runtime calculations and package unchanged",
+  "platform": "macOS Apple Silicon; jamovi 28.13",
+  "fixture": "200 unique labels cycling eight synthetic count patterns; not 200 independent statistical scenarios",
+  "gui": {
+    "keyboard": "End selects200; Down clamps at200; Home returns1; Up clamps at1; Tab exits to First study; Shift+Tab returns to remembered study; Space/Return preserve selection",
+    "internal_scroll": "End reveals last button and paired row200 forest bands; outer result position remains stable",
+    "selection": "local preview only; no cohort or host-option changes",
+    "pending": "Removing TN clears inspector, table values and plot marks; named blank Image placeholders remain; restoration yields200 retained rows",
+    "strict": "Invalid-count rejection clears previous inspector and marks; blank native Image placeholders observed",
+    "direct_export": "Image context menu > Export > PNG; eight-study specificity forest visually inspected",
+    "save": "Complete200-row backend results saved after restoration, with two native PNG resources",
+    "fresh_engine_reopen": "pass: quit/relaunch jamovi; reopen200-row fixture; both native forests,200/200 report and inspector source row1 restored"
+  },
+  "automation_limits": [
+    "One long CUA keyboard batch timed out; affected keys were rechecked in shorter calls",
+    "Initial save during recalculation was incomplete; saved again after completion and checked two native PNG resources"
+  ],
+  "remaining": [
+    "Applied study inclusion and models",
+    "PDF/SVG/EPS direct export qualification",
+    "Screen-reader certification and wider theme/platform tests",
+    "Full native module regression and clinical review"
+  ],
+  "artifact_sha256": {
+    "python-study-inspector-0.3.56-maximum.csv": "c3a6535cd29354d860436ea2a8ff14c3906a296468053fef2f9dcaa69096d127",
+    "python-study-inspector-0.3.56-maximum.omv": "197e9c251919d8726798541e120a7def5434786fe1a66bf427e9fa47ff9048ed",
+    "python-study-inspector-0.3.56-maximum.html": "3febe1d1bf7575705a9033b71e465880900a60b9ff05452b39700c84e58dcf36",
+    "python-study-inspector-0.3.56-direct-specificity.png": "851daa075dff73a80817c2944d1982255ea1fb0b5d541cd30b48a76fdb1eac03"
+  }
+}
