@@ -1,0 +1,15 @@
+Error: Operation not permitted
+Error: Operation not permitted
+Packaged Pj 1.5.0 CPJ envelope/counts/checkpoint/metadata PASS; callbacks: 51 
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Real service cancellation during main Python preserves restart and returns promptly: PASS
+Error: Operation not permitted
+Error: Operation not permitted
+Real service timeout condition: PASS
+Error: Operation not permitted
+Error: Operation not permitted
+Recovery after cancellation/timeout; unchanged library paths: PASS
+Scope: bundled Python on macOS arm64, R service calls only. No desktop, System Python, descendant-process inspection or cross-platform qualification.
+Error: Operation not permitted
