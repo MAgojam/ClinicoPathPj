@@ -1,0 +1,26 @@
+{
+  "scope": "structural artifact checks only",
+  "gui_qualification": false,
+  "historical": {
+    "svg": {
+      "width": "980",
+      "height": "720",
+      "viewBox": "0 0 980 720",
+      "graphic_marks": 23,
+      "sha256": "64ba49af7c061fd5e7686961b2626ee1b00de888885d32bae52511f5feb2d364"
+    },
+    "png": {
+      "width": 3136,
+      "height": 2342,
+      "sha256": "09a283628b0e2a583c60a6ed8a5ef6790be3dd9d29ee951dc03fa7d98c12ce1c",
+      "pixel_decoding_verified": false
+    },
+    "native_preview_snapshot_labels": "pass",
+    "data_only_controls_rejected": [
+      "python-svg-cutoff-0.3.7-data-only-control.omv",
+      "python-svg-cutoff-0.3.7-validation.omv"
+    ]
+  },
+  "omv": {},
+  "docx": {}
+}

@@ -1,0 +1,14 @@
+{
+  "archive_integrity": "pass",
+  "version": "0.3.58",
+  "source_and_installed_bytes": [
+    "cpj_agreement.py",
+    "analyses/meddecide/pyagreement.py",
+    "cpj_runtime.py",
+    "cpj_plots.py",
+    "registry.json",
+    "ClinicoPathPj/R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+    "ClinicoPathPj/R/ClinicoPathPj/R/ClinicoPathPj.rdx"
+  ],
+  "sha256": "a8b496a98c3acf21b4fe1324b77ac59f96844962c1506d74af6131a847e191f9"
+}

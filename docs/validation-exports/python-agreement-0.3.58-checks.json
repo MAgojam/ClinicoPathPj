@@ -1,0 +1,69 @@
+{
+  "version": "0.3.58",
+  "date": "2026-11-07",
+  "analysis": "pyagreement",
+  "scope": "Independent-pair raw-scale Bland-Altman core only",
+  "numerical": {
+    "independent_R_configurations": 45,
+    "quantities_per_configuration": 10,
+    "focused_python_tests": 49,
+    "full_python_tests": 430,
+    "status": "pass"
+  },
+  "native": {
+    "focused_assertions": 24,
+    "failures": 0,
+    "status": "pass",
+    "environment_diagnostics": "Operation not permitted printed outside passing test counts"
+  },
+  "compiler": {
+    "status": "pass",
+    "build": "full compiler build, no runtime asset patch"
+  },
+  "packaged_runtime": {
+    "cases": 30,
+    "status": "pass"
+  },
+  "desktop": {
+    "platform": "macOS arm64",
+    "jamovi": "28.13.0",
+    "sideload": "pass",
+    "fresh_engine": "pass",
+    "coverage_and_confidence_controls": "pass",
+    "saved_original_data": "pass",
+    "save_reopen": "pass",
+    "native_html_and_embedded_png_export": "pass",
+    "invalid_desktop_transitions": "pending"
+  },
+  "compatibility": {
+    "first_executable_core": true,
+    "legacy_R_baseline": "unchanged",
+    "full_baseline_parity": false
+  },
+  "clinical_review": "pending",
+  "other_platforms": "pending",
+  "full_R_suite": {
+    "passed": 4360,
+    "failed": 5,
+    "warnings": 0,
+    "skipped": 0,
+    "status": "environment-blocked process-inspection tests",
+    "failure_file": "tests/testthat/test-bridge.R",
+    "failure_lines": [
+      29,
+      37,
+      46,
+      54,
+      75
+    ],
+    "cause": "ps::ps_pids_macos: Operation not permitted under sandbox",
+    "log": "python-agreement-0.3.58-full-r.log"
+  },
+  "limits": [
+    "No ICC, CCC, categorical or repeated-subject agreement",
+    "No clinical interchangeability verdict",
+    "No interactive plot in this increment"
+  ],
+  "initial_discovery_failure": "New test import path missing; corrected before 430-test passing rerun",
+  "earlier_concurrent_focused_failure": "Unrelated bridge comparison subprocess alarm; sequential 49-test focused rerun passed"
+}

@@ -1,0 +1,249 @@
+{
+  "stage": "shared numerical prototype only; public pyagreement remains Bland-Altman",
+  "models": [
+    "icc11",
+    "icc21",
+    "icc31",
+    "icc1k",
+    "icc2k",
+    "icc3k"
+  ],
+  "oracle_versions": {
+    "irr": "0.85",
+    "psych": "2.6.5"
+  },
+  "reference_configurations": 90,
+  "focused_tests": 52,
+  "public_icc_menu": false,
+  "packaged_icc_runtime": false,
+  "native_icc_gui_verified": false,
+  "icc2k_public_interval": "withheld pending method-policy review",
+  "icc2k_comparisons": [
+    {
+      "name": "two_cases",
+      "confidence": 0.8,
+      "estimate": 0.8571428571428571,
+      "irr": [
+        2.2510713040791774,
+        0.996854432564915
+      ],
+      "psych": [
+        2.2510713040791774,
+        0.9968544325649149
+      ],
+      "max_bound_difference": 1.1102230246251565e-16,
+      "inverted": true
+    },
+    {
+      "name": "two_cases",
+      "confidence": 0.95,
+      "estimate": 0.8571428571428571,
+      "irr": [
+        2.0125041222285467,
+        0.9998069986940995
+      ],
+      "psych": [
+        2.0125041222285467,
+        0.9998069986940995
+      ],
+      "max_bound_difference": 0.0,
+      "inverted": true
+    },
+    {
+      "name": "two_cases",
+      "confidence": 0.99,
+      "estimate": 0.8571428571428571,
+      "irr": [
+        2.00049374417733,
+        0.9999922889950046
+      ],
+      "psych": [
+        2.00049374417733,
+        0.9999922889950046
+      ],
+      "max_bound_difference": 0.0,
+      "inverted": true
+    },
+    {
+      "name": "three_raters",
+      "confidence": 0.8,
+      "estimate": 0.9633821571238348,
+      "irr": [
+        0.8930550195234793,
+        0.9890768896781496
+      ],
+      "psych": [
+        0.8940338338551761,
+        0.9890617819443903
+      ],
+      "max_bound_difference": 0.0009788143316967757,
+      "inverted": false
+    },
+    {
+      "name": "three_raters",
+      "confidence": 0.95,
+      "estimate": 0.9633821571238348,
+      "irr": [
+        0.8060124329260092,
+        0.9946418896280728
+      ],
+      "psych": [
+        0.8088504475967021,
+        0.99462949767779
+      ],
+      "max_bound_difference": 0.00283801467069289,
+      "inverted": false
+    },
+    {
+      "name": "three_raters",
+      "confidence": 0.99,
+      "estimate": 0.9633821571238348,
+      "irr": [
+        0.6620633594933517,
+        0.9974168675313358
+      ],
+      "psych": [
+        0.6689159394316997,
+        0.9974096338892352
+      ],
+      "max_bound_difference": 0.00685257993834798,
+      "inverted": false
+    },
+    {
+      "name": "biased",
+      "confidence": 0.8,
+      "estimate": 0.6891877297505196,
+      "irr": [
+        0.19136197073760708,
+        0.863515780180381
+      ],
+      "psych": [
+        0.195094199895404,
+        0.8632363455273346
+      ],
+      "max_bound_difference": 0.003732229157796918,
+      "inverted": false
+    },
+    {
+      "name": "biased",
+      "confidence": 0.95,
+      "estimate": 0.6891877297505196,
+      "irr": [
+        0.041756097926799136,
+        0.9204237877141819
+      ],
+      "psych": [
+        0.04406441982117161,
+        0.9201110171911572
+      ],
+      "max_bound_difference": 0.002308321894372474,
+      "inverted": false
+    },
+    {
+      "name": "biased",
+      "confidence": 0.99,
+      "estimate": 0.6891877297505196,
+      "irr": [
+        -0.008018976200255157,
+        0.9513354533271258
+      ],
+      "psych": [
+        -0.007190511170420171,
+        0.9510862698928831
+      ],
+      "max_bound_difference": 0.0008284650298349856,
+      "inverted": false
+    },
+    {
+      "name": "four_raters",
+      "confidence": 0.8,
+      "estimate": 0.9694016150318329,
+      "irr": [
+        0.9524102959255181,
+        0.9820001790191114
+      ],
+      "psych": [
+        0.9524079805783846,
+        0.9820005974133128
+      ],
+      "max_bound_difference": 2.3153471334635967e-06,
+      "inverted": false
+    },
+    {
+      "name": "four_raters",
+      "confidence": 0.95,
+      "estimate": 0.9694016150318329,
+      "irr": [
+        0.9397968883449963,
+        0.9865313330553716
+      ],
+      "psych": [
+        0.9397922984374836,
+        0.98653180875412
+      ],
+      "max_bound_difference": 4.5899075127309175e-06,
+      "inverted": false
+    },
+    {
+      "name": "four_raters",
+      "confidence": 0.99,
+      "estimate": 0.9694016150318329,
+      "irr": [
+        0.925834281000342,
+        0.9898143765170887
+      ],
+      "psych": [
+        0.9258264909542474,
+        0.9898148274742357
+      ],
+      "max_bound_difference": 7.790046094635628e-06,
+      "inverted": false
+    },
+    {
+      "name": "weak",
+      "confidence": 0.8,
+      "estimate": 0.07485587593392025,
+      "irr": [
+        -0.547987099769273,
+        0.4770208390887287
+      ],
+      "psych": [
+        -0.5480681659193128,
+        0.47703272411273295
+      ],
+      "max_bound_difference": 8.106615003988793e-05,
+      "inverted": false
+    },
+    {
+      "name": "weak",
+      "confidence": 0.95,
+      "estimate": 0.07485587593392025,
+      "irr": [
+        -1.0549978013513213,
+        0.6154264196042016
+      ],
+      "psych": [
+        -1.0551711309013097,
+        0.6154396415746846
+      ],
+      "max_bound_difference": 0.000173329549988388,
+      "inverted": false
+    },
+    {
+      "name": "weak",
+      "confidence": 0.99,
+      "estimate": 0.07485587593392025,
+      "irr": [
+        -1.6715063173228342,
+        0.7128255215335106
+      ],
+      "psych": [
+        -1.671827239196076,
+        0.7128378332667494
+      ],
+      "max_bound_difference": 0.00032092187324184174,
+      "inverted": false
+    }
+  ],
+  "fixture_sha256": "ca76fd95f43f491b500c359be935aa1adf8699cc666d1de03ddabebe0898d6de"
+}

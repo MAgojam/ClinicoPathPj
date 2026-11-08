@@ -1,0 +1,6144 @@
+{
+  "scope": "Gaussian balanced independent cases with crossed random raters",
+  "seed": 20261107,
+  "confidence": 0.95,
+  "replicates_per_configuration": 2000,
+  "configurations": 24,
+  "total_matrices": 48000,
+  "draw_contract": "SeedSequence child per ordered configuration; common matrix for both candidates",
+  "numpy_version": "2.4.6",
+  "scipy_version": "1.17.1",
+  "engine_sha256": "d3dc6ed07ad31f2289616a722c68f0bc11e087266e2541863cdc56ed4af2a6f1",
+  "study_script_sha256": "1df88e59c4f60dbefe49d3abc8ccadf0d5fc3fe0368fbb35dd17277a6601e1f5",
+  "limitations": [
+    "No nonnormal, heteroscedastic, missingness or repeated-case coverage study",
+    "Random rater effects are sampled anew for every matrix",
+    "Returned-only coverage is conditional and does not replace unconditional coverage",
+    "This study cannot establish clinical readiness or exact nominal coverage"
+  ],
+  "results": [
+    {
+      "n": 6,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.16666666666666669,
+      "replicates": 2000,
+      "undefined_estimates": 20,
+      "draw_sha256": "774b0e6ec39cd05bab7b1295b18009e40afea1adc0bea29153109ad4c218719c",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1338,
+          "returned": 1401,
+          "withheld": 599,
+          "return_rate": 0.7005,
+          "unconditional_coverage": 0.669,
+          "conditional_coverage": 0.9550321199143469,
+          "monte_carlo_95_interval": [
+            0.6478902827939372,
+            0.6896131208935042
+          ]
+        },
+        "transformed_single": {
+          "covered": 1393,
+          "returned": 1440,
+          "withheld": 560,
+          "return_rate": 0.72,
+          "unconditional_coverage": 0.6965,
+          "conditional_coverage": 0.9673611111111111,
+          "monte_carlo_95_interval": [
+            0.6758226457405205,
+            0.7165997391478923
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1333,
+        "frozen_only": 5,
+        "transformed_only": 60,
+        "neither": 602
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.3088820744212639,
+            0.22950796237669185
+          ],
+          [
+            -0.1730903802383415,
+            -0.279270145576661
+          ],
+          [
+            -0.7948188967425409,
+            -1.0509254867484277
+          ],
+          [
+            0.6293241061540015,
+            0.09449172748048468
+          ],
+          [
+            -0.5615943103973635,
+            -0.16143367556459717
+          ],
+          [
+            -1.339635771872423,
+            -0.42179183463854936
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.7120435736799754,
+          "unconstrained_estimate": 0.7120435736799754,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -1.1018257187476277,
+              0.9599089384531604
+            ],
+            "transformed_single": [
+              -1.137689446092507,
+              0.9599871692947731
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.27376231214188657,
+            "rater": 0.0427299443322012,
+            "error": 0.0836928454865217,
+            "within": 0.07686569529413494
+          },
+          "normalization_scale": 1.339635771872423,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.0275,
+      "paired_difference_mc_se": 0.00398494854514506
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.11764705882352942,
+      "replicates": 2000,
+      "undefined_estimates": 17,
+      "draw_sha256": "82d230c8eba09757dcac8fc981c29d50d7087dd91bdb2dd2b01f51c5a3996ff0",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1607,
+          "returned": 1687,
+          "withheld": 313,
+          "return_rate": 0.8435,
+          "unconditional_coverage": 0.8035,
+          "conditional_coverage": 0.95257854179016,
+          "monte_carlo_95_interval": [
+            0.7853960633912646,
+            0.820709559153471
+          ]
+        },
+        "transformed_single": {
+          "covered": 1673,
+          "returned": 1712,
+          "withheld": 288,
+          "return_rate": 0.856,
+          "unconditional_coverage": 0.8365,
+          "conditional_coverage": 0.9772196261682243,
+          "monte_carlo_95_interval": [
+            0.8195514954061559,
+            0.8524555247144904
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1605,
+        "frozen_only": 2,
+        "transformed_only": 68,
+        "neither": 325
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            2.4321710634672784,
+            1.0809768490765785
+          ],
+          [
+            2.2824089503772598,
+            -0.35024339057655474
+          ],
+          [
+            3.257394365619133,
+            -2.3366447506633525
+          ],
+          [
+            2.0185455537149544,
+            -1.9173362107844676
+          ],
+          [
+            0.7892144142652558,
+            -0.4187846923086405
+          ],
+          [
+            2.9073827820453086,
+            0.24276918339824613
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": -0.06694116224576296,
+          "unconstrained_estimate": -0.06694116224576296,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.34547942070239973,
+              0.6393176453581808
+            ],
+            "transformed_single": [
+              -0.32765321005304965,
+              0.5628709881019721
+            ]
+          },
+          "notices": [
+            "Negative unconstrained ICC retained; no automatic clinical interpretation.",
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.09771311853460811,
+            "rater": 2.3740858206433293,
+            "error": 0.1292989222513759,
+            "within": 0.5034300719833681
+          },
+          "normalization_scale": 3.257394365619133,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.033,
+      "paired_difference_mc_se": 0.0041187354844655286
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.6666666666666666,
+      "replicates": 2000,
+      "undefined_estimates": 3,
+      "draw_sha256": "01c3319aa6a0627ba994a077ec1fdb815e517f019bc026244266969c4f201e56",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1764,
+          "returned": 1818,
+          "withheld": 182,
+          "return_rate": 0.909,
+          "unconditional_coverage": 0.882,
+          "conditional_coverage": 0.9702970297029703,
+          "monte_carlo_95_interval": [
+            0.8670485826263409,
+            0.8958209282570051
+          ]
+        },
+        "transformed_single": {
+          "covered": 1778,
+          "returned": 1833,
+          "withheld": 167,
+          "return_rate": 0.9165,
+          "unconditional_coverage": 0.889,
+          "conditional_coverage": 0.9699945444626296,
+          "monte_carlo_95_interval": [
+            0.8744087041850398,
+            0.902439394258042
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1760,
+        "frozen_only": 4,
+        "transformed_only": 18,
+        "neither": 218
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.4829872481981168,
+            -1.6110927819167844
+          ],
+          [
+            0.6374138062207049,
+            -0.3423204610935479
+          ],
+          [
+            -2.516942800678478,
+            1.1796623933539432
+          ],
+          [
+            2.0869340364106868,
+            0.1322880516216239
+          ],
+          [
+            1.569727598383632,
+            1.7681521407073681
+          ],
+          [
+            1.3595829646038489,
+            0.11520635047518368
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.331124977939072,
+          "unconstrained_estimate": 0.331124977939072,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -24.662344876110705,
+              0.9159728655426518
+            ],
+            "transformed_single": [
+              -24.737734337090032,
+              0.9159782078158126
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.4466089509059281,
+            "rater": 0.0022310722753692137,
+            "error": 0.3160441287925161,
+            "within": 0.26374195270632483
+          },
+          "normalization_scale": 2.516942800678478,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.007,
+      "paired_difference_mc_se": 0.0023405638465036106
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.5714285714285714,
+      "replicates": 2000,
+      "undefined_estimates": 2,
+      "draw_sha256": "30187a110ea3719ba7b3577ef602c93291542541d192a859ed9c4ddcf0a314a7",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1829,
+          "returned": 1886,
+          "withheld": 114,
+          "return_rate": 0.943,
+          "unconditional_coverage": 0.9145,
+          "conditional_coverage": 0.9697773064687168,
+          "monte_carlo_95_interval": [
+            0.9013787558092898,
+            0.9263903521633324
+          ]
+        },
+        "transformed_single": {
+          "covered": 1847,
+          "returned": 1895,
+          "withheld": 105,
+          "return_rate": 0.9475,
+          "unconditional_coverage": 0.9235,
+          "conditional_coverage": 0.97467018469657,
+          "monte_carlo_95_interval": [
+            0.910969351653501,
+            0.9347713500437425
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1827,
+        "frozen_only": 2,
+        "transformed_only": 20,
+        "neither": 151
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.7758101042039321,
+            0.8689371830668093
+          ],
+          [
+            -0.22359884783257994,
+            1.5722699024024023
+          ],
+          [
+            -0.11671584526332102,
+            1.4377608937957262
+          ],
+          [
+            -0.3830424538901628,
+            -1.0397024856769572
+          ],
+          [
+            0.08962677107910877,
+            1.6327102353784195
+          ],
+          [
+            0.6626947100880838,
+            0.7338379199470547
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.2164823428920671,
+          "unconstrained_estimate": 0.2164823428920671,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -1.3384936810652344,
+              0.8642506165778923
+            ],
+            "transformed_single": [
+              -1.3619132926081416,
+              0.8647112771005214
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.26968182986414324,
+            "rater": 0.6054956104185076,
+            "error": 0.19654539192892578,
+            "within": 0.2647037616771894
+          },
+          "normalization_scale": 1.6327102353784195,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.009,
+      "paired_difference_mc_se": 0.0023371416550046296
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.28571428571428575,
+      "replicates": 2000,
+      "undefined_estimates": 9,
+      "draw_sha256": "8ae5789cdd5fbc9dc0ad74bdb27506fdad23151a202474e75aa927d3d7772d43",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1818,
+          "returned": 1898,
+          "withheld": 102,
+          "return_rate": 0.949,
+          "unconditional_coverage": 0.909,
+          "conditional_coverage": 0.9578503688092729,
+          "monte_carlo_95_interval": [
+            0.8955380894479631,
+            0.9212482180882569
+          ]
+        },
+        "transformed_single": {
+          "covered": 1847,
+          "returned": 1906,
+          "withheld": 94,
+          "return_rate": 0.953,
+          "unconditional_coverage": 0.9235,
+          "conditional_coverage": 0.9690451206715635,
+          "monte_carlo_95_interval": [
+            0.910969351653501,
+            0.9347713500437425
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1802,
+        "frozen_only": 16,
+        "transformed_only": 45,
+        "neither": 137
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.6300119767320655,
+            0.6626414087859551,
+            0.07059370871776542,
+            -0.6645476314664164
+          ],
+          [
+            0.2957345043040235,
+            0.8935895958519305,
+            -0.5960126846008247,
+            0.7485271840682831
+          ],
+          [
+            0.12320646749902614,
+            -0.2549101982306215,
+            -0.7802125277722691,
+            -0.9258458773328295
+          ],
+          [
+            -1.609349857356244,
+            0.7189691607199846,
+            0.12837193104327316,
+            -0.7162411421544059
+          ],
+          [
+            0.8326670769062676,
+            -1.1537596444865819,
+            0.5257331559758083,
+            0.8067853951632101
+          ],
+          [
+            1.71436461041373,
+            0.8758378194528507,
+            2.3668104542600577,
+            1.2815627081508092
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.7278921326553648,
+          "unconstrained_estimate": 0.7278921326553648,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.09509767353929253,
+              0.959226759724142
+            ],
+            "transformed_single": [
+              -0.09837561488793636,
+              0.9592455177260091
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.3919870146697491,
+            "rater": 0.012203717928445998,
+            "error": 0.11970421113178992,
+            "within": 0.10178746226456593
+          },
+          "normalization_scale": 2.3668104542600577,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.0145,
+      "paired_difference_mc_se": 0.003892614959845477
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.2105263157894737,
+      "replicates": 2000,
+      "undefined_estimates": 2,
+      "draw_sha256": "624864b2fcf0c95f02aab19d0ad20d812df26126008da6ae00547e3714a1049b",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1901,
+          "returned": 1978,
+          "withheld": 22,
+          "return_rate": 0.989,
+          "unconditional_coverage": 0.9505,
+          "conditional_coverage": 0.961071789686552,
+          "monte_carlo_95_interval": [
+            0.9400626838415638,
+            0.9595896220734529
+          ]
+        },
+        "transformed_single": {
+          "covered": 1930,
+          "returned": 1977,
+          "withheld": 23,
+          "return_rate": 0.9885,
+          "unconditional_coverage": 0.965,
+          "conditional_coverage": 0.9762266059686393,
+          "monte_carlo_95_interval": [
+            0.9559845847215137,
+            0.9726161988615576
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1892,
+        "frozen_only": 9,
+        "transformed_only": 38,
+        "neither": 61
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -3.497037010745861,
+            1.646303763345604,
+            0.6930724451040378,
+            0.07132329356936751
+          ],
+          [
+            -0.37019876101045446,
+            -2.9046202815073543,
+            1.1895104188793684,
+            0.7979850553909343
+          ],
+          [
+            -1.5364195856605014,
+            -2.3056158982672024,
+            -1.974147264448725,
+            -0.014007316503651113
+          ],
+          [
+            -0.9417370433166397,
+            -1.7340149648664127,
+            -0.408589977170125,
+            0.7107559386182977
+          ],
+          [
+            -1.7693655431213233,
+            -1.2787653519950122,
+            -0.30736659869161476,
+            -0.43394083641601455
+          ],
+          [
+            -3.6166298678974096,
+            -1.5475555314571463,
+            -1.887725155207328,
+            -2.181655164468188
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.31398094203569504,
+          "unconstrained_estimate": 0.31398094203569504,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.7394731045862025,
+              0.877522608629021
+            ],
+            "transformed_single": [
+              -0.7318586825549391,
+              0.8773691457440512
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.1882674134518047,
+            "rater": 0.3089951050413978,
+            "error": 0.11922429746601798,
+            "within": 0.15085276539524795
+          },
+          "normalization_scale": 3.6166298678974096,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.0145,
+      "paired_difference_mc_se": 0.0034133122257090816
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.8,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "ae3555ea582beed0c54c7100a6c9c7804b208213fe5e4b797169ca11947e9458",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1894,
+          "returned": 1984,
+          "withheld": 16,
+          "return_rate": 0.992,
+          "unconditional_coverage": 0.947,
+          "conditional_coverage": 0.9546370967741935,
+          "monte_carlo_95_interval": [
+            0.9362572070012273,
+            0.9564069564074236
+          ]
+        },
+        "transformed_single": {
+          "covered": 1892,
+          "returned": 1990,
+          "withheld": 10,
+          "return_rate": 0.995,
+          "unconditional_coverage": 0.946,
+          "conditional_coverage": 0.9507537688442211,
+          "monte_carlo_95_interval": [
+            0.9351721452311595,
+            0.9554953768613262
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1886,
+        "frozen_only": 8,
+        "transformed_only": 6,
+        "neither": 100
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.9582835451085394,
+            0.5912104989959039,
+            0.6070800928848914,
+            2.297558329692551
+          ],
+          [
+            0.8590593776883744,
+            1.1587263095042242,
+            0.383596504977477,
+            0.04380979889435399
+          ],
+          [
+            -0.5958341012429998,
+            -3.082102674280567,
+            0.6057723655482089,
+            -0.047762735675563994
+          ],
+          [
+            0.000375179616430521,
+            0.07956632920367768,
+            1.956900823408116,
+            0.13896836816393088
+          ],
+          [
+            0.17028243673869817,
+            0.9047109780954324,
+            -0.15846714598827102,
+            0.39449118386906906
+          ],
+          [
+            1.6498840173660916,
+            0.6073542044434098,
+            -0.340449360502033,
+            -0.25627383896760814
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.37500092116112416,
+          "unconstrained_estimate": 0.37500092116112416,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -1.76840725864406,
+              0.9088447729718863
+            ],
+            "transformed_single": [
+              -1.8072945619021437,
+              0.9090159338695342
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.16570236699208798,
+            "rater": 0.031219944059564016,
+            "error": 0.10838676487992834,
+            "within": 0.09552562807653427
+          },
+          "normalization_scale": 3.082102674280567,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.001,
+      "paired_difference_mc_se": 0.0018711629072084171
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.7272727272727273,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "90ae95980a88a099d682453bf5feec9423b7b5a7012028f9033aec310118457b",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1918,
+          "returned": 1996,
+          "withheld": 4,
+          "return_rate": 0.998,
+          "unconditional_coverage": 0.959,
+          "conditional_coverage": 0.9609218436873748,
+          "monte_carlo_95_interval": [
+            0.9493615966017168,
+            0.9672610858905928
+          ]
+        },
+        "transformed_single": {
+          "covered": 1908,
+          "returned": 1999,
+          "withheld": 1,
+          "return_rate": 0.9995,
+          "unconditional_coverage": 0.954,
+          "conditional_coverage": 0.9544772386193097,
+          "monte_carlo_95_interval": [
+            0.9438811694564453,
+            0.962759097965631
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1902,
+        "frozen_only": 16,
+        "transformed_only": 6,
+        "neither": 76
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.3455003905635117,
+            1.8869842685334923,
+            0.4973159045418072,
+            -0.6954239485016538
+          ],
+          [
+            0.2693054372884989,
+            1.9218703550019518,
+            -2.036757683852078,
+            1.185399142798566
+          ],
+          [
+            -1.7905249345800907,
+            1.891290650845312,
+            0.611118526443528,
+            0.6657004059866118
+          ],
+          [
+            -1.9772769402725223,
+            -1.7635955947385131,
+            -0.0704571976221704,
+            1.0818213832765564
+          ],
+          [
+            -3.949812382652241,
+            -1.3035029245066898,
+            -1.8316489923216464,
+            -1.0588599181233467
+          ],
+          [
+            -2.504999442757203,
+            -2.798203282822352,
+            -1.5178978169490493,
+            -0.06558384551678764
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 6,
+          "n": 6,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "estimate": 0.5817927337702494,
+          "unconstrained_estimate": 0.5817927337702494,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.15484131413434793,
+              0.9277455727871856
+            ],
+            "transformed_single": [
+              -0.11238299944048576,
+              0.9270217254052583
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.28523137336586746,
+            "rater": 0.33409601693136226,
+            "error": 0.0962200847514468,
+            "within": 0.1358660734480994
+          },
+          "normalization_scale": 3.949812382652241,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.005,
+      "paired_difference_mc_se": 0.0023431272100680493
+    },
+    {
+      "n": 20,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.16666666666666669,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "0aa3d2cc5089ada128c2d63f4133225371a6872b248e07b921bdb64b0ac350ad",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1906,
+          "returned": 1991,
+          "withheld": 9,
+          "return_rate": 0.9955,
+          "unconditional_coverage": 0.953,
+          "conditional_coverage": 0.957307885484681,
+          "monte_carlo_95_interval": [
+            0.9427887680385368,
+            0.9618549593360113
+          ]
+        },
+        "transformed_single": {
+          "covered": 1900,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.95,
+          "conditional_coverage": 0.95,
+          "monte_carlo_95_interval": [
+            0.9395182779168897,
+            0.9591357322817432
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1891,
+        "frozen_only": 15,
+        "transformed_only": 9,
+        "neither": 85
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.40809117097450553,
+            -2.363855134337107
+          ],
+          [
+            1.8214588363527375,
+            2.1738168469445105
+          ],
+          [
+            0.5431957243484291,
+            0.45785263992091896
+          ],
+          [
+            0.011067998843661025,
+            0.43335449150297467
+          ],
+          [
+            1.505102108282658,
+            1.3647874742299253
+          ],
+          [
+            1.3206266220667782,
+            -1.023655420340253
+          ],
+          [
+            -1.489897505619156,
+            -1.1684113187700833
+          ],
+          [
+            -1.031532979146673,
+            -1.2533155546435548
+          ],
+          [
+            -1.9197334609326586,
+            -0.4480682481297049
+          ],
+          [
+            -0.7285504145795936,
+            0.8659255418933005
+          ],
+          [
+            -0.9993551047929331,
+            -0.13528942599938704
+          ],
+          [
+            0.33930125538462214,
+            -2.117947227970424
+          ],
+          [
+            2.0113112486150753,
+            1.0314828747909255
+          ],
+          [
+            -1.3231937848167,
+            -1.2409537875362298
+          ],
+          [
+            1.7546439201454154,
+            -0.08405650203514525
+          ],
+          [
+            -0.4336047107086338,
+            0.6804183041178019
+          ],
+          [
+            -0.233520353216032,
+            0.11120838800169575
+          ],
+          [
+            1.8081623572307632,
+            -0.026839352550744905
+          ],
+          [
+            -0.17130458379071317,
+            -1.559199851516701
+          ],
+          [
+            -0.6618787473408037,
+            -1.1367863391164308
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.571788565816171,
+          "unconstrained_estimate": 0.571788565816171,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.0384400422703866,
+              0.827679363061366
+            ],
+            "transformed_single": [
+              -0.037017732731271846,
+              0.8275828524996154
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.3737212822994379,
+            "rater": 0.28418840053380257,
+            "error": 0.15637769116825834,
+            "within": 0.16276822663653556
+          },
+          "normalization_scale": 2.363855134337107,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.003,
+      "paired_difference_mc_se": 0.0024491833842374506
+    },
+    {
+      "n": 20,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.11764705882352942,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "0ff67c9a4dbbfc0cf8342ea7c672582c7d40fd092ced558b7ac524bb7ab1c588",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1931,
+          "returned": 1993,
+          "withheld": 7,
+          "return_rate": 0.9965,
+          "unconditional_coverage": 0.9655,
+          "conditional_coverage": 0.9688911189162067,
+          "monte_carlo_95_interval": [
+            0.9565391285476879,
+            0.973059780432526
+          ]
+        },
+        "transformed_single": {
+          "covered": 1943,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9715,
+          "conditional_coverage": 0.9715,
+          "monte_carlo_95_interval": [
+            0.9632311301419493,
+            0.9783444815561287
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1923,
+        "frozen_only": 8,
+        "transformed_only": 20,
+        "neither": 49
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.4248295998689543,
+            -0.5320251530038795
+          ],
+          [
+            -1.1459900020690401,
+            0.6718987467002595
+          ],
+          [
+            -2.9996639895090107,
+            0.7802731243938502
+          ],
+          [
+            -1.0607517425229651,
+            0.044887066694198834
+          ],
+          [
+            -3.1706948504937085,
+            1.0830059638326397
+          ],
+          [
+            0.24977939423482054,
+            2.3367372760330887
+          ],
+          [
+            -1.7309573086327152,
+            0.5223591778899168
+          ],
+          [
+            -1.4292469909651795,
+            -0.032888400480322044
+          ],
+          [
+            -0.505750047168466,
+            0.2763467859548835
+          ],
+          [
+            -0.852229475976556,
+            0.11819272027791063
+          ],
+          [
+            -0.6799085649665623,
+            -2.015297854003237
+          ],
+          [
+            -1.9100817862882398,
+            0.12556724014400306
+          ],
+          [
+            -0.6129681208052543,
+            1.8749737187910032
+          ],
+          [
+            -0.16615981778923405,
+            0.050583215342161286
+          ],
+          [
+            -2.394428120801872,
+            -0.6563044259581047
+          ],
+          [
+            -0.10173322572043564,
+            2.1013807910537037
+          ],
+          [
+            1.2100861298894336,
+            -1.0955588499497413
+          ],
+          [
+            0.1682451132464865,
+            -0.08341158199503036
+          ],
+          [
+            0.270777540754377,
+            -2.469020540590571
+          ],
+          [
+            -1.2318937276266975,
+            0.211645576321082
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": -0.30840055728281934,
+          "unconstrained_estimate": -0.30840055728281934,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -2.5582374999185444,
+              0.5586954432712263
+            ],
+            "transformed_single": [
+              -1.426594175459954,
+              0.3974464556523363
+            ]
+          },
+          "notices": [
+            "Negative unconstrained ICC retained; no automatic clinical interpretation.",
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.11002016465392374,
+            "rater": 1.1852445473169508,
+            "error": 0.15976339272352347,
+            "within": 0.21103745045319489
+          },
+          "normalization_scale": 3.1706948504937085,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.006,
+      "paired_difference_mc_se": 0.00264300827588057
+    },
+    {
+      "n": 20,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.6666666666666666,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "b24c90e09668f889aee97a017fa9e2da204897853302cddb9603b382f9cdc8bb",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1914,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.957,
+          "conditional_coverage": 0.957,
+          "monte_carlo_95_interval": [
+            0.9471655821709647,
+            0.9654641956402839
+          ]
+        },
+        "transformed_single": {
+          "covered": 1913,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9565,
+          "conditional_coverage": 0.9565,
+          "monte_carlo_95_interval": [
+            0.9466174011067837,
+            0.965014137153096
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1913,
+        "frozen_only": 1,
+        "transformed_only": 0,
+        "neither": 86
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.06163092705264572,
+            0.40094472495308753
+          ],
+          [
+            -0.8536255526751886,
+            -2.4665742588367827
+          ],
+          [
+            -1.6022629717978536,
+            -1.7100293679446021
+          ],
+          [
+            1.5877861135881526,
+            0.48495376591420947
+          ],
+          [
+            -1.0620021211796173,
+            1.6784284085455436
+          ],
+          [
+            -2.180688710338614,
+            0.15389746765804024
+          ],
+          [
+            2.235113506667754,
+            1.7072047909676464
+          ],
+          [
+            0.34781264939892487,
+            -1.1517344922230643
+          ],
+          [
+            2.4864615416693057,
+            1.0973663878769542
+          ],
+          [
+            0.14613113689130652,
+            2.0472432202256763
+          ],
+          [
+            1.5791310939518604,
+            -0.28820347317699513
+          ],
+          [
+            0.06698827776185076,
+            0.5726801294940376
+          ],
+          [
+            -2.955958379022337,
+            -1.950711745525825
+          ],
+          [
+            0.7524944632068028,
+            1.2731127234192485
+          ],
+          [
+            -0.5008598181435877,
+            -1.5592610383987084
+          ],
+          [
+            1.0583757330334178,
+            -0.37511141050145447
+          ],
+          [
+            1.3286712967715626,
+            0.6071126164363241
+          ],
+          [
+            -1.0017027840692867,
+            -1.1705644491571077
+          ],
+          [
+            3.266260287265682,
+            5.223091181165814
+          ],
+          [
+            1.7264144229405354,
+            -0.3677845185272137
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.7718454794040923,
+          "unconstrained_estimate": 0.7718454794040923,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.4163298045421296,
+              0.9101374380838266
+            ],
+            "transformed_single": [
+              0.4160880027425693,
+              0.9101516680182888
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.1702244352504383,
+            "rater": 0.004764272173236296,
+            "error": 0.04020522123419756,
+            "within": 0.03843317378114951
+          },
+          "normalization_scale": 5.223091181165814,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0005,
+      "paired_difference_mc_se": 0.0005
+    },
+    {
+      "n": 20,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.5714285714285714,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "1461b6675cf692a1466d5917bf8dc1512df858723849b5de9cdd6889683f9e07",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1910,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.955,
+          "conditional_coverage": 0.955,
+          "monte_carlo_95_interval": [
+            0.9449747471525491,
+            0.9636620426887371
+          ]
+        },
+        "transformed_single": {
+          "covered": 1902,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.951,
+          "conditional_coverage": 0.951,
+          "monte_carlo_95_interval": [
+            0.9406073548753107,
+            0.9600432430750466
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1902,
+        "frozen_only": 8,
+        "transformed_only": 0,
+        "neither": 90
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.06671084364156105,
+            1.9214098156798776
+          ],
+          [
+            0.22471264456728846,
+            2.7554532306350623
+          ],
+          [
+            -0.49974705088573373,
+            0.6349354104611601
+          ],
+          [
+            0.25578098421412576,
+            1.3852125366816508
+          ],
+          [
+            -4.470381649901736,
+            -1.0611923711787619
+          ],
+          [
+            -1.185517237188783,
+            1.6461937471204946
+          ],
+          [
+            3.2716306949038128,
+            2.95609515952276
+          ],
+          [
+            -4.041790958095756,
+            -0.7359569507092918
+          ],
+          [
+            -1.5155455322160936,
+            1.2278806332075423
+          ],
+          [
+            2.2270472118035665,
+            1.6287957123331394
+          ],
+          [
+            -2.6015727079210196,
+            -3.2547371936257754
+          ],
+          [
+            2.0118969081002795,
+            0.6825266061954713
+          ],
+          [
+            0.29349726868603365,
+            -0.4441169642867304
+          ],
+          [
+            0.22960167863513514,
+            -1.5330135136412784
+          ],
+          [
+            -3.3637195359076637,
+            -0.8452587731491603
+          ],
+          [
+            -0.43557342834298496,
+            0.832782069386633
+          ],
+          [
+            -0.42246775848292983,
+            1.0158605129469849
+          ],
+          [
+            0.9752136753294147,
+            0.6774144751075752
+          ],
+          [
+            -0.08031149776419122,
+            -0.6641326503377984
+          ],
+          [
+            -0.20813302378176912,
+            1.7247470534444145
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.6698593711524609,
+          "unconstrained_estimate": 0.6698593711524609,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.11399831336943528,
+              0.8728676911891995
+            ],
+            "transformed_single": [
+              0.16383245545876143,
+              0.8696998283785515
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.24944228525503767,
+            "rater": 0.49804286019615945,
+            "error": 0.06794580579549771,
+            "within": 0.0894506585155308
+          },
+          "normalization_scale": 4.470381649901736,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.004,
+      "paired_difference_mc_se": 0.0014117352790977227
+    },
+    {
+      "n": 20,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.28571428571428575,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "a86d7882ee5e35d7b9ff3bf7b3c18e11acbdce98b6396d9cdf44dbace3c52c96",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1897,
+          "returned": 1996,
+          "withheld": 4,
+          "return_rate": 0.998,
+          "unconditional_coverage": 0.9485,
+          "conditional_coverage": 0.9504008016032064,
+          "monte_carlo_95_interval": [
+            0.9378866139553729,
+            0.9577724878882736
+          ]
+        },
+        "transformed_single": {
+          "covered": 1896,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.948,
+          "conditional_coverage": 0.948,
+          "monte_carlo_95_interval": [
+            0.9373432320663051,
+            0.9573175602026627
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1891,
+        "frozen_only": 6,
+        "transformed_only": 5,
+        "neither": 98
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.6467497077217697,
+            0.4562274996524424,
+            0.45306358939982233,
+            -0.9247254979471278
+          ],
+          [
+            0.397631197580415,
+            -0.38175917397043246,
+            0.5642631788156672,
+            1.1104768557524143
+          ],
+          [
+            0.6264620192099902,
+            0.44307941159646747,
+            -0.6422736854709574,
+            0.6032263910873581
+          ],
+          [
+            0.8919331233559256,
+            0.6631011651235541,
+            0.34656905835381085,
+            -1.0893906795945316
+          ],
+          [
+            0.9895475936724994,
+            0.1677163644955076,
+            -1.9846110668625543,
+            -0.42948496930881813
+          ],
+          [
+            -1.9606131594734504,
+            0.16660677714824712,
+            1.3914714750762027,
+            0.2910958597580565
+          ],
+          [
+            2.3894923033509246,
+            -1.1906207339053385,
+            -1.9519938756784012,
+            -0.3067202560303166
+          ],
+          [
+            0.015070676975679013,
+            -1.8188381981167523,
+            2.6436233768045168,
+            0.24437658366924722
+          ],
+          [
+            0.5888064989401932,
+            -1.2827155210543146,
+            -0.5017084201580717,
+            -0.5205787206756549
+          ],
+          [
+            -0.5987348703076705,
+            -1.813103809608025,
+            -0.30886022531392887,
+            0.6559151161724879
+          ],
+          [
+            0.24035259211315876,
+            1.687726964180993,
+            -0.7980257540608696,
+            -1.360938261113351
+          ],
+          [
+            1.0992243015909624,
+            0.3968732717543655,
+            -0.7413937878347484,
+            -0.21236545535648454
+          ],
+          [
+            -0.24635540388296734,
+            -0.4798160611911714,
+            1.0995854834998435,
+            0.41721681741912353
+          ],
+          [
+            -0.3960857460805274,
+            1.2739949522310536,
+            1.8808858043325314,
+            0.27154515051281247
+          ],
+          [
+            1.3615766997752892,
+            0.1944336700872752,
+            1.0928443296298198,
+            -0.1451987686041678
+          ],
+          [
+            0.6307754228232437,
+            -0.24199344072645457,
+            1.0310746348613948,
+            -1.4604803917430107
+          ],
+          [
+            1.07049891456623,
+            -1.4719751745019536,
+            -0.8677239499108724,
+            0.03582014117281329
+          ],
+          [
+            -0.37171373212465864,
+            -0.3192920750881957,
+            -1.5227580797461768,
+            0.11487819238577753
+          ],
+          [
+            0.025963324629761565,
+            -1.2526535665719,
+            -1.6292224269561129,
+            -1.0548140773254053
+          ],
+          [
+            0.4812671491202952,
+            -0.6793698666599349,
+            -0.7501106015559411,
+            -0.02688531164026481
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": -0.5445815805083917,
+          "unconstrained_estimate": -0.5445815805083917,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -2.163895163899855,
+              0.33110985455805864
+            ],
+            "transformed_single": [
+              -2.023963541665594,
+              0.3168444080683507
+            ]
+          },
+          "notices": [
+            "Negative unconstrained ICC retained; no automatic clinical interpretation.",
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.10159771833270696,
+            "rater": 0.20384351686283353,
+            "error": 0.15816962243904298,
+            "within": 0.16045331716023253
+          },
+          "normalization_scale": 2.6436233768045168,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0005,
+      "paired_difference_mc_se": 0.001658689430035851
+    },
+    {
+      "n": 20,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.2105263157894737,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "4b16d59dbe6013398d1af87325abe941a569921f0a0720ee562a31f5afdefb1d",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1956,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.978,
+          "conditional_coverage": 0.978,
+          "monte_carlo_95_interval": [
+            0.970577590517262,
+            0.9839703528301509
+          ]
+        },
+        "transformed_single": {
+          "covered": 1948,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.974,
+          "conditional_coverage": 0.974,
+          "monte_carlo_95_interval": [
+            0.966042965278244,
+            0.9805223827548027
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1939,
+        "frozen_only": 17,
+        "transformed_only": 9,
+        "neither": 35
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            2.036140995687039,
+            0.626531937493522,
+            1.4594272463476046,
+            0.6665335497072763
+          ],
+          [
+            -0.1378573806746144,
+            -0.964613133355672,
+            -0.1616719588103634,
+            -1.2957741017802642
+          ],
+          [
+            1.0805779073275392,
+            0.40332589066476676,
+            1.9711662603367532,
+            -1.016254776319808
+          ],
+          [
+            -0.7519733144949773,
+            -0.6324589057972261,
+            -0.8441499760076775,
+            -1.1208953064279896
+          ],
+          [
+            0.5452997376418234,
+            0.5040722907154563,
+            -0.3824361098412311,
+            -1.1511225398599894
+          ],
+          [
+            -0.5963740871291136,
+            -0.23269601475723223,
+            -0.33166792152911273,
+            -1.7262014152479874
+          ],
+          [
+            -0.6126439786596586,
+            -0.9533981777224241,
+            -1.172094887575521,
+            -0.9424322224646784
+          ],
+          [
+            -0.12553829017628115,
+            -1.8305614081459591,
+            -2.2862084256603405,
+            0.07888609570579197
+          ],
+          [
+            0.4789868942424071,
+            0.7834715384334355,
+            0.5304338309136816,
+            -1.947314168915352
+          ],
+          [
+            0.37167963859653236,
+            -1.771184914602422,
+            -0.8253155916751442,
+            -2.485751195583589
+          ],
+          [
+            1.4770779054526082,
+            1.167240694036485,
+            0.19557938401575253,
+            -2.7129064670415115
+          ],
+          [
+            -0.09760003317556776,
+            -0.7711456521066558,
+            -2.304782965488991,
+            -1.1216997435007587
+          ],
+          [
+            -0.662317227040762,
+            -1.1711143863626683,
+            0.7161852891527747,
+            -1.002244587351618
+          ],
+          [
+            -1.9492481314103063,
+            -2.0026897590817856,
+            -0.40342933609399256,
+            -0.7762821049643376
+          ],
+          [
+            0.8316034397460097,
+            1.1986716128049792,
+            1.8510267392284883,
+            -0.509008498330251
+          ],
+          [
+            0.7544486962721815,
+            2.168124541237876,
+            0.7583787415646364,
+            -2.4866700076870076
+          ],
+          [
+            1.1990477024896864,
+            2.07491929493725,
+            -0.3184792570465902,
+            0.2288010345225071
+          ],
+          [
+            2.016004303357019,
+            -0.08921923408672783,
+            0.33896718742395326,
+            0.2610617839173026
+          ],
+          [
+            -0.7754801156699465,
+            -0.44265849247740324,
+            0.08457248617977249,
+            -1.9487355663981787
+          ],
+          [
+            0.7560790476197278,
+            -0.6098304700117319,
+            0.982432953834115,
+            -1.7343222486992083
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.5647441834595972,
+          "unconstrained_estimate": 0.5647441834595972,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.15037045891460643,
+              0.8054614206062671
+            ],
+            "transformed_single": [
+              0.1982501389459911,
+              0.7993218633930266
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.3175185949299663,
+            "rater": 1.0458406910678901,
+            "error": 0.11182790077321454,
+            "within": 0.1585285402879483
+          },
+          "normalization_scale": 2.7129064670415115,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.004,
+      "paired_difference_mc_se": 0.002548577568725721
+    },
+    {
+      "n": 20,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.8,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "3071ad246cb4d35f220a373ec3d7b2071e96c632796c8047b61a1ad842b7df79",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1897,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9485,
+          "conditional_coverage": 0.9485,
+          "monte_carlo_95_interval": [
+            0.9378866139553729,
+            0.9577724878882736
+          ]
+        },
+        "transformed_single": {
+          "covered": 1897,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9485,
+          "conditional_coverage": 0.9485,
+          "monte_carlo_95_interval": [
+            0.9378866139553729,
+            0.9577724878882736
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1897,
+        "frozen_only": 0,
+        "transformed_only": 0,
+        "neither": 103
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.4419989181019235,
+            -0.6150548006407515,
+            -0.6235972173283701,
+            -0.20193575770215977
+          ],
+          [
+            -2.9018973885271517,
+            -2.2131631397372153,
+            -1.761259891100928,
+            -0.8327821673949432
+          ],
+          [
+            1.385036308939795,
+            -0.10336550625542074,
+            -0.0036803058322559257,
+            -1.3326039851163294
+          ],
+          [
+            0.4594377650447171,
+            0.41069532306373646,
+            -0.20460927783950175,
+            0.35502010647904875
+          ],
+          [
+            -1.1668485668649544,
+            -2.873307369590404,
+            -1.015850030923008,
+            -1.5728464676281533
+          ],
+          [
+            1.6500596865520853,
+            0.9366191076165399,
+            0.6132081744046839,
+            -1.1487593577789554
+          ],
+          [
+            -0.47665163069281213,
+            -1.5404319749034419,
+            -0.33350930199951767,
+            -1.9650046738735916
+          ],
+          [
+            -0.34552554375126177,
+            1.1186380439764643,
+            -1.1838328993433906,
+            -1.833845275327779
+          ],
+          [
+            1.8231747132674856,
+            0.5561910182478305,
+            0.31162292099901656,
+            0.09888163948233808
+          ],
+          [
+            -0.18139669964601915,
+            0.5042195298734014,
+            -2.3415736181827955,
+            1.165861358144995
+          ],
+          [
+            0.3891967833105524,
+            0.1916727683480026,
+            0.36579252197018236,
+            -0.4004950404717823
+          ],
+          [
+            0.7051020033709615,
+            1.4126364505349065,
+            2.3366138924134927,
+            1.894240814331519
+          ],
+          [
+            4.675687068061634,
+            1.4667228134738588,
+            1.480923772998351,
+            -0.19475176150044038
+          ],
+          [
+            -0.3651260312705398,
+            -0.6037084963626312,
+            1.1785530369850055,
+            -1.0858809821823565
+          ],
+          [
+            -3.700389482457256,
+            -2.3212330294231425,
+            -1.5822703650940906,
+            -0.37101945129193314
+          ],
+          [
+            0.47238230077846965,
+            0.027748376442581213,
+            0.11464462223853916,
+            0.6784044636586246
+          ],
+          [
+            -0.11354372001485458,
+            0.05050696938889321,
+            -1.9029177822793368,
+            -0.022532384637577785
+          ],
+          [
+            -0.807574304741423,
+            -1.0334004211510113,
+            -0.6232644689107532,
+            -0.6764126863432762
+          ],
+          [
+            1.0866744194418865,
+            0.06688679718911383,
+            -1.9265790055790313,
+            1.1025033342759825
+          ],
+          [
+            0.023993413630308547,
+            -0.6825103712580309,
+            -1.4293016273388193,
+            -0.6107232014762836
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.7492515559440972,
+          "unconstrained_estimate": 0.7492515559440972,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.5082083545994068,
+              0.8894398899899095
+            ],
+            "transformed_single": [
+              0.508106308689462,
+              0.8894505576814055
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.18666857790292748,
+            "rater": 0.05125655363153148,
+            "error": 0.04663367033826578,
+            "within": 0.04686481450292906
+          },
+          "normalization_scale": 4.675687068061634,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.0,
+      "paired_difference_mc_se": 0.0
+    },
+    {
+      "n": 20,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.7272727272727273,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "4674a0230dd4f6ae2d5f7f356c793f157ca4ad15ed990aa07b568f08642e95a2",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1899,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9495,
+          "conditional_coverage": 0.9495,
+          "monte_carlo_95_interval": [
+            0.9389741333719799,
+            0.9586815775186653
+          ]
+        },
+        "transformed_single": {
+          "covered": 1884,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.942,
+          "conditional_coverage": 0.942,
+          "monte_carlo_95_interval": [
+            0.9308410482508457,
+            0.9518397946771269
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1884,
+        "frozen_only": 15,
+        "transformed_only": 0,
+        "neither": 101
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.009760165422971,
+            0.7265755851334852,
+            -0.8282827774933328,
+            0.5738612026992763
+          ],
+          [
+            -1.0056793139705054,
+            0.6856414922869063,
+            0.10973994341751925,
+            -1.4210350159325955
+          ],
+          [
+            -1.5340481918757494,
+            -0.27965635474457984,
+            -2.6041925457991626,
+            -2.0180302389997156
+          ],
+          [
+            -2.204668806099646,
+            0.6002357772187323,
+            0.3925049665555558,
+            -0.1197008868432029
+          ],
+          [
+            -0.7170882644633834,
+            -1.5478416995848003,
+            -0.4017235902656371,
+            -1.2540177521626767
+          ],
+          [
+            -1.800308960285024,
+            0.6445984467741673,
+            0.5912138249133685,
+            0.25811610158787623
+          ],
+          [
+            -1.2311535302434489,
+            0.4592037949846892,
+            -0.9814555205928617,
+            -1.4217933421383635
+          ],
+          [
+            -0.8595876410645119,
+            0.38316732081558186,
+            -0.25711217887798576,
+            0.021545846540688016
+          ],
+          [
+            -2.433202726514411,
+            -0.31272736676980384,
+            0.625150701223092,
+            0.7922594282756368
+          ],
+          [
+            0.04730631963875909,
+            -0.4881083271279038,
+            -1.460608909268697,
+            -1.0371207675731178
+          ],
+          [
+            -1.9679928567785248,
+            0.16707561560685913,
+            -2.77148422992902,
+            -0.8380124971085003
+          ],
+          [
+            -2.010701508967956,
+            -0.12897744827911048,
+            -1.1364815274145428,
+            0.9201578810396708
+          ],
+          [
+            -1.4609387028281842,
+            -1.815199184457631,
+            -1.015932616615638,
+            -0.48655210440635577
+          ],
+          [
+            -1.1859721432832075,
+            0.412386204412948,
+            -0.49619906751013265,
+            -0.7527848673699052
+          ],
+          [
+            0.13089916413258185,
+            0.63207967271257,
+            -2.1491709118915145,
+            -1.9329472416246873
+          ],
+          [
+            -0.24781798683167766,
+            0.035012819624666125,
+            0.046314088593574554,
+            -1.209459489856308
+          ],
+          [
+            -1.979554482597936,
+            1.235429838454539,
+            1.0840486801115365,
+            -1.474085258365653
+          ],
+          [
+            -0.0746934216978612,
+            -0.08141255105350265,
+            -0.6789091932449076,
+            0.9374341772247498
+          ],
+          [
+            0.9401032509302742,
+            0.2521475741356536,
+            -1.5833902859727833,
+            -0.5327728108031018
+          ],
+          [
+            1.7868926516009935,
+            3.378551862523248,
+            0.5391465673200647,
+            2.2125005294753617
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 20,
+          "n": 20,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "estimate": 0.5241957308202719,
+          "unconstrained_estimate": 0.5241957308202719,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.10121163357228248,
+              0.7842718052544821
+            ],
+            "transformed_single": [
+              0.12843388036823378,
+              0.7807772848629739
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.1828832605007835,
+            "rater": 0.44832816670151043,
+            "error": 0.07729185354087621,
+            "within": 0.09584366919890792
+          },
+          "normalization_scale": 3.378551862523248,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0075,
+      "paired_difference_mc_se": 0.0019296986470519733
+    },
+    {
+      "n": 60,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.16666666666666669,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "a31cde10cf00c6e754135c74a37dc59ff98d0579c7b4ff303d5c0f0c14557c0a",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1906,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.953,
+          "conditional_coverage": 0.953,
+          "monte_carlo_95_interval": [
+            0.9427887680385368,
+            0.9618549593360113
+          ]
+        },
+        "transformed_single": {
+          "covered": 1904,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.952,
+          "conditional_coverage": 0.952,
+          "monte_carlo_95_interval": [
+            0.9416975076588525,
+            0.9609496629443076
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1904,
+        "frozen_only": 2,
+        "transformed_only": 0,
+        "neither": 94
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.02559962459293081,
+            -0.7520258582922936
+          ],
+          [
+            -3.5194172989393455,
+            -2.352692344353903
+          ],
+          [
+            -0.2779005667470341,
+            -0.9027145173075161
+          ],
+          [
+            0.9391380018390046,
+            -1.8234849249222818
+          ],
+          [
+            0.8966745368018098,
+            0.5048268053456175
+          ],
+          [
+            -0.39564373677237824,
+            -0.050059518374144074
+          ],
+          [
+            -0.8068975547234106,
+            -0.5098488344476121
+          ],
+          [
+            0.8041498355053921,
+            1.0574079624730934
+          ],
+          [
+            -0.05337350751406045,
+            0.45538875046259897
+          ],
+          [
+            -0.5552834095791134,
+            -0.23249146823200606
+          ],
+          [
+            -0.39227584669895804,
+            -0.1852694439951418
+          ],
+          [
+            -1.4956111550124846,
+            0.883388087958907
+          ],
+          [
+            -0.5628798065890662,
+            -1.1819365382877738
+          ],
+          [
+            -0.38852828612297813,
+            1.6999705588521346
+          ],
+          [
+            0.18700849545329568,
+            1.5453195485068039
+          ],
+          [
+            0.20658597942418216,
+            -0.15476202573449505
+          ],
+          [
+            0.48022376172342807,
+            0.8574987318207156
+          ],
+          [
+            -0.43544224821486144,
+            -0.361706662888319
+          ],
+          [
+            -1.324097254531743,
+            0.042973726110899224
+          ],
+          [
+            0.19930558962377742,
+            -0.04156351367643489
+          ],
+          [
+            -1.6846996527996805,
+            0.9440566618344202
+          ],
+          [
+            0.8028415271695809,
+            0.011291321499424023
+          ],
+          [
+            -1.107986534952141,
+            1.6761275577524137
+          ],
+          [
+            -0.5565940207287445,
+            0.093457032331137
+          ],
+          [
+            0.6550823239398218,
+            0.9889150056818714
+          ],
+          [
+            1.2820924322338734,
+            0.6819677634646264
+          ],
+          [
+            -0.5115904203339665,
+            -1.0324581363275225
+          ],
+          [
+            0.3222594089283276,
+            -1.8175244279220666
+          ],
+          [
+            -0.5567398280369356,
+            -2.1266441489591337
+          ],
+          [
+            0.3024406786038649,
+            2.110337365685485
+          ],
+          [
+            -0.35241568417819924,
+            1.6093285898961676
+          ],
+          [
+            2.272314543947064,
+            2.5495456405848835
+          ],
+          [
+            -1.8178512375931988,
+            -0.15163899920599516
+          ],
+          [
+            0.1315987107558161,
+            -0.343927983337008
+          ],
+          [
+            -0.9979385761967142,
+            -0.10927839735295647
+          ],
+          [
+            -0.06701881862147296,
+            0.7976450032695113
+          ],
+          [
+            1.5633001153506494,
+            1.1951787436080568
+          ],
+          [
+            -0.5990289614917078,
+            -0.2734065739232303
+          ],
+          [
+            -0.6020384777611933,
+            0.17332507540446443
+          ],
+          [
+            -1.1334345796057115,
+            -1.3231481900297253
+          ],
+          [
+            -0.777782866612974,
+            0.8838443107723095
+          ],
+          [
+            1.5396732769182873,
+            -0.3365860228698454
+          ],
+          [
+            -1.3728642619911544,
+            1.1538126985164174
+          ],
+          [
+            0.4731332616230251,
+            2.7060688582272876
+          ],
+          [
+            1.2379964621898156,
+            1.4643031591446147
+          ],
+          [
+            -0.0005207007455907964,
+            1.1607556228374796
+          ],
+          [
+            1.0401379706400118,
+            0.39538717656923295
+          ],
+          [
+            -0.3936680721812732,
+            0.3892527832386617
+          ],
+          [
+            -1.1489402948795115,
+            0.7981002353530791
+          ],
+          [
+            -1.0018114435464658,
+            0.09203030795006001
+          ],
+          [
+            -0.3041028333297358,
+            1.4135099998578502
+          ],
+          [
+            -0.09077181498144449,
+            0.2145205672156174
+          ],
+          [
+            -1.8946402528285096,
+            1.021963331658083
+          ],
+          [
+            1.3724685894199131,
+            -0.9437675483622152
+          ],
+          [
+            0.1210392968681001,
+            0.401644203686504
+          ],
+          [
+            -0.33886299936546627,
+            -1.4314512745533388
+          ],
+          [
+            2.283842326421176,
+            -1.7705238511657908
+          ],
+          [
+            -0.8195645973441805,
+            -0.4742459403033803
+          ],
+          [
+            0.48432253658563845,
+            0.8231963082218315
+          ],
+          [
+            0.5285709952058111,
+            0.1232662281903627
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.28376287931912436,
+          "unconstrained_estimate": 0.28376287931912436,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.17337854866279756,
+              0.5665071413340735
+            ],
+            "transformed_single": [
+              -0.17240555287370216,
+              0.5662865445414484
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.11063744520573261,
+            "rater": 0.28202355773218174,
+            "error": 0.07827905977052492,
+            "within": 0.08167480140321919
+          },
+          "normalization_scale": 3.5194172989393455,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.001,
+      "paired_difference_mc_se": 0.0007069298939339522
+    },
+    {
+      "n": 60,
+      "k": 2,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.11764705882352942,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "09905265bf3a0047485c0773dcda1d897c17eccd0e36f7b5607b9f4a59b6e880",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1968,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.984,
+          "conditional_coverage": 0.984,
+          "monte_carlo_95_interval": [
+            0.9774872880441305,
+            0.9890309386557523
+          ]
+        },
+        "transformed_single": {
+          "covered": 1944,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.972,
+          "conditional_coverage": 0.972,
+          "monte_carlo_95_interval": [
+            0.9637922708941069,
+            0.978781319180894
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1944,
+        "frozen_only": 24,
+        "transformed_only": 0,
+        "neither": 32
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            1.6630519932894567,
+            -2.7286060597161104
+          ],
+          [
+            -0.493176708344917,
+            -3.0799692213683825
+          ],
+          [
+            0.732621122864573,
+            0.5539699765538595
+          ],
+          [
+            3.1049212715215173,
+            1.3580991135576275
+          ],
+          [
+            2.8727550761386342,
+            -2.580301561541632
+          ],
+          [
+            1.3630211304354016,
+            0.6041096462719819
+          ],
+          [
+            1.3328036276024586,
+            -1.968888538105981
+          ],
+          [
+            1.542908159564642,
+            -2.3146216373570896
+          ],
+          [
+            -1.1370660348552506,
+            -0.15807690000497304
+          ],
+          [
+            1.290303349843549,
+            -1.3126078975956288
+          ],
+          [
+            -0.5628492954240498,
+            -0.07938722433132234
+          ],
+          [
+            2.364236901465681,
+            -0.9927004100855097
+          ],
+          [
+            1.586943671218961,
+            1.156168087982521
+          ],
+          [
+            1.0381798451411777,
+            -0.859810484509971
+          ],
+          [
+            1.2490389012149694,
+            0.5212624081980349
+          ],
+          [
+            0.33364691945890756,
+            0.3679844541240238
+          ],
+          [
+            1.6415204156299186,
+            -0.6095676974636574
+          ],
+          [
+            0.8621543064117863,
+            -0.49437871344415185
+          ],
+          [
+            3.339419582690721,
+            0.12684007538009207
+          ],
+          [
+            1.0570331424179622,
+            -0.5960335779456565
+          ],
+          [
+            3.137743146080891,
+            0.5382077585782703
+          ],
+          [
+            1.6315433759829223,
+            0.06008243885557368
+          ],
+          [
+            -1.4173253671180004,
+            -0.2562102953885869
+          ],
+          [
+            2.6362595583350736,
+            -1.5338363418527328
+          ],
+          [
+            0.6857281252506156,
+            -1.7953858160652345
+          ],
+          [
+            0.3429267043112423,
+            0.12045630372260707
+          ],
+          [
+            1.4139313079924187,
+            -1.6228906496647941
+          ],
+          [
+            0.9793794230728046,
+            0.10264920809978195
+          ],
+          [
+            1.563193769264324,
+            0.0408043288819922
+          ],
+          [
+            2.1399663431881875,
+            -0.4358247669484299
+          ],
+          [
+            2.2115483671452387,
+            0.05579994591739307
+          ],
+          [
+            1.2784994021470117,
+            -2.823705770208803
+          ],
+          [
+            1.9716927434418272,
+            0.3873919704912902
+          ],
+          [
+            -0.5017170311975272,
+            -1.974654152500853
+          ],
+          [
+            0.8141337310549921,
+            -0.7267499123149785
+          ],
+          [
+            2.2084180881045983,
+            -2.2813886756434103
+          ],
+          [
+            2.162794293051172,
+            -0.7331285753675068
+          ],
+          [
+            0.6329841815357171,
+            0.6769553249478422
+          ],
+          [
+            -0.14422228825704764,
+            0.7824362992004235
+          ],
+          [
+            1.2134608177833777,
+            -0.031005838857376178
+          ],
+          [
+            1.451524256737002,
+            -2.1057793870195556
+          ],
+          [
+            0.32045052914078576,
+            -1.7339234810888569
+          ],
+          [
+            1.1554542686791995,
+            -1.2980370937660692
+          ],
+          [
+            0.8344247600857816,
+            -0.4313510333913059
+          ],
+          [
+            1.0532435728988403,
+            -0.42003454527819456
+          ],
+          [
+            1.1433184176247373,
+            -0.7367497995133239
+          ],
+          [
+            0.9171626489711444,
+            -1.0407380462077038
+          ],
+          [
+            -0.9854143122386869,
+            -0.881110053814372
+          ],
+          [
+            0.9921519592403898,
+            -1.6728060019347457
+          ],
+          [
+            2.153918705660466,
+            -2.531168745048343
+          ],
+          [
+            2.343656707032851,
+            0.5273090813078456
+          ],
+          [
+            0.5746453738877183,
+            -1.6236815755859166
+          ],
+          [
+            1.0148289242582171,
+            0.9844347492575327
+          ],
+          [
+            0.9669049707958226,
+            -2.1218009848925625
+          ],
+          [
+            0.4622912146932741,
+            0.6251714928291855
+          ],
+          [
+            2.214787236262082,
+            0.02166063899783416
+          ],
+          [
+            0.5111361959492472,
+            -0.8764967579880378
+          ],
+          [
+            2.0938365184391587,
+            -0.33149616371355306
+          ],
+          [
+            0.06883174726271202,
+            -3.145955172095797
+          ],
+          [
+            -0.06416792259726245,
+            -0.37786884042085667
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.056671512115882186,
+          "unconstrained_estimate": 0.056671512115882186,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.18813593445874852,
+              0.3002566714619789
+            ],
+            "transformed_single": [
+              -0.150945045294472,
+              0.2755510307901016
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.1158251609482824,
+            "rater": 9.554092334958204,
+            "error": 0.100331858913631,
+            "within": 0.2578945335143739
+          },
+          "normalization_scale": 3.339419582690721,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.012,
+      "paired_difference_mc_se": 0.0024353573624298695
+    },
+    {
+      "n": 60,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.6666666666666666,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "0bd0be09e8351c20e05b574af11fbbdd0cc45ac6370bfe99f42a1d1c2abd3ee9",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1894,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.947,
+          "conditional_coverage": 0.947,
+          "monte_carlo_95_interval": [
+            0.9362572070012273,
+            0.9564069564074236
+          ]
+        },
+        "transformed_single": {
+          "covered": 1893,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9465,
+          "conditional_coverage": 0.9465,
+          "monte_carlo_95_interval": [
+            0.9357145572909322,
+            0.9559512869808574
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1893,
+        "frozen_only": 1,
+        "transformed_only": 0,
+        "neither": 106
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.1468030646417699,
+            0.293874559270459
+          ],
+          [
+            0.40638935589968567,
+            -0.7604025174874693
+          ],
+          [
+            -1.3275250491798378,
+            -0.23516177347686884
+          ],
+          [
+            -1.2438626575635199,
+            0.5234274730436264
+          ],
+          [
+            2.3711165474441964,
+            1.1873397804145207
+          ],
+          [
+            0.2590889343646785,
+            0.5053067510075182
+          ],
+          [
+            1.657890727890993,
+            -0.520616986769497
+          ],
+          [
+            -0.843838167847456,
+            -0.8716191585284561
+          ],
+          [
+            -2.690367555736233,
+            -3.4030056592826083
+          ],
+          [
+            -1.3716674033143745,
+            0.7816477771228514
+          ],
+          [
+            1.826224472023696,
+            -0.1394932805618725
+          ],
+          [
+            -2.365717723439598,
+            -1.527850284092814
+          ],
+          [
+            1.7955985338843716,
+            -0.21587066008014366
+          ],
+          [
+            2.862110205938839,
+            1.6897083411362863
+          ],
+          [
+            -0.7731022000370893,
+            0.7078854928188903
+          ],
+          [
+            3.0278148927322506,
+            -0.3215744964686955
+          ],
+          [
+            0.020887111706053174,
+            -1.4997203196660975
+          ],
+          [
+            3.1232063301509827,
+            -0.25081135032434543
+          ],
+          [
+            2.3446796472066014,
+            0.5274848288798335
+          ],
+          [
+            0.706171432178512,
+            1.6155699684092657
+          ],
+          [
+            -0.5693768262426013,
+            -1.2569582848508645
+          ],
+          [
+            -1.474506549895335,
+            0.720033358920037
+          ],
+          [
+            -0.17604522579488036,
+            2.243794569130268
+          ],
+          [
+            0.13733827032609242,
+            0.6708596249069554
+          ],
+          [
+            0.7362376024035704,
+            1.7369352439376626
+          ],
+          [
+            -2.4888546040226416,
+            -0.26705511904428203
+          ],
+          [
+            -1.08023737951196,
+            -0.4755309350623397
+          ],
+          [
+            -0.07680109445233674,
+            -1.5244361697148325
+          ],
+          [
+            -0.9446657763546145,
+            -0.3231438447215243
+          ],
+          [
+            1.233537640791385,
+            -0.2294788254388371
+          ],
+          [
+            -0.6483919747645758,
+            -2.7063828599624307
+          ],
+          [
+            -1.3200105281600083,
+            -1.9807144058908417
+          ],
+          [
+            0.44009030715684166,
+            2.2671116706255603
+          ],
+          [
+            -0.4743218815771659,
+            0.03199966473740712
+          ],
+          [
+            1.2138968448292238,
+            -0.968806046903589
+          ],
+          [
+            -0.38491158610552156,
+            -1.1295134371448878
+          ],
+          [
+            -0.532208309918933,
+            -1.4831452773487301
+          ],
+          [
+            -0.03680339260802046,
+            0.9776640788522168
+          ],
+          [
+            0.6184542182276971,
+            1.4653561038896357
+          ],
+          [
+            -1.2733582562263106,
+            0.3946955093662805
+          ],
+          [
+            0.036599097647576864,
+            -2.071931373649118
+          ],
+          [
+            1.4231180682599003,
+            3.1165528069297497
+          ],
+          [
+            1.0106644859921945,
+            -0.22681525156100046
+          ],
+          [
+            -0.7402365843310719,
+            -0.6520332394805646
+          ],
+          [
+            1.4583227082115382,
+            -0.6339897345342753
+          ],
+          [
+            0.3608000205217403,
+            0.6910308897398003
+          ],
+          [
+            1.4767051374718672,
+            0.6676926122732486
+          ],
+          [
+            0.5041172224119654,
+            0.043535997729914844
+          ],
+          [
+            -0.3080111396446747,
+            0.7678547494715457
+          ],
+          [
+            2.10926475293004,
+            0.9701737834457498
+          ],
+          [
+            1.041221225961442,
+            1.0095296307300359
+          ],
+          [
+            -1.90358542067408,
+            -1.3432410548816296
+          ],
+          [
+            1.1985286564396835,
+            1.5676767082793965
+          ],
+          [
+            0.1839310195858045,
+            -0.2083171579781467
+          ],
+          [
+            1.6102190155544702,
+            2.1160436852467734
+          ],
+          [
+            -1.6012398714475433,
+            -1.556958621461387
+          ],
+          [
+            0.23467331025907973,
+            0.924286388537382
+          ],
+          [
+            -1.0350928046268604,
+            -2.1051947470177383
+          ],
+          [
+            0.007062118920520444,
+            0.9652639431148644
+          ],
+          [
+            -0.3636888645167591,
+            -1.317703361770091
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.6132139386479751,
+          "unconstrained_estimate": 0.6132139386479751,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.35387783601341943,
+              0.768664805110228
+            ],
+            "transformed_single": [
+              0.35370082464870894,
+              0.7687024291590976
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.22452531799511732,
+            "rater": 0.08026801298396047,
+            "error": 0.08691115790551493,
+            "within": 0.08680043882348902
+          },
+          "normalization_scale": 3.4030056592826083,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0005,
+      "paired_difference_mc_se": 0.0005
+    },
+    {
+      "n": 60,
+      "k": 2,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.5714285714285714,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "af5d96185fcdd1a3b424b3f3b253e896b28705162f8cca85b7e0b688095f5f86",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1905,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9525,
+          "conditional_coverage": 0.9525,
+          "monte_carlo_95_interval": [
+            0.9422429973496296,
+            0.9614024536755772
+          ]
+        },
+        "transformed_single": {
+          "covered": 1881,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9405,
+          "conditional_coverage": 0.9405,
+          "monte_carlo_95_interval": [
+            0.9292204627311629,
+            0.9504653327666495
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1881,
+        "frozen_only": 24,
+        "transformed_only": 0,
+        "neither": 95
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -0.9110405878612408,
+            -1.0833470394710887
+          ],
+          [
+            -0.9687278773436256,
+            0.7383632178719276
+          ],
+          [
+            -0.0549125579049472,
+            0.8523302662528331
+          ],
+          [
+            1.1166546547215888,
+            0.2504785259292698
+          ],
+          [
+            -1.4446363656925947,
+            -1.461013256559961
+          ],
+          [
+            1.3619417200542085,
+            -0.5056033844199292
+          ],
+          [
+            -1.4689601748998047,
+            0.37774131998031335
+          ],
+          [
+            -1.8832495288924367,
+            -2.901788926543216
+          ],
+          [
+            -1.5268324453452797,
+            -1.3834730239296864
+          ],
+          [
+            -2.1077341015377,
+            -0.31004360397234065
+          ],
+          [
+            -0.04064415754406747,
+            -2.0831209701714988
+          ],
+          [
+            -1.6202078506226805,
+            -0.25733238896414223
+          ],
+          [
+            -1.0524442392366664,
+            0.4448534878133807
+          ],
+          [
+            -0.923560923579587,
+            -0.6042729308583659
+          ],
+          [
+            1.1697776747581836,
+            0.5446185042979566
+          ],
+          [
+            -0.4737299804735591,
+            -2.2502836014721335
+          ],
+          [
+            -1.280086015428803,
+            1.0439135453620334
+          ],
+          [
+            -0.11741380586323164,
+            0.14552503312501192
+          ],
+          [
+            -2.6976710686656737,
+            -0.6452885666034408
+          ],
+          [
+            -0.38320372891573257,
+            -0.6046619806256968
+          ],
+          [
+            -0.3950470318466974,
+            0.27914483887732233
+          ],
+          [
+            -0.44000230924463957,
+            -1.0175844881797385
+          ],
+          [
+            -0.5140971431149856,
+            -0.31192145435134
+          ],
+          [
+            -0.8773590504798244,
+            -0.658853531629711
+          ],
+          [
+            0.25233750271491107,
+            -0.35004734727598075
+          ],
+          [
+            -0.08115694858807043,
+            -1.5642350024598124
+          ],
+          [
+            -1.476289393049608,
+            0.36214977349751387
+          ],
+          [
+            -0.5835701915062214,
+            -0.16808585132613624
+          ],
+          [
+            -2.1446329833906264,
+            -1.8722925167443933
+          ],
+          [
+            -2.0918577082461733,
+            0.23693474712549678
+          ],
+          [
+            0.6799117632710183,
+            -0.15805434134816812
+          ],
+          [
+            -2.597827407015798,
+            -2.4526405035675984
+          ],
+          [
+            -2.190672340983453,
+            -2.1800824043584903
+          ],
+          [
+            0.4325543039383499,
+            -0.667132643417852
+          ],
+          [
+            -0.2728548908758902,
+            0.03642735042415268
+          ],
+          [
+            -2.506551136952941,
+            -2.3143377777992082
+          ],
+          [
+            0.24471724628098324,
+            0.5153526761911379
+          ],
+          [
+            0.4888336202172738,
+            1.0654951833539927
+          ],
+          [
+            -0.9078005817626922,
+            -1.379928747756504
+          ],
+          [
+            0.6068042461417525,
+            1.4385010449422542
+          ],
+          [
+            1.517142170548479,
+            -0.6238249945992667
+          ],
+          [
+            -0.8579391809192216,
+            0.8659560873754284
+          ],
+          [
+            0.045707435670448104,
+            0.979651672527979
+          ],
+          [
+            -1.3507233962503344,
+            0.32307838156746826
+          ],
+          [
+            -1.8588728563109156,
+            -1.6856657999247524
+          ],
+          [
+            -0.34950883703578495,
+            -2.2950235104675625
+          ],
+          [
+            -0.5037263496256594,
+            0.5998883958969137
+          ],
+          [
+            0.006566027380105588,
+            1.057517042635889
+          ],
+          [
+            -2.333117570808817,
+            -1.199748123656965
+          ],
+          [
+            -1.2649999808947092,
+            1.943880155146278
+          ],
+          [
+            0.00270555966320174,
+            0.2650616259661207
+          ],
+          [
+            -2.1792770638818384,
+            -1.404628827812862
+          ],
+          [
+            0.1822933034062914,
+            0.8414367558144847
+          ],
+          [
+            -0.9254280899227562,
+            0.07511564416709504
+          ],
+          [
+            -0.9121338173348283,
+            -1.767764976930886
+          ],
+          [
+            -2.9996392636851343,
+            -0.9506263613769393
+          ],
+          [
+            -1.799066268926186,
+            0.16091976833450605
+          ],
+          [
+            0.020182982625289725,
+            0.1520692780411117
+          ],
+          [
+            -1.117486622326867,
+            -2.736943623022638
+          ],
+          [
+            0.16265200744458858,
+            -0.9623777989126105
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 2,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.5329448361134739,
+          "unconstrained_estimate": 0.5329448361134739,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.22593841243864457,
+              0.7193121288156916
+            ],
+            "transformed_single": [
+              0.2291591858470375,
+              0.7186022391106309
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.18813809791297523,
+            "rater": 0.33364619933803624,
+            "error": 0.08566822715832616,
+            "within": 0.08980119336132132
+          },
+          "normalization_scale": 2.9996392636851343,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.012,
+      "paired_difference_mc_se": 0.0024353573624298695
+    },
+    {
+      "n": 60,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.28571428571428575,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "2ff0d848e1d2a45a49d6ea47fe5079ddb281d813f28a81157537b0b9e3cd756c",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1912,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.956,
+          "conditional_coverage": 0.956,
+          "monte_carlo_95_interval": [
+            0.9460695383023608,
+            0.9645637553532357
+          ]
+        },
+        "transformed_single": {
+          "covered": 1909,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9545,
+          "conditional_coverage": 0.9545,
+          "monte_carlo_95_interval": [
+            0.9444278089934137,
+            0.9632107219012072
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1909,
+        "frozen_only": 3,
+        "transformed_only": 0,
+        "neither": 88
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            0.5961285995385683,
+            -0.46131113438457483,
+            1.4000755720655638,
+            -0.009494428614657796
+          ],
+          [
+            0.9192512033975391,
+            1.281613428941783,
+            0.6536388958930395,
+            0.9140949414178011
+          ],
+          [
+            -0.5267391243063013,
+            -1.0271215706358745,
+            1.1500593274289685,
+            2.1286697530148593
+          ],
+          [
+            1.7742680981010863,
+            1.0994797685332194,
+            1.2323200176058575,
+            -0.12359001732291885
+          ],
+          [
+            -0.9305789621127689,
+            1.8555894465336429,
+            -0.0680831385192841,
+            0.29112594434699524
+          ],
+          [
+            -0.08176774545005164,
+            -0.477844385472364,
+            1.9695603442288527,
+            0.7011179860457217
+          ],
+          [
+            -0.9314903948302954,
+            1.1188287757752107,
+            0.7523705623348851,
+            -1.6336285158540058
+          ],
+          [
+            -1.4907729748808118,
+            0.03651153729440998,
+            2.172261919891428,
+            1.2267843197426647
+          ],
+          [
+            -1.1383634264737987,
+            0.6957669771482333,
+            1.2268978056609148,
+            0.18617359909064324
+          ],
+          [
+            -0.10131133318936819,
+            1.099850814213535,
+            -0.791062709743984,
+            0.19848624084718092
+          ],
+          [
+            0.36864563134775574,
+            0.5220383932928525,
+            1.147340496519885,
+            0.6280186508532422
+          ],
+          [
+            1.3892751657424107,
+            -0.09890288045446399,
+            0.1114892203865469,
+            -0.8010856638364945
+          ],
+          [
+            -0.8304185994017683,
+            1.2428175941333433,
+            -0.5614008799166847,
+            -0.17744217972095594
+          ],
+          [
+            1.1002415327995487,
+            -1.0198466495268472,
+            -2.4451978664930043,
+            -0.025078809851059425
+          ],
+          [
+            -0.816609187779469,
+            -0.4568889253775265,
+            -0.09570231999282675,
+            0.0740859913816489
+          ],
+          [
+            -1.4201970316148091,
+            2.4116819296819756,
+            0.5291062535808315,
+            0.0354076761823644
+          ],
+          [
+            -1.4316494742938444,
+            -1.452578898371344,
+            -0.7919366830420446,
+            0.46456963861506173
+          ],
+          [
+            -0.005034459839822286,
+            -1.2778682616648995,
+            0.9046538913265552,
+            0.6637784362899305
+          ],
+          [
+            -2.5266521169182274,
+            0.05147961074740034,
+            -0.07287460002414137,
+            -0.7887492602880745
+          ],
+          [
+            -0.4374429803117943,
+            -0.7505002017522602,
+            0.14001553340744288,
+            0.5541612346759838
+          ],
+          [
+            -1.5636522127581538,
+            0.6644774223739,
+            0.06918058939567276,
+            2.0097387548754644
+          ],
+          [
+            0.7485155689082634,
+            -0.30349088382371625,
+            -1.2249761952024414,
+            -0.5566964335790645
+          ],
+          [
+            -0.8561161195826618,
+            -0.5357052006336003,
+            0.9900255785604067,
+            0.32285601834781286
+          ],
+          [
+            0.5346395397809988,
+            -0.9558695871635104,
+            -0.1481348021141251,
+            2.1695168826575597
+          ],
+          [
+            2.019743366081563,
+            0.44476756648694743,
+            -0.584737892284655,
+            0.6523566418101023
+          ],
+          [
+            -1.4702786817328526,
+            -0.27612323401031075,
+            1.9669526125479486,
+            1.3382160325989114
+          ],
+          [
+            -0.8295084413935441,
+            0.6094911363127904,
+            0.0548198538116505,
+            1.3325205016526593
+          ],
+          [
+            -1.4765542487569023,
+            -0.43135156047138223,
+            -0.7560086052830193,
+            0.44021614995928626
+          ],
+          [
+            -0.5870972154627232,
+            -0.07502844016951826,
+            0.8757801845815613,
+            -0.3651446118819647
+          ],
+          [
+            -1.6932789546065576,
+            -1.7830291458260168,
+            -1.4828216176844826,
+            0.5392092523702838
+          ],
+          [
+            0.12328981720577004,
+            0.847333243013684,
+            -1.0368808129322373,
+            -0.6050079854073745
+          ],
+          [
+            0.2953039876258768,
+            -0.16109400801919688,
+            -0.1536287401944713,
+            0.6089063486004561
+          ],
+          [
+            0.3871748950871952,
+            -0.1404835013363475,
+            1.384083735300448,
+            -0.32239983108560427
+          ],
+          [
+            -0.2921321911263564,
+            0.518982557088819,
+            0.7465094494701073,
+            0.5424616859727437
+          ],
+          [
+            1.6382818063687354,
+            -0.535399952628709,
+            1.7205356048301634,
+            0.3937872038800267
+          ],
+          [
+            -0.27543094910930793,
+            -0.6278553578943638,
+            -0.47870682674176007,
+            -1.3565598108804775
+          ],
+          [
+            -2.8428240829427063,
+            -0.15871436946728001,
+            -1.1538429313437575,
+            0.7275023989192216
+          ],
+          [
+            2.4538057783913265,
+            -1.2766792272747651,
+            0.012357849994871467,
+            0.3353974701358786
+          ],
+          [
+            0.5685284254729166,
+            -1.4632762072495455,
+            -0.27442413748014777,
+            0.005602925532911168
+          ],
+          [
+            0.26822830577943435,
+            0.13523582303217666,
+            0.14638578251819953,
+            -1.0182600187011643
+          ],
+          [
+            -1.5361506513236907,
+            0.1606215572090126,
+            -0.16579409325312916,
+            0.9267434795600689
+          ],
+          [
+            -1.0736420993657756,
+            -0.44827624114479525,
+            -0.41351355226695186,
+            0.01154381464077342
+          ],
+          [
+            0.3300542165003649,
+            1.5394406240362513,
+            2.7965334283404153,
+            1.474555564822378
+          ],
+          [
+            0.14266717550470237,
+            0.29718271592636664,
+            0.36974792316385224,
+            1.5277289098875495
+          ],
+          [
+            -0.6864912636018825,
+            0.34756406907288717,
+            0.7297454109050823,
+            -1.4108281936373328
+          ],
+          [
+            0.0794460965419501,
+            -1.2678587460083164,
+            1.8083189016002776,
+            0.8453515561207982
+          ],
+          [
+            -0.7743325621052356,
+            0.08781242642446963,
+            0.7734221734746537,
+            -2.0368672357574
+          ],
+          [
+            0.023399030994509518,
+            1.0503531082239523,
+            -1.094907220348259,
+            0.8663139504084677
+          ],
+          [
+            -0.46115338710175174,
+            0.41643189905634453,
+            -0.7373968242682798,
+            -0.27835969313682285
+          ],
+          [
+            -0.898969163382831,
+            -0.32595418802858034,
+            -0.43567198922824346,
+            0.1030617758299216
+          ],
+          [
+            -0.3386723623170227,
+            -0.2086693964734492,
+            1.582151837699966,
+            1.9733885222460696
+          ],
+          [
+            0.6744290252354896,
+            0.1126093047293088,
+            -0.025838730238793683,
+            0.7312648311442405
+          ],
+          [
+            -1.1269101772876924,
+            -2.427230920231028,
+            -0.538134510195823,
+            1.2947204104323122
+          ],
+          [
+            1.898236889354511,
+            -0.03813507724166568,
+            1.1101389782045288,
+            0.07570334762449177
+          ],
+          [
+            0.021462966303199514,
+            0.255237698882735,
+            -0.9108294681289418,
+            1.264941893868368
+          ],
+          [
+            -0.058558095045008224,
+            -1.0737378317068325,
+            0.31504386044849775,
+            0.44760239319091333
+          ],
+          [
+            0.72816812082322,
+            1.1771417231682735,
+            -0.41715151840928844,
+            0.3690017651676446
+          ],
+          [
+            -0.41808599079664027,
+            -0.5141045927641651,
+            0.023172237153867487,
+            0.0595237758820423
+          ],
+          [
+            -0.8201101551605673,
+            -0.44590819493884515,
+            -2.870275600717368,
+            0.46341258587009815
+          ],
+          [
+            0.7578354407398983,
+            0.9039585554871987,
+            -0.1767738516144751,
+            -0.5487654640237973
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.13968191185111142,
+          "unconstrained_estimate": 0.13968191185111142,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.25773373934491856,
+              0.4397444330414564
+            ],
+            "transformed_single": [
+              -0.2578799679435708,
+              0.439788223705391
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.13676100833656188,
+            "rater": 0.41555200194710235,
+            "error": 0.11696284415177739,
+            "within": 0.12193933011503277
+          },
+          "normalization_scale": 2.870275600717368,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0015,
+      "paired_difference_mc_se": 0.0008655920660521364
+    },
+    {
+      "n": 60,
+      "k": 4,
+      "subject_variance": 0.1,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.2105263157894737,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "0ca536b797d52839b67001797ae30d9bc671136c6a28b5e8b2fa7458478866dd",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1968,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.984,
+          "conditional_coverage": 0.984,
+          "monte_carlo_95_interval": [
+            0.9774872880441305,
+            0.9890309386557523
+          ]
+        },
+        "transformed_single": {
+          "covered": 1913,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9565,
+          "conditional_coverage": 0.9565,
+          "monte_carlo_95_interval": [
+            0.9466174011067837,
+            0.965014137153096
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1913,
+        "frozen_only": 55,
+        "transformed_only": 0,
+        "neither": 32
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.0005628478272561,
+            -0.5284568949222953,
+            -1.0889469572290305,
+            0.10255936262844365
+          ],
+          [
+            -1.0549847483239854,
+            -1.369630696854061,
+            -0.1470244622432805,
+            0.3502318634309509
+          ],
+          [
+            -0.6651919980614808,
+            -0.17686231157292784,
+            1.1383034964924077,
+            0.6618698573015079
+          ],
+          [
+            -0.11312205345133403,
+            -0.30044747864862853,
+            1.0482826203312612,
+            -0.0977882403409075
+          ],
+          [
+            0.7635659743070079,
+            1.1689745810910568,
+            2.0126725082621073,
+            1.4313230787363946
+          ],
+          [
+            0.7826386981023398,
+            0.35937669911251385,
+            -0.7585475478579252,
+            1.7387581104769894
+          ],
+          [
+            -1.0610193910990582,
+            -0.204204504423241,
+            1.4229249888070041,
+            1.0758743735866043
+          ],
+          [
+            0.6656819698204965,
+            0.26677108509742065,
+            -0.966879604797673,
+            0.6930763046674904
+          ],
+          [
+            -0.507707611262328,
+            1.240308956478887,
+            0.6702812085333776,
+            0.23904495088499694
+          ],
+          [
+            0.32941438134626333,
+            0.3991238089595091,
+            -0.6330275767594052,
+            -0.34160517375123756
+          ],
+          [
+            0.08239423116133793,
+            -0.010858839449998103,
+            -1.4250867421368871,
+            -1.7423023611962654
+          ],
+          [
+            0.8095926706377576,
+            -0.07974264036083809,
+            -0.019854516540539657,
+            -0.8851024382789452
+          ],
+          [
+            -0.26751154717371045,
+            -2.0046023747836426,
+            0.09014927891840463,
+            -0.6066469357085604
+          ],
+          [
+            -0.6867789046929204,
+            -1.8564001227274265,
+            -3.387158180537377,
+            -2.0982304287586526
+          ],
+          [
+            0.7137994713230267,
+            0.7411125377081711,
+            1.13308128752227,
+            0.053978571289344746
+          ],
+          [
+            -1.4187406056802574,
+            0.3370402594952027,
+            -0.2331870728173323,
+            1.061031634170311
+          ],
+          [
+            -0.7186656768836099,
+            -0.10640288488850433,
+            -1.907327569594817,
+            1.1963352695888383
+          ],
+          [
+            -2.3699860856564783,
+            1.32831772001501,
+            -2.2036848933257085,
+            0.13297466356939996
+          ],
+          [
+            -0.8248535691609864,
+            1.4265525586298993,
+            0.5925689906449414,
+            -0.20551600733980163
+          ],
+          [
+            -1.5401445830704046,
+            0.7598013430356345,
+            -3.281143133557756,
+            -0.5345697144445805
+          ],
+          [
+            -0.9041034326804136,
+            -1.0143885161204442,
+            0.051855526284733056,
+            0.737362270555328
+          ],
+          [
+            -0.4584373598304833,
+            -0.16093884709490425,
+            0.011437655235006276,
+            -1.1149044140379805
+          ],
+          [
+            0.3225916351950614,
+            -1.8846853617469241,
+            0.35696894761309417,
+            2.2541134700709655
+          ],
+          [
+            -0.06156510447722994,
+            0.33678004082677093,
+            -0.043624554997471504,
+            0.16607363234761685
+          ],
+          [
+            0.33968761443407525,
+            0.06000084123743099,
+            0.8288656445981013,
+            -0.5357918066385206
+          ],
+          [
+            -0.6115739941854712,
+            1.7251331384393112,
+            -0.7960481567768841,
+            -0.03279625355101277
+          ],
+          [
+            -0.5959468478153574,
+            1.797435096009833,
+            -0.2951243474153265,
+            1.0332457710872915
+          ],
+          [
+            -0.27846877924394225,
+            0.23030684542697374,
+            -0.058161575940705576,
+            -0.12819891314390325
+          ],
+          [
+            0.6529728118673362,
+            -2.659975415073434,
+            0.874562556759966,
+            0.360504680909353
+          ],
+          [
+            0.16982710631390968,
+            1.4699046298629492,
+            0.8805252871284852,
+            0.364633584714662
+          ],
+          [
+            0.32667684735244096,
+            0.8001811811860106,
+            -1.6483207550890524,
+            -0.36099905719644715
+          ],
+          [
+            0.6904989090830815,
+            1.6797378793906503,
+            -0.43426393979139916,
+            0.9982354887533306
+          ],
+          [
+            -0.15429431179145048,
+            -1.2399817194829832,
+            -0.22005266015210534,
+            -1.0306931088000666
+          ],
+          [
+            1.1227383740111445,
+            0.7694869481442964,
+            1.1416411175998622,
+            0.8606482282648494
+          ],
+          [
+            1.588403672636517,
+            0.6129626819340995,
+            -0.9951507768990101,
+            -1.706814021809046
+          ],
+          [
+            -0.8916706436789537,
+            -0.06309523699566545,
+            -1.0245310469924214,
+            0.248308536733303
+          ],
+          [
+            2.513794329133111,
+            -0.10739523319072529,
+            -0.5740022052457923,
+            0.10756108376053053
+          ],
+          [
+            1.9404875176346463,
+            -0.5185036951244387,
+            -0.742056233249395,
+            -2.14414241289626
+          ],
+          [
+            -0.3763976713122987,
+            0.7958265897575797,
+            0.4954791264593161,
+            0.730320149596173
+          ],
+          [
+            -0.9498786812589982,
+            1.2031074638165835,
+            0.20672002264166633,
+            -1.3999282558167316
+          ],
+          [
+            0.12470861405208378,
+            -0.18342644329168745,
+            -1.5774793271177638,
+            -0.07563643515636653
+          ],
+          [
+            1.2432891260493975,
+            0.44572214622350276,
+            -0.13681736232656966,
+            -1.1524406124228863
+          ],
+          [
+            -0.3055336962541269,
+            2.4188036026077513,
+            -0.8173190691297321,
+            -0.13231985989912481
+          ],
+          [
+            -1.0751371140171715,
+            0.027128140248041638,
+            -1.451633437351802,
+            0.8380437445351221
+          ],
+          [
+            -1.9630424884949267,
+            1.2094648681501097,
+            -1.2271603212175117,
+            0.5252136671191155
+          ],
+          [
+            0.8091643679816228,
+            -0.2948034565926936,
+            -1.7812290242313766,
+            -1.493210431119208
+          ],
+          [
+            -0.08195269396513027,
+            -0.6762117761922679,
+            1.3960326669694294,
+            1.1635018884416148
+          ],
+          [
+            -1.1106475726799032,
+            1.2333656989893054,
+            0.04004029847368917,
+            -1.4750709124952164
+          ],
+          [
+            -1.031886687665152,
+            0.9629199326484627,
+            -1.5777640137634943,
+            0.5351907479716724
+          ],
+          [
+            -0.06497709740013162,
+            1.3152985584809966,
+            0.8361209660350011,
+            0.6275582660368635
+          ],
+          [
+            -0.7034339041941103,
+            0.2995315471007336,
+            -0.8164451757726021,
+            0.31844445552102024
+          ],
+          [
+            0.26657924481116113,
+            -0.9644881738127001,
+            -0.8549543539026825,
+            0.5096005230936472
+          ],
+          [
+            0.47201671656673316,
+            -0.09315610120978657,
+            -1.608494187682172,
+            -2.1881383338923226
+          ],
+          [
+            -1.9354472293906693,
+            1.4787500459835017,
+            -0.7270490731180382,
+            -0.409901220310818
+          ],
+          [
+            -0.8261805693844394,
+            -0.38812214758667996,
+            0.4009002969297,
+            2.295237724353811
+          ],
+          [
+            -2.146035382458371,
+            0.2774792578694744,
+            2.048919706855985,
+            0.47500531806958646
+          ],
+          [
+            0.2505234320572184,
+            -0.002332528401871106,
+            -1.1593109124769279,
+            -0.7409476564870849
+          ],
+          [
+            0.2552199584652773,
+            0.4552459521264596,
+            0.46535910118832946,
+            -0.8858860986218647
+          ],
+          [
+            0.5708606191852618,
+            1.081245451188376,
+            1.3888154502474126,
+            2.754738815742731
+          ],
+          [
+            0.09552189750619933,
+            0.01851400642653539,
+            -0.6738105800498941,
+            0.4327867703590762
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.22534903779313875,
+          "unconstrained_estimate": 0.22534903779313875,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              -0.13690765831308102,
+              0.4969922246736175
+            ],
+            "transformed_single": [
+              -0.13642615640489922,
+              0.49684983602350125
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.1182999575016532,
+            "rater": 0.2934504581130139,
+            "error": 0.09088035962803225,
+            "within": 0.09425652793611528
+          },
+          "normalization_scale": 3.387158180537377,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0275,
+      "paired_difference_mc_se": 0.0036576719757437344
+    },
+    {
+      "n": 60,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.0,
+      "error_variance": 1,
+      "true_average_icc": 0.8,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "1fecb4cf11cdf68829490d9ac07c4d37c85a11a401bd023921d2cb523f857854",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1892,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.946,
+          "conditional_coverage": 0.946,
+          "monte_carlo_95_interval": [
+            0.9351721452311595,
+            0.9554953768613262
+          ]
+        },
+        "transformed_single": {
+          "covered": 1892,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.946,
+          "conditional_coverage": 0.946,
+          "monte_carlo_95_interval": [
+            0.9351721452311595,
+            0.9554953768613262
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1892,
+        "frozen_only": 0,
+        "transformed_only": 0,
+        "neither": 108
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.4434633350543018,
+            0.8241676082030521,
+            2.550250528443657,
+            0.44719760877770676
+          ],
+          [
+            0.8132505877108327,
+            0.5915275790917419,
+            -0.31206034344763756,
+            -0.431909903081409
+          ],
+          [
+            -0.1249108035354341,
+            -0.20610010476999602,
+            -0.8216705545737919,
+            0.27987438371176043
+          ],
+          [
+            0.7374964425022176,
+            1.1956784071490123,
+            0.4982244339868323,
+            1.0498414480542824
+          ],
+          [
+            -2.7654640273831923,
+            -1.8085892298485684,
+            -3.281114808705649,
+            -1.850020707474699
+          ],
+          [
+            1.02743651032846,
+            -0.25746325615480115,
+            -1.3783976777850795,
+            1.1641268126343534
+          ],
+          [
+            0.8475460916807793,
+            -0.15733343400253585,
+            1.0563677887679557,
+            -0.01835160918625922
+          ],
+          [
+            1.4129991808929012,
+            2.8087479387752303,
+            3.9150124584147417,
+            2.634783856758942
+          ],
+          [
+            1.9946776292627653,
+            3.1435288543514996,
+            0.5753090945925462,
+            -0.569323756189281
+          ],
+          [
+            -0.38918302077826195,
+            -1.2251125405187142,
+            0.40564157347945873,
+            0.20372167911306596
+          ],
+          [
+            1.273730263467234,
+            1.17658252401581,
+            1.72652425490105,
+            1.1798450387905233
+          ],
+          [
+            -2.0551309143061087,
+            0.03465716666443164,
+            -0.7641294319935626,
+            -1.322397922724409
+          ],
+          [
+            0.446149772756212,
+            -0.4239044566803082,
+            0.9597728671103714,
+            0.05054176770387076
+          ],
+          [
+            0.5404828194604197,
+            -0.8328175511442337,
+            -0.3301436657948289,
+            0.10329599930376082
+          ],
+          [
+            -1.0214140216872352,
+            2.0384376353881226,
+            -0.1075311798035651,
+            0.8303136895073768
+          ],
+          [
+            1.4497512761885298,
+            2.2266131032335412,
+            2.462922365465129,
+            1.8264273466823397
+          ],
+          [
+            0.140867916331878,
+            -0.5342365018082526,
+            -1.0623597742186432,
+            -1.5495451237428912
+          ],
+          [
+            0.4516650686539231,
+            0.06813945657522254,
+            -1.1202799965159396,
+            -0.6632618218440052
+          ],
+          [
+            0.7164448164268774,
+            1.4242966170924096,
+            1.1480508119155794,
+            -1.0417936407543253
+          ],
+          [
+            0.678952159284594,
+            0.8943269663086083,
+            1.252369000831401,
+            -0.04054296171495653
+          ],
+          [
+            -0.2857395615136872,
+            -0.7471346522852054,
+            0.03265376469048213,
+            1.5635803183210708
+          ],
+          [
+            0.30230884978303857,
+            -0.015268017854505156,
+            0.5998132994109457,
+            1.9271718422693218
+          ],
+          [
+            0.6687116465751084,
+            2.820237284723222,
+            2.6969564115441886,
+            0.5653516152341143
+          ],
+          [
+            0.7871442256819761,
+            0.05428065378649158,
+            0.7363384306112029,
+            -2.06331896944358
+          ],
+          [
+            0.7187909578542571,
+            3.4135628292032143,
+            1.2882869086913011,
+            -0.33523132807429423
+          ],
+          [
+            -0.09596475777180868,
+            -1.4115130705534562,
+            -0.10326526964197003,
+            1.7483941807486065
+          ],
+          [
+            -2.8098359836136995,
+            -0.5110030660087653,
+            -0.9832488044543437,
+            1.7121925891507181
+          ],
+          [
+            -0.1784896640975161,
+            0.6442485181155323,
+            -0.41510147465443836,
+            -0.001185845338071756
+          ],
+          [
+            1.9636860174486266,
+            0.9239854846225898,
+            0.16347456760128654,
+            1.929065802343727
+          ],
+          [
+            0.06308241687972416,
+            -0.538903336367916,
+            1.3607073261131148,
+            0.8191782610887477
+          ],
+          [
+            -1.9101133414669595,
+            0.3663992278760454,
+            -0.4560982769576935,
+            -1.9784263179017376
+          ],
+          [
+            -2.732272475636662,
+            -0.3216280953586369,
+            -0.8918070483156952,
+            -1.0938747726553413
+          ],
+          [
+            0.6598493130757503,
+            0.3808984875269028,
+            -0.40906049135011024,
+            -0.6030876560324097
+          ],
+          [
+            -1.6904464407804047,
+            -0.790705244213876,
+            0.36131946676308657,
+            0.38354992604981575
+          ],
+          [
+            -1.299809647731576,
+            -2.9496522849176463,
+            1.017638357076507,
+            -0.04139623691445404
+          ],
+          [
+            0.22764611773192234,
+            0.0629350662671394,
+            0.013965430086770425,
+            1.2969975770405282
+          ],
+          [
+            1.5820093469151124,
+            -1.437612090209079,
+            -0.1503025282245839,
+            -0.9561650355906883
+          ],
+          [
+            -1.2494208238773747,
+            -0.6455343808996898,
+            -1.733987855247643,
+            -2.7573129827265372
+          ],
+          [
+            3.520560419873492,
+            1.8543951156241651,
+            -0.21168831632603258,
+            2.7292812319050395
+          ],
+          [
+            0.7881252820147493,
+            0.015510898744116153,
+            -0.014065639190191437,
+            -0.5104341503660543
+          ],
+          [
+            -0.0601448814512362,
+            1.4184121586068663,
+            2.382795393628498,
+            0.7437767678389055
+          ],
+          [
+            -2.4227581034311614,
+            -1.8457650962089684,
+            -0.993929945674462,
+            -0.2096301887297769
+          ],
+          [
+            1.4886210168634009,
+            -1.3320857968893616,
+            -0.9151426784743256,
+            -0.6973343299618119
+          ],
+          [
+            -0.6748147952960195,
+            2.6189793788094664,
+            1.459265584209776,
+            -1.0870084051234166
+          ],
+          [
+            1.2609038669020876,
+            2.3797306759136982,
+            -0.4872070694286277,
+            2.444021356918878
+          ],
+          [
+            -3.5643053486793606,
+            -1.2871851330383621,
+            -3.91445794915312,
+            -2.0526209525388444
+          ],
+          [
+            1.14227995149679,
+            1.9799862517754974,
+            1.974673307458054,
+            0.5539149428323787
+          ],
+          [
+            0.07996970542638993,
+            -0.8803732831107054,
+            0.18004354244907483,
+            0.337051483319159
+          ],
+          [
+            0.5678669133044745,
+            1.5332782247203387,
+            2.3670041606740178,
+            -1.5470249013400554
+          ],
+          [
+            1.1268968012635718,
+            -0.38588040798640144,
+            -0.49026392622221504,
+            -0.8969638029304939
+          ],
+          [
+            1.9565838180330588,
+            1.223380158114489,
+            1.3899534054329936,
+            0.4733805477759143
+          ],
+          [
+            0.3071668614986549,
+            -0.2576654515444199,
+            0.8568502774295403,
+            -0.717213289562739
+          ],
+          [
+            -0.793236691081756,
+            0.4307922174724509,
+            1.4722782512950974,
+            -0.5477011074799703
+          ],
+          [
+            3.2242965549984968,
+            2.279151085815793,
+            0.7507936583068964,
+            0.5625349053310215
+          ],
+          [
+            -3.1427695335929133,
+            -2.172181895861068,
+            -0.03700812677590393,
+            -1.6198957213088405
+          ],
+          [
+            0.4292797380826485,
+            1.1704694917223146,
+            1.0530217855864294,
+            1.5405684317658406
+          ],
+          [
+            0.6125071333318892,
+            0.9869706372648477,
+            -0.2889939133220367,
+            -0.10621121854995419
+          ],
+          [
+            3.2255093000640285,
+            1.8968208030723943,
+            1.960153229885153,
+            1.3987576790905527
+          ],
+          [
+            0.3752930865113134,
+            -1.962341864637421,
+            1.9978950765944992,
+            -0.5841807349664379
+          ],
+          [
+            -0.9645968864278434,
+            -0.17579762042545674,
+            -0.7705270114674384,
+            0.3611192154415536
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.7582027611327484,
+          "unconstrained_estimate": 0.7582027611327484,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.6404658418125573,
+              0.8445112678499924
+            ],
+            "transformed_single": [
+              0.6404405037289924,
+              0.84451841977958
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.30057033363312236,
+            "rater": 0.06812117552633712,
+            "error": 0.07273538519981215,
+            "within": 0.07265848170525423
+          },
+          "normalization_scale": 3.9150124584147417,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": 0.0,
+      "paired_difference_mc_se": 0.0
+    },
+    {
+      "n": 60,
+      "k": 4,
+      "subject_variance": 1.0,
+      "rater_variance": 0.5,
+      "error_variance": 1,
+      "true_average_icc": 0.7272727272727273,
+      "replicates": 2000,
+      "undefined_estimates": 0,
+      "draw_sha256": "b81de5dc04eebb6981fb047f9b0a0b434d87130f0779db45efb54d5ac4622217",
+      "intervals": {
+        "frozen_irr": {
+          "covered": 1899,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.9495,
+          "conditional_coverage": 0.9495,
+          "monte_carlo_95_interval": [
+            0.9389741333719799,
+            0.9586815775186653
+          ]
+        },
+        "transformed_single": {
+          "covered": 1870,
+          "returned": 2000,
+          "withheld": 0,
+          "return_rate": 1.0,
+          "unconditional_coverage": 0.935,
+          "conditional_coverage": 0.935,
+          "monte_carlo_95_interval": [
+            0.9232936210254108,
+            0.9454101624918252
+          ]
+        }
+      },
+      "paired_outcome_counts": {
+        "both": 1870,
+        "frozen_only": 29,
+        "transformed_only": 0,
+        "neither": 101
+      },
+      "oracle_example": {
+        "ratings": [
+          [
+            -1.183623037405263,
+            -0.23754927538856643,
+            0.38495729862041655,
+            -0.774834014651291
+          ],
+          [
+            -0.22966717278780902,
+            -0.5851853939539163,
+            -1.9497399807214335,
+            0.9906509029593242
+          ],
+          [
+            -1.3695095492646332,
+            -0.5521758907392926,
+            1.4769215731384413,
+            -0.5141841492757268
+          ],
+          [
+            0.7201379695789651,
+            1.8457570332182114,
+            -0.166575350199903,
+            0.3479876173861067
+          ],
+          [
+            -0.8128678563928206,
+            -1.1924470846236739,
+            -0.4586180356319553,
+            -0.2402695438553507
+          ],
+          [
+            -2.7154101010464444,
+            0.7723908058742064,
+            0.03941850185427015,
+            -0.2536049337711902
+          ],
+          [
+            1.5473530336370984,
+            1.206048701000737,
+            4.6363718314609095,
+            1.879006371972802
+          ],
+          [
+            -1.0417002897700618,
+            -4.352255637200848,
+            -0.8346649093339367,
+            -3.265527697150884
+          ],
+          [
+            1.5336819418975325,
+            -0.5201007635127601,
+            -0.7160500536508381,
+            -3.9297871276227045
+          ],
+          [
+            1.550766001614031,
+            0.20700890244801584,
+            -0.2340251879489802,
+            0.3302060979226986
+          ],
+          [
+            0.043579744284287125,
+            1.254243095985836,
+            -0.05396849828667927,
+            -1.509665945280115
+          ],
+          [
+            0.37523173048877023,
+            -1.1716692669944955,
+            0.2099583533722359,
+            0.5022283172881515
+          ],
+          [
+            0.7333028533367447,
+            0.0549483804530084,
+            -1.269201335511975,
+            -0.5184553097343881
+          ],
+          [
+            -0.6737111957361074,
+            -0.15447572764621803,
+            -0.10914506628318474,
+            -1.5312549078789923
+          ],
+          [
+            -0.0757795455130641,
+            -1.089974175927945,
+            -0.665077571414536,
+            -1.7273566349139324
+          ],
+          [
+            -0.15396917993292336,
+            -0.7687900640073896,
+            -0.8820882221335595,
+            -1.6983279210562967
+          ],
+          [
+            -0.46722950026949706,
+            -0.6819267183107938,
+            -2.212533728108514,
+            0.3613389372984981
+          ],
+          [
+            -2.987058233376374,
+            -0.824877112012701,
+            -3.5665516612384867,
+            -0.9503202464833873
+          ],
+          [
+            1.009114385239089,
+            2.779016771536619,
+            -0.5710229592431979,
+            1.3935377363437524
+          ],
+          [
+            1.0031315374226677,
+            0.871008685219715,
+            1.4933119534229913,
+            0.34912749388970565
+          ],
+          [
+            -3.2271683300832175,
+            -0.6655014373545016,
+            -1.95834078918119,
+            -2.6142128121159907
+          ],
+          [
+            -0.96576112697429,
+            -2.4247158310048396,
+            -1.12509057004798,
+            -3.824429082124952
+          ],
+          [
+            1.1683787894933884,
+            0.9369141484665253,
+            0.9426917826557611,
+            -0.4468179171022538
+          ],
+          [
+            -0.31059944076565077,
+            -2.1997901832905042,
+            1.094610943073953,
+            -0.8967834055513988
+          ],
+          [
+            -0.052744696649262374,
+            -0.7131203532251692,
+            0.5382195399102667,
+            0.4967370402416058
+          ],
+          [
+            0.04958241871065827,
+            -0.09989074767069173,
+            -0.2432150022330177,
+            -2.871650953303403
+          ],
+          [
+            0.008615769194351475,
+            1.9199950439238884,
+            -1.7301056391057412,
+            -0.7766513579252472
+          ],
+          [
+            -1.0486245278414015,
+            -0.16123015165470422,
+            0.3219511942539377,
+            1.402332306116044
+          ],
+          [
+            -2.305169249019605,
+            -0.19244903983915718,
+            -1.6874258476246267,
+            -3.0439615342280693
+          ],
+          [
+            0.33529311767235187,
+            -0.25253466603352265,
+            -1.0396733108822496,
+            -0.6930948153101932
+          ],
+          [
+            -1.4802771907030614,
+            -1.6372129383884697,
+            -0.9362254368046412,
+            -2.920468050546221
+          ],
+          [
+            0.7914397366302436,
+            0.07632143070996877,
+            -1.1243311374707876,
+            -0.3414272590408869
+          ],
+          [
+            0.5995518247003142,
+            -1.3964957523289083,
+            1.4826803186706172,
+            -0.9999160112883277
+          ],
+          [
+            3.3090230589910337,
+            1.7129150176953323,
+            1.2898766632244232,
+            0.8711657500851065
+          ],
+          [
+            0.8305359520417083,
+            0.3902012361314635,
+            1.5480755055457363,
+            0.26896170171485545
+          ],
+          [
+            0.7200671829362905,
+            1.3335911703106842,
+            0.1827464154159647,
+            -0.9688409569127164
+          ],
+          [
+            -0.03733592931150942,
+            -0.0038993168703548298,
+            1.4892758274622073,
+            0.7925054154326864
+          ],
+          [
+            -0.1420780544204452,
+            -0.1345644557097323,
+            -0.18555134290994446,
+            -0.5504663330895372
+          ],
+          [
+            -0.37670688878358605,
+            1.5027251836539333,
+            0.7424829235061344,
+            -1.9004735149221046
+          ],
+          [
+            -0.3846036619443994,
+            -3.5046791096218053,
+            -0.3584013809824126,
+            -1.4862926112425816
+          ],
+          [
+            -0.1369821485499082,
+            -1.9363399141677395,
+            0.6815063239661929,
+            -0.2850855231050694
+          ],
+          [
+            1.0976550174138264,
+            2.6451122385248427,
+            1.3283934650224456,
+            -0.8357689604525977
+          ],
+          [
+            0.13184156678370815,
+            -0.6477689326000631,
+            0.7960139889735991,
+            -1.8782583671028892
+          ],
+          [
+            1.3451555357398044,
+            0.9807571684632803,
+            2.0037608313923982,
+            0.5986843504701554
+          ],
+          [
+            0.3879624347403793,
+            0.2966529424659955,
+            -0.3929612754100972,
+            -0.6775515739995683
+          ],
+          [
+            -1.2001265374426218,
+            0.3930543346462025,
+            -0.6788412711785664,
+            -0.41958417535355225
+          ],
+          [
+            -1.8821909208263157,
+            -2.6103348443959296,
+            -3.1637431698697336,
+            -3.189325212913773
+          ],
+          [
+            0.9775348008339148,
+            0.6589162840805824,
+            1.358454836396894,
+            -0.9476086969803139
+          ],
+          [
+            0.6774181035124878,
+            3.1717564376426286,
+            2.7986725716936816,
+            1.8215178460712114
+          ],
+          [
+            -0.023179398049051336,
+            -0.6753438825101974,
+            -0.11067869994067417,
+            -3.285069964385567
+          ],
+          [
+            1.5868181950956628,
+            -0.7084253338893414,
+            1.0001522366826552,
+            -1.7387753628024236
+          ],
+          [
+            1.01544512928561,
+            0.7312931182773872,
+            0.6821297172791358,
+            0.16204273344342435
+          ],
+          [
+            -1.6033807861983558,
+            -0.024110987905347825,
+            -0.4004094744577733,
+            -3.970051243351259
+          ],
+          [
+            0.8080687689709694,
+            0.6140874070551052,
+            1.0616259987199892,
+            1.1890548043500069
+          ],
+          [
+            1.0261236331618018,
+            0.6531650772926098,
+            -0.49852319894751085,
+            -0.9663859544245176
+          ],
+          [
+            -1.3487861634431448,
+            -1.4641185145331863,
+            -0.40500762825034836,
+            -1.2369705466106753
+          ],
+          [
+            -1.4697397924044118,
+            -0.11258576617923827,
+            1.091949263466329,
+            -1.3180182602741664
+          ],
+          [
+            1.9025969691503901,
+            2.2798899463304885,
+            0.01549725697677129,
+            -0.355428266498068
+          ],
+          [
+            -1.2671909359037385,
+            -0.4243322152632119,
+            -0.7644512462966675,
+            0.017342268647075887
+          ],
+          [
+            -1.674469213427436,
+            -2.842262640088507,
+            1.6109970647622407,
+            0.1755341640143817
+          ]
+        ],
+        "result": {
+          "model": "icc2k",
+          "confidence": 0.95,
+          "input": 60,
+          "n": 60,
+          "raters": 4,
+          "excluded": 0,
+          "retained_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "estimate": 0.7247038122509335,
+          "unconstrained_estimate": 0.7247038122509335,
+          "interval": null,
+          "candidate_intervals": {
+            "frozen_irr": [
+              0.584553017859574,
+              0.8245018864813967
+            ],
+            "transformed_single": [
+              0.5891771710750139,
+              0.8232085345913952
+            ]
+          },
+          "notices": [
+            "ICC(2,k) interval policy unresolved: candidate formulas differ; public interval withheld."
+          ],
+          "normalized_anova": {
+            "subject": 0.2058891475489836,
+            "rater": 0.3992625290744807,
+            "error": 0.05249206614478742,
+            "within": 0.058271573860282304
+          },
+          "normalization_scale": 4.6363718314609095,
+          "public_analysis": false
+        }
+      },
+      "paired_coverage_difference": -0.0145,
+      "paired_difference_mc_se": 0.0026736583971428184
+    }
+  ]
+}

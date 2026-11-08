@@ -1,0 +1,14 @@
+{
+  "integrity": "pass",
+  "source_and_installed_bytes": [
+    "cpj_icc.py",
+    "cpj_icc_analysis.py",
+    "cpj_agreement.py",
+    "analyses/meddecide/pyagreement.py",
+    "registry.json",
+    "R/ClinicoPathPj/R/ClinicoPathPj.rdb",
+    "R/ClinicoPathPj/R/ClinicoPathPj.rdx"
+  ],
+  "version": "0.3.59",
+  "sha256": "278eea5b561e62be53245b04d88245a3da0326d98c5fc207f67249fed48089f4"
+}

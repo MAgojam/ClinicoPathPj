@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-07",
+  "host": "jamovi 28.17.0.0",
+  "platform": "macOS arm64",
+  "word": {
+    "version": "16.114.4",
+    "document": "python-svg-28.17-confirmed-preview3.docx",
+    "pages_inspected": [
+      1,
+      2,
+      3
+    ],
+    "whole_page_view": true,
+    "explorer_and_static_plots": "visually present",
+    "native_classification": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "preview_cutoff": 3,
+    "native_cutoff": 2,
+    "javascript_source_visible": false,
+    "clipped_figures_observed": false,
+    "document_edited_or_saved": false,
+    "sha256": "fc5bf6068ea9137a78d346f51edf8ce51831bf9b64592be15fa6763343629f99",
+    "closed_after_inspection": true,
+    "original_export_bytes_unchanged": true
+  },
+  "latex": {
+    "status": "stalled; UI still Saving at final observation",
+    "destination": "python-svg-28.17-latex.zip",
+    "bytes": 0,
+    "observation_time": "2026-11-07T19:40:52.316278+03:00",
+    "seconds_since_destination_creation": 523,
+    "escape": "file panel dismissed; Saving indicator remained",
+    "archive_members": "unavailable: empty file",
+    "compilation": "not attempted; invalid bundle",
+    "pdflatex_available": true,
+    "cause": "not established",
+    "post_session_close": {
+      "bytes": 22,
+      "members": [],
+      "note": "Session closed for ICC testing; no TeX source or figures; still not a successful export"
+    }
+  },
+  "tests": {
+    "focused_passed": 20,
+    "runner": "jamovi bundled Python"
+  },
+  "remaining": [
+    "Native SVG OMV save/reopen",
+    "Successful LaTeX completion/compilation/rendering",
+    "PDF/ODT",
+    "Additional platforms"
+  ],
+  "state": "Disposable SVG session closed for ICC testing; original stalled-export observations retained above"
+}

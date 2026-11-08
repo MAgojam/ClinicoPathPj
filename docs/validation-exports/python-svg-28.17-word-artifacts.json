@@ -1,0 +1,23 @@
+{
+  "scope": "structural artifact checks only",
+  "gui_qualification": false,
+  "word_example": {
+    "native_counts": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "native_cutoff": 2,
+    "preview_cutoff": 3,
+    "local_snapshot_cutoff": 2,
+    "native_rule_text": "pass",
+    "inspected_preview_media_sha256": "f3c6fd2f2ff60acab28a663fef3b7eaaa762c302178559cf44b17a9207018ad9",
+    "embedded_media": "word/media/4640b24821e941580e9d798d45c38c6c37ad361c.png",
+    "exported_text_marker_scan": "pass; limited patterns, not a general JavaScript detector",
+    "word_page_rendering_verified": false,
+    "save_reopen_verified": false
+  },
+  "omv": {},
+  "docx": {}
+}

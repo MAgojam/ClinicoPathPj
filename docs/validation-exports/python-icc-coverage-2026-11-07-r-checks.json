@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "matrices": 24,
+  "coefficient_comparisons": 48,
+  "interval_comparisons": 48,
+  "withheld_candidates": 0,
+  "irr": "0.85",
+  "psych": "2.6.5"
+} 

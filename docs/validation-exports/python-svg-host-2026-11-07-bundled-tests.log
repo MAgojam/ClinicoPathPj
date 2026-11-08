@@ -1,0 +1,9 @@
+test_compatible_accessor_and_inheritance_are_not_reported_as_confirmed_mismatch (test_svg_host_preflight.SvgHostPreflight.test_compatible_accessor_and_inheritance_are_not_reported_as_confirmed_mismatch) ... ok
+test_known_mismatch (test_svg_host_preflight.SvgHostPreflight.test_known_mismatch) ... ok
+test_new_path_never_certifies_gui (test_svg_host_preflight.SvgHostPreflight.test_new_path_never_certifies_gui) ... ok
+test_unrecognized_source_cannot_pass (test_svg_host_preflight.SvgHostPreflight.test_unrecognized_source_cannot_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

@@ -1,0 +1,165 @@
+40 entry points, 0 file(s) updated
+Bundled 10 pinned packages (macos-arm64-cp311)
+
+jamovi compiler
+
+wrote: pyagepyramid.h.R
+wrote: pyagepyramid.src.js
+wrote: pyagepyramid.js
+wrote: pyagreement.h.R
+wrote: pyagreement.src.js
+wrote: pyagreement.js
+wrote: pyalluvial.h.R
+wrote: pyalluvial.src.js
+wrote: pyalluvial.js
+wrote: pybenford.h.R
+wrote: pybenford.src.js
+wrote: pybenford.js
+wrote: pybridgecompare.h.R
+wrote: pybridgecompare.src.js
+wrote: pybridgecompare.js
+wrote: pycategorize.h.R
+wrote: pycategorize.src.js
+wrote: pycategorize.js
+wrote: pycheckdata.h.R
+wrote: pycheckdata.src.js
+wrote: pycheckdata.js
+wrote: pychisqposttest.h.R
+wrote: pychisqposttest.src.js
+wrote: pychisqposttest.js
+wrote: pycotest.h.R
+wrote: pycotest.src.js
+wrote: pycotest.js
+wrote: pycrosstable.h.R
+wrote: pycrosstable.src.js
+wrote: pycrosstable.js
+wrote: pyd3cutoff.h.R
+wrote: pyd3cutoff.src.js
+wrote: pyd3cutoff.js
+wrote: pydataquality.h.R
+wrote: pydataquality.src.js
+wrote: pydataquality.js
+wrote: pydatetimeconverter.h.R
+wrote: pydatetimeconverter.src.js
+wrote: pydatetimeconverter.js
+wrote: pydecision.h.R
+wrote: pydecision.src.js
+wrote: pydecision.js
+wrote: pydecisioncalculator.h.R
+wrote: pydecisioncalculator.src.js
+wrote: pydecisioncalculator.js
+wrote: pydecisioncurve.h.R
+wrote: pydecisioncurve.src.js
+wrote: pydecisioncurve.js
+wrote: pydescriptives.h.R
+wrote: pydescriptives.src.js
+wrote: pydescriptives.js
+wrote: pydiagnosticmeta.h.R
+wrote: pydiagnosticmeta.src.js
+wrote: pydiagnosticmeta.js
+wrote: pydotdecision.h.R
+wrote: pydotdecision.src.js
+wrote: pydotdecision.js
+wrote: pyexacttests.h.R
+wrote: pyexacttests.src.js
+wrote: pyexacttests.js
+wrote: pyfirstevent.h.R
+wrote: pyfirstevent.src.js
+wrote: pyfirstevent.js
+wrote: pyihcheatmap.h.R
+wrote: pyihcheatmap.src.js
+wrote: pyihcheatmap.js
+wrote: pyintervalcensoring.h.R
+wrote: pyintervalcensoring.src.js
+wrote: pyintervalcensoring.js
+wrote: pyjjcorrmat.h.R
+wrote: pyjjcorrmat.src.js
+wrote: pyjjcorrmat.js
+wrote: pykappaci.h.R
+wrote: pykappaci.src.js
+wrote: pykappaci.js
+wrote: pykappafixedn.h.R
+wrote: pykappafixedn.src.js
+wrote: pykappafixedn.js
+wrote: pykappapower.h.R
+wrote: pykappapower.src.js
+wrote: pykappapower.js
+wrote: pyobservablecutoff.h.R
+wrote: pyobservablecutoff.src.js
+wrote: pyobservablecutoff.js
+wrote: pyoutcomeorganizer.h.R
+wrote: pyoutcomeorganizer.src.js
+wrote: pyoutcomeorganizer.js
+wrote: pyoutlierdetection.h.R
+wrote: pyoutlierdetection.src.js
+wrote: pyoutlierdetection.js
+wrote: pyreportcat.h.R
+wrote: pyreportcat.src.js
+wrote: pyreportcat.js
+wrote: pyruntime.h.R
+wrote: pyruntime.src.js
+wrote: pyruntime.js
+wrote: pysequentialtests.h.R
+wrote: pysequentialtests.src.js
+wrote: pysequentialtests.js
+wrote: pysummarydata.h.R
+wrote: pysummarydata.src.js
+wrote: pysummarydata.js
+wrote: pysvgcutoff.h.R
+wrote: pysvgcutoff.src.js
+wrote: pysvgcutoff.js
+wrote: pytableone.h.R
+wrote: pytableone.src.js
+wrote: pytableone.js
+wrote: pytimeinterval.h.R
+wrote: pytimeinterval.src.js
+wrote: pytimeinterval.js
+wrote: pyvartree.h.R
+wrote: pyvartree.src.js
+wrote: pyvartree.js
+wrote: pyvenn.h.R
+wrote: pyvenn.src.js
+wrote: pyvenn.js
+wrote: pywelch.h.R
+wrote: pywelch.src.js
+wrote: pywelch.js
+writing module meta
+copied python_core_examples.omv
+copied python_set_intersection_examples.csv
+copied python_set_intersection_unequal_examples.csv
+copied python_outlier_screening_examples.csv
+copied python_variable_tree_examples.csv
+copied python_tree_node_summary_examples.csv
+copied python_tree_reference_examples.csv
+copied python_alluvial_examples.csv
+copied python_cross_table_examples.omv
+copied python_table_one_examples.omv
+copied python_outcome_examples.csv
+copied python_datetime_examples.csv
+copied python_interval_examples.csv
+copied python_calendar_interval_examples.csv
+copied python_numeric_date_examples.csv
+copied python_composite_outcome_examples.csv
+copied python_interval_censoring_examples.omv
+copied python_first_event_examples.omv
+copied python_first_event_identity.omv
+copied python_diagnostic_study_examples.omv
+copied python_agreement_examples.omv
+wrote: 0000.yaml
+wrote: jamovi.yaml
+wrote: jamovi-full.yaml
+* installing *source* package ‘ClinicoPathPj’ ...
+** this is package ‘ClinicoPathPj’ version ‘0.3.58’
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ClinicoPathPj)
+wrote module: ClinicoPathPj_0.3.58.jmo
+

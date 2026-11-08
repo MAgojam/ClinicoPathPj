@@ -1,0 +1,1523 @@
+== R tests against the installed module (engine-like environment)
+✔ | F W  S  OK | Context
+
+⠏ |          0 | agreement-pairs-python                                         Error: Operation not permitted
+
+⠋ |          1 | agreement-pairs-python                                         
+⠇ |          9 | agreement-pairs-python                                         Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         10 | agreement-pairs-python                                         
+⠙ |         12 | agreement-pairs-python                                         
+⠹ |         13 | agreement-pairs-python                                         
+⠦ |         17 | agreement-pairs-python                                         Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         19 | agreement-pairs-python                                         
+⠏ |         20 | agreement-pairs-python                                         
+⠹ |         23 | agreement-pairs-python                                         
+⠸ |         24 | agreement-pairs-python                                         
+✔ |         24 | agreement-pairs-python [17.4s]
+
+⠏ |          0 | alluvial-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | alluvial-python                                                Error: Operation not permitted
+
+⠹ |         33 | alluvial-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         57 | alluvial-python                                                
+⠙ |         62 | alluvial-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         63 | alluvial-python                                                
+⠴ |         66 | alluvial-python                                                
+⠇ |         69 | alluvial-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         71 | alluvial-python                                                
+✔ |         71 | alluvial-python [3.8s]
+
+⠏ |          0 | bridge                                                         
+⠧ |          8 | bridge                                                         
+⠋ | 1       10 | bridge                                                         Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ | 2       12 | bridge                                                         Error: Operation not permitted
+
+⠦ | 4       13 | bridge                                                         
+⠇ | 4       15 | bridge                                                         
+⠋ | 5       16 | bridge                                                         
+✖ | 5       19 | bridge [4.6s]
+────────────────────────────────────────────────────────────────────────────────
+Error: Operation not permitted
+Error: Operation not permitted
+Error ('test-bridge.R:29:5'): a checkpoint condition stops Python at once and leaves no process behind
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:29:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:37:5'): a run over the time limit is stopped, even inside C code
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:37:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:46:5'): jamovi's restart request (an option change) ends the analysis in 'restarting'
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:46:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:54:9'): a Python process that dies without answering is reported, with what it printed
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_error(...) at test-bridge.R:57:5
+  2. │ └─testthat:::expect_condition_matching_(...)
+  3. │   └─testthat:::quasi_capture(...)
+  4. │     ├─testthat (local) .capture(...)
+  5. │     │ └─base::withCallingHandlers(...)
+  6. │     └─rlang::eval_bare(quo_get_expr(.quo), quo_get_env(.quo))
+  7. └─analysis$run() at test-bridge.R:57:37
+  8.   ├─jmvcore (local) try(...)
+  9.   │ └─base::eval(expr)
+ 10.   └─private$.run()
+ 11.     └─ClinicoPathPj:::.cpjRun(...)
+ 12.       └─ClinicoPathPj:::.cpjExecute(...)
+ 13.         └─ClinicoPathPj (local) checkpoint()
+ 14.           └─private$.checkpoint(flush = FALSE)
+ 15.             └─private$.checkpointCB(results)
+ 16.               └─pythonChildren() at test-bridge.R:54:9
+ 17.                 ├─base::Filter(...) at test-bridge.R:18:5
+ 18.                 │ ├─base::unlist(lapply(x, f))
+ 19.                 │ └─base::lapply(x, f)
+ 20.                 └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+ 21.                   └─ps:::ps_ppid_map()
+ 22.                     └─ps::ps_pids()
+ 23.                       └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:75:5'): stopping a run also kills what Python started
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+    ▆
+ 1. ├─sleeper %in% ps::ps_pids() at test-bridge.R:75:5
+ 2. └─ps::ps_pids()
+ 3.   └─ps:::ps_pids_macos()
+────────────────────────────────────────────────────────────────────────────────
+
+⠏ |          0 | build-metadata                                                 
+⠼ |          5 | build-metadata                                                 
+✔ |          5 | build-metadata
+
+⠏ |          0 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠋ |          1 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠇ |          9 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠦ |         17 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠼ |         25 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠹ |         33 | composite-outcomes-python                                      Error: Operation not permitted
+
+⠸ |         34 | composite-outcomes-python                                      
+⠼ |         35 | composite-outcomes-python                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         37 | composite-outcomes-python                                      
+⠧ |         38 | composite-outcomes-python                                      
+⠇ |         39 | composite-outcomes-python                                      
+⠋ |         41 | composite-outcomes-python                                      
+⠙ |         42 | composite-outcomes-python                                      
+⠸ |         44 | composite-outcomes-python                                      
+✔ |         45 | composite-outcomes-python [21.3s]
+
+⠏ |          0 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | correlation-python                                             
+⠴ |         26 | correlation-python                                             Error: Operation not permitted
+
+⠋ |         51 | correlation-python                                             
+⠴ |         76 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         96 | correlation-python                                             
+⠋ |        101 | correlation-python                                             
+⠼ |        115 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |        126 | correlation-python                                             
+⠋ |        151 | correlation-python                                             Error: Operation not permitted
+
+⠴ |        176 | correlation-python                                             
+⠋ |        201 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |        223 | correlation-python                                             
+⠴ |        226 | correlation-python                                             Error: Operation not permitted
+
+⠋ |        251 | correlation-python                                             
+⠸ |        274 | correlation-python                                             
+⠴ |        276 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |        301 | correlation-python                                             Error: Operation not permitted
+
+⠴ |        326 | correlation-python                                             
+⠋ |        351 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |        376 | correlation-python                                             Error: Operation not permitted
+
+⠋ |        401 | correlation-python                                             
+⠴ |        426 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |        451 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |        476 | correlation-python                                             
+⠋ |        501 | correlation-python                                             Error: Operation not permitted
+
+⠸ |        524 | correlation-python                                             
+⠴ |        526 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |        551 | correlation-python                                             
+⠴ |        576 | correlation-python                                             Error: Operation not permitted
+
+⠋ |        601 | correlation-python                                             
+⠴ |        626 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |        651 | correlation-python                                             Error: Operation not permitted
+
+⠴ |        676 | correlation-python                                             
+⠋ |        701 | correlation-python                                             
+⠴ |        706 | correlation-python                                             
+⠦ |        707 | correlation-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |        708 | correlation-python                                             
+⠋ |        731 | correlation-python                                             Error: Operation not permitted
+
+⠋ |        751 | correlation-python                                             
+⠧ |        788 | correlation-python                                             Error: Operation not permitted
+
+⠸ |        794 | correlation-python                                             
+⠏ |        830 | correlation-python                                             Error: Operation not permitted
+
+⠦ |        837 | correlation-python                                             
+⠋ |        871 | correlation-python                                             Error: Operation not permitted
+
+⠏ |        880 | correlation-python                                             
+⠹ |        893 | correlation-python                                             
+⠏ |        910 | correlation-python                                             Error: Operation not permitted
+
+⠹ |        923 | correlation-python                                             
+⠋ |        961 | correlation-python                                             Error: Operation not permitted
+
+⠴ |        966 | correlation-python                                             
+⠇ |        999 | correlation-python                                             Error: Operation not permitted
+
+⠇ |        1009 | correlation-python                                            
+⠋ |        1051 | correlation-python                                            Error: Operation not permitted
+
+⠙ |        1052 | correlation-python                                            
+⠋ |        1071 | correlation-python                                            Error: Operation not permitted
+
+⠼ |        1095 | correlation-python                                            
+⠏ |        1130 | correlation-python                                            Error: Operation not permitted
+
+⠧ |        1138 | correlation-python                                            
+⠼ |        1175 | correlation-python                                            Error: Operation not permitted
+
+⠋ |        1181 | correlation-python                                            
+⠴ |        1216 | correlation-python                                            Error: Operation not permitted
+
+⠸ |        1224 | correlation-python                                            
+⠸ |        1254 | correlation-python                                            Error: Operation not permitted
+
+⠦ |        1267 | correlation-python                                            
+⠴ |        1306 | correlation-python                                            
+⠏ |        1310 | correlation-python                                            
+⠧ |        1348 | correlation-python                                            
+⠧ |        1358 | correlation-python                                            
+⠋ |        1391 | correlation-python                                            Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |        1394 | correlation-python                                            
+⠴ |        1406 | correlation-python                                            Error: Operation not permitted
+
+⠙ |        1442 | correlation-python                                            
+⠸ |        1454 | correlation-python                                            
+⠴ |        1486 | correlation-python                                            Error: Operation not permitted
+
+⠙ |        1502 | correlation-python                                            
+⠼ |        1525 | correlation-python                                            Error: Operation not permitted
+
+⠏ |        1550 | correlation-python                                            Error: Operation not permitted
+
+⠏ |        1580 | correlation-python                                            
+⠧ |        1598 | correlation-python                                            Error: Operation not permitted
+
+⠋ |        1631 | correlation-python                                            
+⠴ |        1646 | correlation-python                                            Error: Operation not permitted
+
+⠧ |        1678 | correlation-python                                            
+⠸ |        1694 | correlation-python                                            Error: Operation not permitted
+
+⠧ |        1728 | correlation-python                                            
+⠙ |        1742 | correlation-python                                            
+⠸ |        1764 | correlation-python                                            Error: Operation not permitted
+
+⠇ |        1789 | correlation-python                                            
+⠏ |        1790 | correlation-python                                            Error: Operation not permitted
+
+⠸ |        1824 | correlation-python                                            
+⠧ |        1838 | correlation-python                                            Error: Operation not permitted
+
+⠹ |        1873 | correlation-python                                            
+⠴ |        1886 | correlation-python                                            
+✔ |        1886 | correlation-python [82.7s]
+
+⠏ |          0 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | crosstable-python                                              
+⠹ |          3 | crosstable-python                                              Error: Operation not permitted
+
+⠇ |         49 | crosstable-python                                              Error: Operation not permitted
+
+⠴ |         66 | crosstable-python                                              
+⠼ |        105 | crosstable-python                                              
+⠴ |        126 | crosstable-python                                              Error: Operation not permitted
+
+⠧ |        128 | crosstable-python                                              
+⠼ |        165 | crosstable-python                                              
+⠴ |        176 | crosstable-python                                              Error: Operation not permitted
+
+⠹ |        213 | crosstable-python                                              
+⠋ |        221 | crosstable-python                                              
+⠸ |        224 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |        227 | crosstable-python                                              
+⠏ |        230 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |        233 | crosstable-python                                              
+⠴ |        236 | crosstable-python                                              
+⠇ |        239 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |        242 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |        245 | crosstable-python                                              
+⠧ |        248 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |        251 | crosstable-python                                              
+⠸ |        254 | crosstable-python                                              
+⠴ |        256 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |        258 | crosstable-python                                              
+⠏ |        260 | crosstable-python                                              
+⠧ |        268 | crosstable-python                                              Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |        270 | crosstable-python                                              
+⠋ |        271 | crosstable-python                                              Error: Operation not permitted
+
+⠼ |        275 | crosstable-python                                              
+✔ |        275 | crosstable-python [32.6s]
+
+⠏ |          0 | dataquality-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | dataquality-python                                             
+⠦ |          7 | dataquality-python                                             Error: Operation not permitted
+
+⠙ |         12 | dataquality-python                                             Error: Operation not permitted
+
+⠼ |         15 | dataquality-python                                             
+⠴ |         16 | dataquality-python                                             
+⠙ |         22 | dataquality-python                                             
+✔ |         23 | dataquality-python [1.5s]
+
+⠏ |          0 | datetime-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | datetime-python                                                Error: Operation not permitted
+
+⠙ |         12 | datetime-python                                                Error: Operation not permitted
+
+⠹ |         23 | datetime-python                                                Error: Operation not permitted
+
+⠸ |         34 | datetime-python                                                Error: Operation not permitted
+
+⠼ |         45 | datetime-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         56 | datetime-python                                                
+⠦ |         67 | datetime-python                                                Error: Operation not permitted
+
+⠧ |         78 | datetime-python                                                Error: Operation not permitted
+
+⠇ |         89 | datetime-python                                                Error: Operation not permitted
+
+⠏ |        100 | datetime-python                                                Error: Operation not permitted
+
+⠋ |        111 | datetime-python                                                Error: Operation not permitted
+
+⠙ |        122 | datetime-python                                                Error: Operation not permitted
+
+⠹ |        133 | datetime-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |        136 | datetime-python                                                Error: Operation not permitted
+
+⠇ |        139 | datetime-python                                                Error: Operation not permitted
+
+⠙ |        142 | datetime-python                                                
+⠼ |        145 | datetime-python                                                Error: Operation not permitted
+
+⠋ |        151 | datetime-python                                                Error: Operation not permitted
+
+⠙ |        152 | datetime-python                                                Error: Operation not permitted
+
+⠹ |        153 | datetime-python                                                
+⠴ |        156 | datetime-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |        159 | datetime-python                                                
+⠹ |        163 | datetime-python                                                
+✔ |        163 | datetime-python [30.4s]
+
+⠏ |          0 | demographics                                                   Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | demographics                                                   Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |          5 | demographics                                                   
+⠇ |          9 | demographics                                                   Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         13 | demographics                                                   
+⠦ |         17 | demographics                                                   Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         20 | demographics                                                   
+⠋ |         21 | demographics                                                   
+⠼ |         25 | demographics                                                   
+⠴ |         26 | demographics                                                   Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |         28 | demographics                                                   
+✔ |         28 | demographics [2.7s]
+
+⠏ |          0 | descriptive-ports                                              
+⠋ |          1 | descriptive-ports                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |          8 | descriptive-ports                                              Error: Operation not permitted
+
+⠙ |         12 | descriptive-ports                                              Error: Operation not permitted
+
+⠴ |         16 | descriptive-ports                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         20 | descriptive-ports                                              
+⠸ |         24 | descriptive-ports                                              Error: Operation not permitted
+
+⠏ |         30 | descriptive-ports                                              
+⠋ |         31 | descriptive-ports                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         33 | descriptive-ports                                              
+⠸ |         34 | descriptive-ports                                              
+⠦ |         37 | descriptive-ports                                              Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |         38 | descriptive-ports                                              
+⠇ |         39 | descriptive-ports                                              Error: Operation not permitted
+
+⠏ |         40 | descriptive-ports                                              Error: Operation not permitted
+
+⠼ |         45 | descriptive-ports                                              
+⠴ |         46 | descriptive-ports                                              
+⠧ |         48 | descriptive-ports                                              Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         49 | descriptive-ports                                              
+✔ |         49 | descriptive-ports [26.5s]
+
+⠏ |          0 | diagnostic-studies-python                                      Error: Operation not permitted
+
+⠋ |          1 | diagnostic-studies-python                                      Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |         22 | diagnostic-studies-python                                      Error: Operation not permitted
+
+⠦ |         27 | diagnostic-studies-python                                      
+⠧ |         28 | diagnostic-studies-python                                      Error: Operation not permitted
+
+⠏ |         30 | diagnostic-studies-python                                      
+⠹ |         33 | diagnostic-studies-python                                      Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         37 | diagnostic-studies-python                                      
+⠧ |         38 | diagnostic-studies-python                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |         42 | diagnostic-studies-python                                      
+⠴ |         46 | diagnostic-studies-python                                      
+⠦ |         47 | diagnostic-studies-python                                      
+⠏ |         50 | diagnostic-studies-python                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         53 | diagnostic-studies-python                                      
+⠸ |         54 | diagnostic-studies-python                                      
+⠇ |         59 | diagnostic-studies-python                                      
+⠋ |         61 | diagnostic-studies-python                                      
+⠴ |         66 | diagnostic-studies-python                                      
+⠦ |         67 | diagnostic-studies-python                                      
+⠧ |         68 | diagnostic-studies-python                                      
+⠙ |         72 | diagnostic-studies-python                                      
+✔ |         74 | diagnostic-studies-python [24.6s]
+
+⠏ |          0 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | first-event-python                                             
+⠼ |          5 | first-event-python                                             
+⠧ |         18 | first-event-python                                             
+⠇ |         19 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         21 | first-event-python                                             
+⠙ |         22 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         23 | first-event-python                                             Error: Operation not permitted
+
+⠴ |         26 | first-event-python                                             Error: Operation not permitted
+
+⠇ |         29 | first-event-python                                             Error: Operation not permitted
+
+⠙ |         32 | first-event-python                                             Error: Operation not permitted
+
+⠼ |         35 | first-event-python                                             
+⠧ |         38 | first-event-python                                             
+⠸ |         44 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         50 | first-event-python                                             
+⠙ |         52 | first-event-python                                             
+⠼ |         55 | first-event-python                                             
+⠴ |         56 | first-event-python                                             
+⠦ |         57 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |         64 | first-event-python                                             
+⠴ |         66 | first-event-python                                             
+⠇ |         69 | first-event-python                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |         72 | first-event-python                                             
+⠴ |         76 | first-event-python                                             
+⠇ |         79 | first-event-python                                             
+✔ |         81 | first-event-python [28.5s]
+
+⠏ |          0 | ihc-selection                                                  
+⠋ |          1 | ihc-selection                                                  
+⠙ |          2 | ihc-selection                                                  
+⠏ |         10 | ihc-selection                                                  Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         13 | ihc-selection                                                  
+⠴ |         16 | ihc-selection                                                  
+⠧ |         18 | ihc-selection                                                  
+⠋ |         21 | ihc-selection                                                  
+⠹ |         23 | ihc-selection                                                  Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         31 | ihc-selection                                                  
+⠹ |         33 | ihc-selection                                                  
+⠸ |         34 | ihc-selection                                                  
+⠼ |         35 | ihc-selection                                                  
+⠴ |         36 | ihc-selection                                                  
+⠧ |         38 | ihc-selection                                                  
+⠇ |         39 | ihc-selection                                                  Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         40 | ihc-selection                                                  
+⠙ |         42 | ihc-selection                                                  
+✔ |         43 | ihc-selection [5.0s]
+
+⠏ |          0 | ihc-trees                                                      
+⠋ |          1 | ihc-trees                                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |          7 | ihc-trees                                                      
+⠹ |         13 | ihc-trees                                                      
+⠇ |         19 | ihc-trees                                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         25 | ihc-trees                                                      
+⠋ |         31 | ihc-trees                                                      Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         37 | ihc-trees                                                      
+⠇ |         39 | ihc-trees                                                      
+⠙ |         42 | ihc-trees                                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         43 | ihc-trees                                                      
+⠇ |         49 | ihc-trees                                                      
+⠋ |         51 | ihc-trees                                                      
+⠙ |         52 | ihc-trees                                                      
+✔ |         52 | ihc-trees [12.8s]
+
+⠏ |          0 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | ihcheatmap                                                     
+⠼ |          5 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |          9 | ihcheatmap                                                     
+⠹ |         13 | ihcheatmap                                                     
+⠦ |         17 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         21 | ihcheatmap                                                     
+⠼ |         25 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         29 | ihcheatmap                                                     
+⠹ |         33 | ihcheatmap                                                     
+⠦ |         37 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         41 | ihcheatmap                                                     
+⠼ |         45 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         49 | ihcheatmap                                                     
+⠹ |         53 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         57 | ihcheatmap                                                     
+⠋ |         61 | ihcheatmap                                                     
+⠼ |         65 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+
+⠧ |         68 | ihcheatmap                                                     
+⠇ |         69 | ihcheatmap                                                     
+⠹ |         73 | ihcheatmap                                                     
+⠦ |         77 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         81 | ihcheatmap                                                     
+⠼ |         85 | ihcheatmap                                                     
+⠇ |         89 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         93 | ihcheatmap                                                     
+⠦ |         97 | ihcheatmap                                                     
+⠹ |        103 | ihcheatmap                                                     
+⠸ |        104 | ihcheatmap                                                     
+⠼ |        105 | ihcheatmap                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |        110 | ihcheatmap                                                     
+⠋ |        111 | ihcheatmap                                                     
+⠼ |        115 | ihcheatmap                                                     
+✔ |        116 | ihcheatmap [11.8s]
+
+⠏ |          0 | interval-censoring-python                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | interval-censoring-python                                      
+⠦ |          7 | interval-censoring-python                                      
+⠧ |         18 | interval-censoring-python                                      
+⠋ |         21 | interval-censoring-python                                      
+⠙ |         22 | interval-censoring-python                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         23 | interval-censoring-python                                      
+✔ |         29 | interval-censoring-python [3.2s]
+
+⠏ |          0 | intervals-python                                               
+⠋ |          1 | intervals-python                                               
+⠴ |          6 | intervals-python                                               
+⠋ |         11 | intervals-python                                               Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         16 | intervals-python                                               
+⠋ |         21 | intervals-python                                               Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |         24 | intervals-python                                               Error: Operation not permitted
+
+⠦ |         27 | intervals-python                                               Error: Operation not permitted
+
+⠏ |         30 | intervals-python                                               
+⠹ |         33 | intervals-python                                               
+⠼ |         35 | intervals-python                                               
+⠦ |         37 | intervals-python                                               
+⠇ |         39 | intervals-python                                               
+⠏ |         40 | intervals-python                                               
+⠋ |         41 | intervals-python                                               
+⠸ |         44 | intervals-python                                               
+⠼ |         45 | intervals-python                                               Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         46 | intervals-python                                               Error: Operation not permitted
+
+⠇ |         49 | intervals-python                                               Error: Operation not permitted
+
+⠙ |         52 | intervals-python                                               
+⠼ |         55 | intervals-python                                               
+⠧ |         58 | intervals-python                                               Error: Operation not permitted
+
+⠋ |         61 | intervals-python                                               
+⠙ |         62 | intervals-python                                               
+⠹ |         63 | intervals-python                                               
+⠼ |         65 | intervals-python                                               
+✔ |         65 | intervals-python [43.5s]
+
+⠏ |          0 | migration                                                      
+⠸ |          4 | migration                                                      
+✔ |         12 | migration
+
+⠏ |          0 | numeric-dates-python                                           
+⠋ |          1 | numeric-dates-python                                           
+⠸ |          4 | numeric-dates-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |          7 | numeric-dates-python                                           
+⠏ |         10 | numeric-dates-python                                           
+⠹ |         13 | numeric-dates-python                                           
+⠴ |         16 | numeric-dates-python                                           
+⠇ |         19 | numeric-dates-python                                           
+⠙ |         22 | numeric-dates-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         25 | numeric-dates-python                                           
+⠇ |         29 | numeric-dates-python                                           
+⠏ |         30 | numeric-dates-python                                           
+⠹ |         33 | numeric-dates-python                                           
+✔ |         33 | numeric-dates-python [15.3s]
+
+⠏ |          0 | outcomes-python                                                
+⠋ |          1 | outcomes-python                                                
+⠋ |         11 | outcomes-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |         12 | outcomes-python                                                
+⠙ |         22 | outcomes-python                                                
+⠹ |         23 | outcomes-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         35 | outcomes-python                                                
+⠴ |         36 | outcomes-python                                                
+⠦ |         37 | outcomes-python                                                
+⠧ |         38 | outcomes-python                                                
+⠇ |         39 | outcomes-python                                                
+⠏ |         40 | outcomes-python                                                
+⠋ |         41 | outcomes-python                                                
+⠙ |         42 | outcomes-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         43 | outcomes-python                                                
+⠸ |         44 | outcomes-python                                                
+⠦ |         47 | outcomes-python                                                
+⠇ |         49 | outcomes-python                                                
+⠹ |         53 | outcomes-python                                                
+⠇ |         59 | outcomes-python                                                
+⠏ |         60 | outcomes-python                                                
+⠹ |         63 | outcomes-python                                                
+⠴ |         66 | outcomes-python                                                
+⠦ |         67 | outcomes-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         69 | outcomes-python                                                
+⠏ |         70 | outcomes-python                                                
+⠋ |         71 | outcomes-python                                                
+✔ |         71 | outcomes-python [35.4s]
+
+⠏ |          0 | outlier-screening-python                                       
+⠋ |          1 | outlier-screening-python                                       
+⠇ |          9 | outlier-screening-python                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         11 | outlier-screening-python                                       Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         21 | outlier-screening-python                                       
+⠋ |         31 | outlier-screening-python                                       
+⠸ |         34 | outlier-screening-python                                       
+⠏ |         40 | outlier-screening-python                                       
+⠋ |         41 | outlier-screening-python                                       
+⠹ |         43 | outlier-screening-python                                       
+⠴ |         46 | outlier-screening-python                                       
+⠙ |         52 | outlier-screening-python                                       
+⠼ |         55 | outlier-screening-python                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         56 | outlier-screening-python                                       
+⠦ |         57 | outlier-screening-python                                       
+⠏ |         60 | outlier-screening-python                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         66 | outlier-screening-python                                       
+⠦ |         67 | outlier-screening-python                                       
+⠇ |         69 | outlier-screening-python                                       
+✔ |         69 | outlier-screening-python [7.9s]
+
+⠏ |          0 | pj-bridge                                                      Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |          7 | pj-bridge                                                      
+⠼ |         15 | pj-bridge                                                      
+✔ |         15 | pj-bridge [2.6s]
+
+⠏ |          0 | plots                                                          
+⠋ |          1 | plots                                                          
+⠹ |          3 | plots                                                          
+⠼ |          5 | plots                                                          Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |          7 | plots                                                          
+✔ |         10 | plots [4.2s]
+
+⠏ |          0 | pycotest                                                       
+⠋ |          1 | pycotest                                                       
+⠼ |          5 | pycotest                                                       
+⠇ |          9 | pycotest                                                       
+⠹ |         13 | pycotest                                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         17 | pycotest                                                       
+⠧ |         18 | pycotest                                                       
+⠏ |         20 | pycotest                                                       
+⠼ |         25 | pycotest                                                       
+⠦ |         27 | pycotest                                                       
+⠏ |         30 | pycotest                                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         36 | pycotest                                                       
+⠦ |         37 | pycotest                                                       
+⠹ |         43 | pycotest                                                       
+⠼ |         45 | pycotest                                                       Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         49 | pycotest                                                       
+⠏ |         50 | pycotest                                                       
+⠼ |         55 | pycotest                                                       
+⠴ |         56 | pycotest                                                       
+⠦ |         57 | pycotest                                                       
+⠧ |         58 | pycotest                                                       
+✔ |         58 | pycotest [5.9s]
+
+⠏ |          0 | pyd3cutoff                                                     Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | pyd3cutoff                                                     
+⠏ |         10 | pyd3cutoff                                                     
+⠙ |         12 | pyd3cutoff                                                     
+⠏ |         20 | pyd3cutoff                                                     
+⠙ |         22 | pyd3cutoff                                                     
+⠴ |         26 | pyd3cutoff                                                     
+✔ |         27 | pyd3cutoff [6.7s]
+
+⠏ |          0 | pydescriptives                                                 
+⠋ |          1 | pydescriptives                                                 Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         17 | pydescriptives                                                 
+⠧ |         18 | pydescriptives                                                 
+⠸ |         24 | pydescriptives                                                 
+⠧ |         28 | pydescriptives                                                 
+✔ |         33 | pydescriptives [1.3s]
+
+⠏ |          0 | pydotdecision                                                  
+⠋ |          1 | pydotdecision                                                  
+✔ |         12 | pydotdecision [1.1s]
+
+⠏ |          0 | pyexacttests                                                   Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | pyexacttests                                                   
+⠇ |          9 | pyexacttests                                                   
+⠦ |         17 | pyexacttests                                                   
+⠧ |         18 | pyexacttests                                                   Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |         19 | pyexacttests                                                   
+⠹ |         23 | pyexacttests                                                   
+⠼ |         25 | pyexacttests                                                   
+⠴ |         26 | pyexacttests                                                   
+⠙ |         32 | pyexacttests                                                   
+⠼ |         35 | pyexacttests                                                   
+⠦ |         37 | pyexacttests                                                   Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠙ |         42 | pyexacttests                                                   
+✔ |         44 | pyexacttests [12.4s]
+
+⠏ |          0 | pykappaci                                                      
+⠋ |          1 | pykappaci                                                      
+⠙ |          2 | pykappaci                                                      
+⠹ |          3 | pykappaci                                                      
+⠸ |          4 | pykappaci                                                      
+⠼ |          5 | pykappaci                                                      
+⠴ |          6 | pykappaci                                                      
+⠇ |          9 | pykappaci                                                      
+⠏ |         10 | pykappaci                                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         15 | pykappaci                                                      
+⠋ |         21 | pykappaci                                                      
+⠙ |         22 | pykappaci                                                      
+⠼ |         25 | pykappaci                                                      
+⠴ |         26 | pykappaci                                                      
+⠦ |         27 | pykappaci                                                      
+✔ |         27 | pykappaci [13.9s]
+
+⠏ |          0 | pykappafixedn                                                  
+⠋ |          1 | pykappafixedn                                                  
+⠙ |          2 | pykappafixedn                                                  
+⠹ |          3 | pykappafixedn                                                  
+⠸ |          4 | pykappafixedn                                                  Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |          5 | pykappafixedn                                                  
+⠴ |          6 | pykappafixedn                                                  
+⠦ |          7 | pykappafixedn                                                  
+⠇ |          9 | pykappafixedn                                                  
+⠋ |         11 | pykappafixedn                                                  
+⠹ |         13 | pykappafixedn                                                  
+⠸ |         14 | pykappafixedn                                                  
+✔ |         14 | pykappafixedn [10.8s]
+
+⠏ |          0 | pykappapower                                                   
+⠋ |          1 | pykappapower                                                   
+⠙ |          2 | pykappapower                                                   
+⠹ |          3 | pykappapower                                                   Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |          4 | pykappapower                                                   
+⠼ |          5 | pykappapower                                                   
+⠴ |          6 | pykappapower                                                   
+⠦ |          7 | pykappapower                                                   
+⠏ |         10 | pykappapower                                                   
+⠋ |         11 | pykappapower                                                   
+⠼ |         15 | pykappapower                                                   
+⠴ |         16 | pykappapower                                                   
+⠇ |         19 | pykappapower                                                   
+⠏ |         20 | pykappapower                                                   
+✔ |         20 | pykappapower [13.5s]
+
+⠏ |          0 | pyobservablecutoff                                             Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | pyobservablecutoff                                             
+⠏ |         10 | pyobservablecutoff                                             
+⠙ |         12 | pyobservablecutoff                                             
+⠏ |         20 | pyobservablecutoff                                             
+⠙ |         22 | pyobservablecutoff                                             
+⠴ |         26 | pyobservablecutoff                                             
+✔ |         27 | pyobservablecutoff [7.3s]
+
+⠏ |          0 | pyruntime                                                      Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | pyruntime                                                      
+✔ |          3 | pyruntime
+
+⠏ |          0 | pysvgcutoff                                                    
+⠋ |          1 | pysvgcutoff                                                    
+⠼ |          5 | pysvgcutoff                                                    
+⠙ |         12 | pysvgcutoff                                                    
+⠴ |         16 | pysvgcutoff                                                    
+⠧ |         18 | pysvgcutoff                                                    
+⠏ |         20 | pysvgcutoff                                                    
+✔ |         20 | pysvgcutoff [6.8s]
+
+⠏ |          0 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |         14 | python-core                                                    
+⠋ |         21 | python-core                                                    
+⠙ |         22 | python-core                                                    
+⠏ |         30 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |         34 | python-core                                                    
+⠙ |         42 | python-core                                                    
+⠏ |         50 | python-core                                                    
+⠧ |         58 | python-core                                                    
+⠏ |         60 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         65 | python-core                                                    Error: Operation not permitted
+
+⠏ |         70 | python-core                                                    
+⠼ |         75 | python-core                                                    Assuming '1' is [Event] and '0' is [non-Event]
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         90 | python-core                                                    
+⠋ |         91 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |         93 | python-core                                                    
+⠸ |         94 | python-core                                                    
+⠴ |         96 | python-core                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         97 | python-core                                                    
+✔ |         98 | python-core [52.6s]
+
+⠏ |          0 | pywelch                                                        
+⠋ |          1 | pywelch                                                        
+⠦ |          7 | pywelch                                                        
+⠹ |         13 | pywelch                                                        
+⠼ |         15 | pywelch                                                        
+⠦ |         17 | pywelch                                                        Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         20 | pywelch                                                        
+⠋ |         21 | pywelch                                                        
+⠸ |         24 | pywelch                                                        
+⠴ |         26 | pywelch                                                        
+⠇ |         29 | pywelch                                                        
+⠙ |         32 | pywelch                                                        
+⠼ |         35 | pywelch                                                        
+⠦ |         37 | pywelch                                                        
+⠧ |         38 | pywelch                                                        
+⠏ |         40 | pywelch                                                        
+⠙ |         42 | pywelch                                                        Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠦ |         47 | pywelch                                                        
+⠹ |         53 | pywelch                                                        
+⠧ |         58 | pywelch                                                        
+⠇ |         59 | pywelch                                                        
+⠏ |         60 | pywelch                                                        
+⠋ |         61 | pywelch                                                        
+✔ |         64 | pywelch [25.2s]
+
+⠏ |          0 | sets-python                                                    
+⠋ |          1 | sets-python                                                    
+⠸ |         14 | sets-python                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠼ |         35 | sets-python                                                    
+⠙ |         72 | sets-python                                                    
+⠸ |         74 | sets-python                                                    
+⠧ |         88 | sets-python                                                    
+⠇ |         89 | sets-python                                                    Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠏ |         90 | sets-python                                                    
+⠹ |         93 | sets-python                                                    
+⠸ |         94 | sets-python                                                    
+⠦ |         97 | sets-python                                                    
+⠧ |         98 | sets-python                                                    
+⠼ |        105 | sets-python                                                    
+⠴ |        106 | sets-python                                                    
+✔ |        106 | sets-python [5.5s]
+
+⠏ |          0 | single-quality                                                 
+⠋ |          1 | single-quality                                                 Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         11 | single-quality                                                 
+⠼ |         15 | single-quality                                                 
+⠧ |         18 | single-quality                                                 
+⠹ |         23 | single-quality                                                 
+⠼ |         25 | single-quality                                                 
+⠧ |         28 | single-quality                                                 
+⠇ |         29 | single-quality                                                 
+⠏ |         30 | single-quality                                                 
+✔ |         31 | single-quality [4.1s]
+
+⠏ |          0 | tableone-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |          1 | tableone-python                                                
+⠇ |         29 | tableone-python                                                
+⠇ |         59 | tableone-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         66 | tableone-python                                                
+⠼ |         95 | tableone-python                                                
+⠋ |        111 | tableone-python                                                
+⠼ |        115 | tableone-python                                                
+⠧ |        118 | tableone-python                                                
+⠴ |        146 | tableone-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |        176 | tableone-python                                                
+⠴ |        216 | tableone-python                                                
+⠙ |        232 | tableone-python                                                Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |        239 | tableone-python                                                
+⠏ |        240 | tableone-python                                                
+⠹ |        243 | tableone-python                                                
+⠴ |        246 | tableone-python                                                
+⠧ |        248 | tableone-python                                                
+⠏ |        250 | tableone-python                                                
+⠸ |        254 | tableone-python                                                
+⠴ |        256 | tableone-python                                                
+⠦ |        257 | tableone-python                                                Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠸ |        264 | tableone-python                                                
+✔ |        267 | tableone-python [20.7s]
+
+⠏ |          0 | variable-tree-python                                           
+⠋ |          1 | variable-tree-python                                           
+⠙ |         12 | variable-tree-python                                           
+⠸ |         34 | variable-tree-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠋ |         71 | variable-tree-python                                           
+⠼ |         75 | variable-tree-python                                           
+⠴ |         76 | variable-tree-python                                           
+⠙ |         82 | variable-tree-python                                           
+⠸ |         84 | variable-tree-python                                           
+⠧ |         88 | variable-tree-python                                           
+⠋ |         91 | variable-tree-python                                           
+⠙ |         92 | variable-tree-python                                           
+⠸ |         94 | variable-tree-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠴ |         96 | variable-tree-python                                           
+⠦ |        127 | variable-tree-python                                           
+⠧ |        168 | variable-tree-python                                           Error: Operation not permitted
+Error: Operation not permitted
+
+⠹ |        173 | variable-tree-python                                           
+⠋ |        181 | variable-tree-python                                           
+⠸ |        184 | variable-tree-python                                           
+⠼ |        185 | variable-tree-python                                           
+⠇ |        189 | variable-tree-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+⠇ |        229 | variable-tree-python                                           
+⠸ |        234 | variable-tree-python                                           
+⠴ |        236 | variable-tree-python                                           
+⠦ |        237 | variable-tree-python                                           
+⠏ |        240 | variable-tree-python                                           
+⠋ |        241 | variable-tree-python                                           
+⠹ |        243 | variable-tree-python                                           
+⠴ |        246 | variable-tree-python                                           
+⠦ |        247 | variable-tree-python                                           Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+Error: Operation not permitted
+
+✔ |        251 | variable-tree-python [8.4s]
+
+══ Results ═════════════════════════════════════════════════════════════════════
+Duration: 616.1 s
+
+── Failed tests ────────────────────────────────────────────────────────────────
+Error ('test-bridge.R:29:5'): a checkpoint condition stops Python at once and leaves no process behind
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:29:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:37:5'): a run over the time limit is stopped, even inside C code
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:37:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:46:5'): jamovi's restart request (an option change) ends the analysis in 'restarting'
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_length(pythonChildren(), 0) at test-bridge.R:46:5
+  2. │ └─testthat::quasi_label(enquo(object))
+  3. │   └─rlang::eval_bare(expr, quo_get_env(quo))
+  4. └─pythonChildren()
+  5.   ├─base::Filter(...) at test-bridge.R:18:5
+  6.   │ ├─base::unlist(lapply(x, f))
+  7.   │ └─base::lapply(x, f)
+  8.   └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+  9.     └─ps:::ps_ppid_map()
+ 10.       └─ps::ps_pids()
+ 11.         └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:54:9'): a Python process that dies without answering is reported, with what it printed
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+     ▆
+  1. ├─testthat::expect_error(...) at test-bridge.R:57:5
+  2. │ └─testthat:::expect_condition_matching_(...)
+  3. │   └─testthat:::quasi_capture(...)
+  4. │     ├─testthat (local) .capture(...)
+  5. │     │ └─base::withCallingHandlers(...)
+  6. │     └─rlang::eval_bare(quo_get_expr(.quo), quo_get_env(.quo))
+  7. └─analysis$run() at test-bridge.R:57:37
+  8.   ├─jmvcore (local) try(...)
+  9.   │ └─base::eval(expr)
+ 10.   └─private$.run()
+ 11.     └─ClinicoPathPj:::.cpjRun(...)
+ 12.       └─ClinicoPathPj:::.cpjExecute(...)
+ 13.         └─ClinicoPathPj (local) checkpoint()
+ 14.           └─private$.checkpoint(flush = FALSE)
+ 15.             └─private$.checkpointCB(results)
+ 16.               └─pythonChildren() at test-bridge.R:54:9
+ 17.                 ├─base::Filter(...) at test-bridge.R:18:5
+ 18.                 │ ├─base::unlist(lapply(x, f))
+ 19.                 │ └─base::lapply(x, f)
+ 20.                 └─ps::ps_children(ps::ps_handle(), recursive = TRUE)
+ 21.                   └─ps:::ps_ppid_map()
+ 22.                     └─ps::ps_pids()
+ 23.                       └─ps:::ps_pids_macos()
+
+Error ('test-bridge.R:75:5'): stopping a run also kills what Python started
+<os_error/ps_error/error/condition>
+Error: Operation not permitted
+Backtrace:
+    ▆
+ 1. ├─sleeper %in% ps::ps_pids() at test-bridge.R:75:5
+ 2. └─ps::ps_pids()
+ 3.   └─ps:::ps_pids_macos()
+
+[ FAIL 5 | WARN 0 | SKIP 0 | PASS 4360 ]
+Error:
+! Test failures.
+Execution halted

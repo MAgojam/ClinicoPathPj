@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-07",
+  "host": {
+    "status": "known_path_mismatch",
+    "known_bad_path_lines": [
+      428
+    ],
+    "dataset_path_or_dynamic_accessor_declared": false,
+    "dataset_has_base_classes": false,
+    "gui_save_verified": false,
+    "export_verified": false,
+    "source_sha256": "6c1d7da3aa2c1765e4ab54d5c69041911d7249193676b9c3ee82d548e904de08",
+    "app": "/Applications/jamovi.app",
+    "version": "28.17.0.0",
+    "issue": "https://github.com/jamovi/jamovi/issues/1907"
+  },
+  "architecture": "arm64",
+  "native_analysis": "pysvgcutoff",
+  "module_version": "0.3.58",
+  "fixture": "python-svg-cutoff-0.3.7-data-only-control.omv",
+  "rows": 6,
+  "native_cutoff": 2,
+  "native_counts": [
+    3,
+    2,
+    0,
+    1
+  ],
+  "confirmed_preview_cutoff": 3,
+  "preview_counts": [
+    2,
+    1,
+    1,
+    2
+  ],
+  "local_snapshot_cutoff": 2,
+  "save_as": {
+    "status": "failed",
+    "message": "'DataSetModel' object has no attribute 'instance_path'",
+    "destination_created": false
+  },
+  "docx": {
+    "status": "exported through native GUI",
+    "filename": "python-svg-28.17-confirmed-preview3.docx",
+    "sha256": "fc5bf6068ea9137a78d346f51edf8ce51831bf9b64592be15fa6763343629f99",
+    "embedded_explorer": "decoded and visually inspected",
+    "native_table": "checked against expected cutoff-2 counts",
+    "word_page_rendering": "not tested",
+    "marker_scan": "limited patterns only"
+  },
+  "pdf_odt_latex": "not tested",
+  "fresh_engine_saved_analysis_reopen": "blocked by failed save",
+  "snapshot_persistence": "not verified",
+  "module_omv_release_status": "experimental",
+  "window": "synthetic analysis left open unsaved"
+}

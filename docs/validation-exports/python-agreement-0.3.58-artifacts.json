@@ -1,0 +1,39 @@
+{
+  "valid": {
+    "rows": 12,
+    "columns": 3,
+    "native_images": 1,
+    "original_data": "pass"
+  },
+  "reopened": {
+    "rows": 12,
+    "columns": 3,
+    "native_images": 1,
+    "original_data": "pass"
+  },
+  "export": {
+    "audit": [
+      12,
+      8,
+      4,
+      1,
+      2,
+      1
+    ],
+    "source_rows": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rounded_estimates": "pass",
+    "png_dimensions": [
+      1277,
+      958
+    ]
+  }
+}

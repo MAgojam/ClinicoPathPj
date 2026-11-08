@@ -1,0 +1,68 @@
+{
+  "version": "0.3.59",
+  "date": "2026-11-07",
+  "analysis": "pyagreement",
+  "methods": [
+    "blandaltman",
+    "icc"
+  ],
+  "default_method": "blandaltman",
+  "icc_models": 6,
+  "icc_interval_forms_available": 5,
+  "icc2k_interval": "withheld with native notice",
+  "numerical": {
+    "R_reference_configurations": 90,
+    "coverage_study_matrices": 48000,
+    "coverage_does_not_establish_release": true
+  },
+  "python": {
+    "focused_tests": 60,
+    "full_suite_tests": 465,
+    "status": "pass",
+    "initial_full_run": "one mutable stalled-LaTeX artifact-state regression, corrected before passing full rerun"
+  },
+  "native_R": {
+    "passed": 91,
+    "failed": 0,
+    "warnings": 0,
+    "skipped": 0,
+    "environment_diagnostics": "Operation not permitted outside passing test counts",
+    "full_R_suite": "not rerun; prior broad process-inspection sandbox failures remain documented"
+  },
+  "compiler": "full build passed",
+  "packaged_runtime": {
+    "top_level_cases": 30,
+    "icc_model_subcases": 6,
+    "status": "pass"
+  },
+  "desktop": {
+    "app": "jamovi 28.17",
+    "platform": "macOS arm64",
+    "sideload": true,
+    "fresh_engine": true,
+    "models_observed": [
+      "icc21",
+      "icc2k",
+      "icc31"
+    ],
+    "pending_recovery": true,
+    "confidence_change": true,
+    "save_reopen_recalculate": true,
+    "native_html_export": true,
+    "legacy_0_3_58_BlandAltman": true
+  },
+  "persisted_artifacts": "six OMV states and HTML checked",
+  "omissions": [
+    "ICC(2,k) uncertainty",
+    "CCC/categorical/repeated/unbalanced/hierarchical methods",
+    "Bootstrap/F-test/sample-size outputs",
+    "Clinical bands and adjudication"
+  ],
+  "remaining": [
+    "Broader GUI pathological cases",
+    "Additional platforms",
+    "Broader document formats",
+    "Clinical review",
+    "Full baseline parity"
+  ]
+}
